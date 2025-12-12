@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Panda Studio Team Website
 
-## Getting Started
+A modern, feature-oriented marketing and presentation website for **Panda Studio Team** — a professional fitness and massage studio based in Rzeszów, PL.  
+The site showcases services, pricing, contact information, and engages potential clients with clear pathways to book training and wellness sessions. :contentReference[oaicite:1]{index=1}
 
-First, run the development server:
+This repository contains the full source code for the project built with a focus on **scalability**, **type safety**, and **feature modularity** using modern frontend technologies.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Live Demo:** [https://pandastudioteam.com/]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Project Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This codebase represents a **Next.js website** structured around real user journeys:
 
-## Learn More
+- Home / Landing page
+- Training services
+- Massage offerings
+- Pricing and booking sections
+- Contact and location details
 
-To learn more about Next.js, take a look at the following resources:
+The goal is to deliver a professional online presence that matches the visual and brand identity of the physical Panda Studio Team service offerings. :contentReference[oaicite:2]{index=2}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧱 Feature-Oriented Structure
 
-## Deploy on Vercel
+The project follows a **feature folder architecture** (domain-oriented rather than technical) to optimize scale and maintainability
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Each feature folder contains domain-specific pages, components, and logic, allowing teams to work independently per feature without large shared monoliths.
+
+---
+
+## 📦 Tech Stack (Observed)
+
+This project uses a modern frontend stack optimized for reliability, scalability, and maintainability:
+
+- **TypeScript** — static typing and improved DX
+- **Next.js** — SSR & static site delivery
+- **Zustand** — lightweight state management
+- **TanStack Query** — data fetching and caching
+- **Sanity** — CMS for rich content editing
+- **Supabase** — backend services (authentication, storage, DB)
+- **Zod** — schema validation
+- **React Hook Form** — form state management
+- **Vitest** — unit and integration testing
+- **Playwright** — end-to-end testing
+
+---

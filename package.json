@@ -16,6 +16,7 @@
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "sanity": "^4.21.1",
+    "sass": "^1.97.2",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {

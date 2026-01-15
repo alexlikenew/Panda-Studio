@@ -1,5 +1,5 @@
 import { getEntry } from "@/features/dictionary/services/dictionaryService";
-import DictionaryEntryView from "@/features/dictionary/components/DictionaryEntryView";
+import DictionaryPostPage from "@/features/dictionary/DictionaryPostPage";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -29,5 +29,5 @@ export default async function KnowledgeBaseEntryPage({ params }: Props) {
         notFound();
     }
 
-    return <DictionaryEntryView entry={entry} />;
+    return <DictionaryPostPage entry={entry} />;
 }

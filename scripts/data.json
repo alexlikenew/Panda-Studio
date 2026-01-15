@@ -1,0 +1,2194 @@
+[
+    {
+        "_type": "baza-wiedzy",
+        "title": "Hipertrofia Mięśniowa",
+        "slug": {
+            "current": "hipertrofia-miesniowa"
+        },
+        "publishedAt": "2024-03-01T10:00:00Z",
+        "excerpt": "Czym jest hipertrofia? Poznaj mechanizmy wzrostu mięśni, różnice między hipertrofią miofibrylaną a sarkoplazmatyczną i zasady treningu budującego sylwetkę.",
+        "tags": [
+            "trening",
+            "fizjologia",
+            "budowa mięśni"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Ile powtórzeń robić na masę?",
+                "answer": "Zakres 5-30 powtórzeń jest skuteczny, pod warunkiem zachowania bliskości upadku mięśniowego (RIR 0-3)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "h_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "h_intro_span_1",
+                        "text": "Hipertrofia to proces adaptacyjny organizmu polegający na zwiększeniu objętości włókien mięśniowych w odpowiedzi na stres mechaniczny. W Panda Studio traktujemy to nie jako estetykę, ale jako fundament siły i zdrowia metabolicznego."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "h_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "h_head_span_1",
+                        "text": "Rodzaje hipertrofii"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "h_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "h_desc_span_1",
+                        "text": "Wyróżniamy dwa główne typy: "
+                    },
+                    {
+                        "_type": "span",
+                        "_key": "h_desc_span_2",
+                        "text": "hipertrofię miofibrylaną",
+                        "marks": [
+                            "strong"
+                        ]
+                    },
+                    {
+                        "_type": "span",
+                        "_key": "h_desc_span_3",
+                        "text": " (wzrost siły i gęstości włókien) oraz "
+                    },
+                    {
+                        "_type": "span",
+                        "_key": "h_desc_span_4",
+                        "text": "sarkoplazmatyczną",
+                        "marks": [
+                            "strong"
+                        ]
+                    },
+                    {
+                        "_type": "span",
+                        "_key": "h_desc_span_5",
+                        "text": " (zwiększenie objętości płynów i glikogenu w mięśniu)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Atrofia Mięśniowa",
+        "slug": {
+            "current": "atrofia-miesniowa"
+        },
+        "publishedAt": "2024-03-02T10:00:00Z",
+        "excerpt": "Atrofia to proces zaniku tkanki mięśniowej. Dowiedz się, jak brak aktywności (detrening) wpływa na sylwetkę i jak szybko można odzyskać formę dzięki pamięci mięśniowej.",
+        "tags": [
+            "regeneracja",
+            "fizjologia",
+            "zdrowie"
+        ],
+        "relatedServices": [
+            {
+                "title": "Rehabilitacja Ruchowa",
+                "url": "/oferta/rehabilitacja"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Po jakim czasie następuje spadek mięśni?",
+                "answer": "Zauważalna atrofia z braku aktywności rozpoczyna się zazwyczaj po 2-3 tygodniach całkowitego braku bodźców."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "a_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "a_intro_span_1",
+                        "text": "Organizm jest ekonomiczny. Jeśli nie używasz mięśni, system uznaje je za zbędny balast energetyczny i rozpoczyna proces kataboliczny zwany atrofią."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "a_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "a_head_span_1",
+                        "text": "Przyczyny atrofii"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "a_list_1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "a_list_span_1",
+                        "text": "Brak aktywności fizycznej (siedzący tryb życia)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "a_list_2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "a_list_span_2",
+                        "text": "Unieruchomienie po kontuzjach (gips, orteza)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "a_list_3",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "a_list_span_3",
+                        "text": "Deficyt kaloryczny i niedobór białka."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "DOMS (Opóźniona Bolesność Mięśniowa)",
+        "slug": {
+            "current": "doms-zakwasy"
+        },
+        "publishedAt": "2024-03-03T10:00:00Z",
+        "excerpt": "Popularne 'zakwasy' to nie kwas mlekowy. Poznaj prawdę o DOMS, mikrouszkodzeniach włókien i tym, czy ból jest wyznacznikiem dobrego treningu.",
+        "tags": [
+            "regeneracja",
+            "mity treningowe",
+            "DOMS"
+        ],
+        "relatedServices": [
+            {
+                "title": "Masaż Sportowy",
+                "url": "/oferta/masaz"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy można ćwiczyć z DOMS?",
+                "answer": "Lekki trening (aktywna regeneracja) jest wskazany, ale unikanie ciężkich obciążeń na obolałą partię jest zalecane."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "d_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "d_intro_span_1",
+                        "text": "DOMS (Delayed Onset Muscle Soreness) to ból pojawiający się 24-72 godziny po wysiłku. Wbrew mitom, nie jest on spowodowany kwasem mlekowym, który jest usuwany z mięśni w ciągu godziny po treningu."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "d_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "d_head_span_1",
+                        "text": "Mikrouszkodzenia, nie kwas"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "d_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "d_desc_span_1",
+                        "text": "Ból wynika ze stanu zapalnego wywołanego mikrouszkodzeniami struktur mięśniowych, głównie podczas fazy ekscentrycznej ruchu (rozciągania pod obciążeniem)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "RPE (Skala Odczuwalnego Wysiłku)",
+        "slug": {
+            "current": "rpe-skala-wysilku"
+        },
+        "publishedAt": "2024-03-04T10:00:00Z",
+        "excerpt": "RPE (Rating of Perceived Exertion) to klucz do autoregulacji treningowej. Naucz się precyzyjnie oceniać intensywność serii w skali 1-10.",
+        "tags": [
+            "metodyka treningowa",
+            "programowanie",
+            "RPE"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czym różni się RPE 9 od RPE 10?",
+                "answer": "RPE 10 to absolutny upadek (brak możliwości wykonania ruchu). RPE 9 oznacza, że mogłeś wykonać jeszcze dokładnie jedno powtórzenie."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "rpe_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rpe_intro_span_1",
+                        "text": "Skala RPE pozwala dostosować ciężar do dyspozycji dnia. Jest to subiektywna ocena trudności serii, pierwotnie oparta na skali Borga, a w kulturystyce zaadaptowana do zakresu 1-10."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rpe_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rpe_head_span_1",
+                        "text": "Jak czytać RPE?"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rpe_list_1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rpe_list_span_1",
+                        "text": "RPE 10: Maksymalny wysiłek, 0 powtórzeń w zapasie."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rpe_list_2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rpe_list_span_2",
+                        "text": "RPE 9: Bardzo ciężko, 1 powtórzenie w zapasie."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rpe_list_3",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rpe_list_span_3",
+                        "text": "RPE 8: Ciężko, 2 powtórzenia w zapasie (optimum hipertroficzne)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Reps in Reserve (RIR)",
+        "slug": {
+            "current": "rir-powtorzenia-w-zapasie"
+        },
+        "publishedAt": "2024-03-05T10:00:00Z",
+        "excerpt": "RIR (Reps In Reserve) to odwrotność skali RPE. Dowiedz się, dlaczego trenowanie do upadku nie zawsze jest najlepszą drogą do progresu.",
+        "tags": [
+            "metodyka treningowa",
+            "siła",
+            "RIR"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy początkujący powinien stosować RIR?",
+                "answer": "Początkujący mają trudność z oceną bliskości upadku, dlatego zaleca się im pracę na ustalonych zakresach powtórzeń."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "rir_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rir_intro_span_1",
+                        "text": "RIR, czyli powtórzenia w zapasie, to metoda określająca, jak daleko jesteś od upadku mięśniowego. Zamiast pytać 'jak ciężko było' (RPE), pytasz 'ile jeszcze bym zrobił'."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rir_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rir_head_span_1",
+                        "text": "Efektywne powtórzenia"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rir_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rir_desc_span_1",
+                        "text": "Badania wskazują, że ostatnie 5 powtórzeń przed upadkiem (RIR 5 do RIR 0) generuje największą stymulację włókien wysokoprogowych. Utrzymywanie RIR 1-2 to złoty środek między stymulacją a zmęczeniem."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Objętość Treningowa",
+        "slug": {
+            "current": "objetosc-treningowa"
+        },
+        "publishedAt": "2024-03-06T10:00:00Z",
+        "excerpt": "Objętość to nie tylko ilość potu. Dowiedz się, jak liczyć serie robocze, czym jest 'junk volume' i jaka dawka treningu jest potrzebna do wzrostu.",
+        "tags": [
+            "programowanie",
+            "hipertrofia",
+            "podstawy"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Ile serii tygodniowo na partię mięśniową?",
+                "answer": "Dla większości osób optymalny zakres to 10-20 serii roboczych tygodniowo na partię, podzielonych na 2 lub więcej jednostek treningowych."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "vol_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "vol_intro_span_1",
+                        "text": "W ujęciu naukowym objętość (volume) to iloczyn serii, powtórzeń i ciężaru. Jednak w nowoczesnym treningu sylwetkowym upraszczamy to do 'liczby ciężkich serii roboczych' (hard sets)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "vol_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "vol_head_span_1",
+                        "text": "Jakość ponad ilość"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "vol_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "vol_desc_span_1",
+                        "text": "Zbyt duża objętość prowadzi do tzw. 'junk volume' – serii, które generują zmęczenie, ale nie dają bodźca wzrostowego. Kluczem jest znalezienie MEV (Minimal Effective Volume) i MAV (Maximum Recoverable Volume)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Intensywność Treningowa",
+        "slug": {
+            "current": "intensywnosc-treningowa"
+        },
+        "publishedAt": "2024-03-07T10:00:00Z",
+        "excerpt": "Intensywność to często mylone pojęcie. W treningu siłowym oznacza procent ciężaru maksymalnego lub bliskość upadku. Zrozum różnicę, by trenować celowo.",
+        "tags": [
+            "siła",
+            "metodyka treningowa",
+            "definicje"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy muszę pocić się, żeby trening był intensywny?",
+                "answer": "Nie. Pot to reakcja termoregulacyjna. Prawdziwa intensywność siłowa (np. 90% 1RM) często wiąże się z długimi przerwami i brakiem 'zadyszki'."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "int_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "int_intro_span_1",
+                        "text": "W potocznym języku 'intensywny' znaczy szybki i męczący. W treningu oporowym definicja jest inna: intensywność odnosi się do obciążenia na sztandze względem Twojego maksa (1RM) lub stopnia wysiłku w serii."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "int_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "int_head_span_1",
+                        "text": "Dwie miary intensywności"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "int_list_1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "int_list_span_1",
+                        "text": "Intensywność ciężaru: % 1RM (kluczowa dla budowania siły)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "int_list_2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "int_list_span_2",
+                        "text": "Intensywność wysiłku: Bliskość upadku mięśniowego (kluczowa dla hipertrofii)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Progresywne Przeładowanie (Progressive Overload)",
+        "slug": {
+            "current": "progresywne-przeladowanie"
+        },
+        "publishedAt": "2024-03-08T10:00:00Z",
+        "excerpt": "Fundamentalne prawo treningu. Bez progresywnego przeładowania Twoje ciało nie ma powodu, by się zmieniać. Poznaj metody progresji inne niż tylko dokładanie ciężaru.",
+        "tags": [
+            "fundamenty",
+            "progres",
+            "siła"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Co zrobić, gdy nie mogę dołożyć ciężaru?",
+                "answer": "Możesz wykonać więcej powtórzeń tym samym ciężarem, skrócić przerwę wypoczynkową lub poprawić technikę i kontrolę ruchu (tempo)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "po_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "po_intro_span_1",
+                        "text": "Ciało dąży do homeostazy (równowagi). Aby wymusić adaptację (wzrost mięśni lub siły), musisz dostarczać bodziec silniejszy niż ten, do którego organizm już przywykł."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "po_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "po_head_span_1",
+                        "text": "Metody Progresji"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "po_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "po_desc_span_1",
+                        "text": "Najpopularniejszą metodą jest zwiększanie obciążenia, ale równie skuteczne jest zwiększanie objętości (serie/powtórzenia), gęstości treningowej (krótsze przerwy) lub poprawa jakości ruchu (lepsze czucie mięśniowe)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Deload (Roztrenowanie)",
+        "slug": {
+            "current": "deload-roztrenowanie"
+        },
+        "publishedAt": "2024-03-09T10:00:00Z",
+        "excerpt": "Deload to planowany krok w tył, by zrobić dwa kroki naprzód. Dowiedz się, jak zarządzać zmęczeniem (fatigue management) i unikać przetrenowania.",
+        "tags": [
+            "regeneracja",
+            "planowanie",
+            "zdrowie"
+        ],
+        "relatedServices": [
+            {
+                "title": "Masaż Sportowy",
+                "url": "/oferta/masaz"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Jak często robić deload?",
+                "answer": "Zazwyczaj co 4-8 tygodni ciężkiego treningu, lub w momencie wystąpienia objawów skumulowanego zmęczenia (spadek siły, gorszy sen, brak motywacji)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "del_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "del_intro_span_1",
+                        "text": "Trening to stres. Adaptacja następuje podczas odpoczynku. Deload to okres (zwykle tydzień), w którym celowo redukujemy objętość lub intensywność, aby pozwolić układowi nerwowemu i stawom na pełną regenerację."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "del_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "del_head_span_1",
+                        "text": "Jak przeprowadzić Deload?"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "del_list_1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "del_list_span_1",
+                        "text": "Opcja A (Zalecana): Zmniejsz liczbę serii o 50%, zachowaj ciężar."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "del_list_2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "del_list_span_2",
+                        "text": "Opcja B: Zmniejsz ciężar o 40-50%, zachowaj liczbę powtórzeń (tzw. 'active recovery')."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Trening Funkcjonalny",
+        "slug": {
+            "current": "trening-funkcjonalny"
+        },
+        "publishedAt": "2024-03-10T10:00:00Z",
+        "excerpt": "Trening pod życie, nie pod Instagram. Budowanie sprawności opartej na fundamentalnych wzorcach ruchowych, które wykorzystujesz każdego dnia.",
+        "tags": [
+            "sprawność",
+            "mobilność",
+            "wzorce ruchowe"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy trening funkcjonalny buduje mięśnie?",
+                "answer": "Tak, ale jest to efekt uboczny budowania sprawności. Głównym celem jest transfer siły na czynności dnia codziennego i inne dyscypliny sportu."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "func_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "func_intro_span_1",
+                        "text": "Trening funkcjonalny nie polega na robieniu przysiadów na piłce bosu. Polega na wzmacnianiu fundamentalnych wzorców ruchowych: przysiadu (squat), zgięcia biodrowego (hinge), pchania (push), ciągnięcia (pull), wykroku (lunge) i noszenia (carry)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "func_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "func_head_span_1",
+                        "text": "Dlaczego warto?"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "func_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "func_desc_span_1",
+                        "text": "Celem jest stworzenie ciała, które jest gotowe na wyzwania codzienności – od wniesienia zakupów na 4. piętro po bezpieczne podniesienie dziecka. Izolacja ma swoje miejsce, ale to wielostawy budują fundament życia."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Trening Izometryczny",
+        "slug": {
+            "current": "trening-izometryczny"
+        },
+        "publishedAt": "2024-03-11T10:00:00Z",
+        "excerpt": "Siła bez ruchu. Izometria to generowanie napięcia mięśniowego bez zmiany długości włókien. Kluczowa w rehabilitacji i budowaniu siły w 'martwych punktach'.",
+        "tags": [
+            "siła",
+            "rehabilitacja",
+            "metodyka treningowa"
+        ],
+        "relatedServices": [
+            {
+                "title": "Rehabilitacja Ruchowa",
+                "url": "/oferta/rehabilitacja"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy izometria buduje masę mięśniową?",
+                "answer": "W ograniczonym stopniu. Izometria jest doskonała do budowania siły i sztywności ścięgien, ale mniejszy zakres ruchu ogranicza potencjał hipertroficzny."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "iso_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "iso_intro_span_1",
+                        "text": "Izometria występuje wtedy, gdy siła generowana przez mięsień równoważy opór zewnętrzny – nie ma ruchu, jest tylko czyste napięcie. Przykładem jest 'Deska' (Plank) lub pchanie w nieruchomą ścianę."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "iso_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "iso_head_span_1",
+                        "text": "Zastosowanie praktyczne"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "iso_list_1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "iso_list_span_1",
+                        "text": "Rehabilitacja: Pozwala aktywować mięsień bez obciążania stawu ruchem."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "iso_list_2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "iso_list_span_2",
+                        "text": "Przełamywanie barier: Wzmacnianie najsłabszego punktu w boju (np. pauza w połowie wyciskania)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Trening Plyometryczny",
+        "slug": {
+            "current": "trening-plyometryczny"
+        },
+        "publishedAt": "2024-03-12T10:00:00Z",
+        "excerpt": "Dynamika i moc. Plyometria wykorzystuje cykl rozciągnięcie-skurcz (SSC), aby uczyć układ nerwowy generowania maksymalnej siły w minimalnym czasie.",
+        "tags": [
+            "moc",
+            "dynamika",
+            "skoczność"
+        ],
+        "relatedServices": [
+            {
+                "title": "Przygotowanie Motoryczne",
+                "url": "/oferta/motoryka"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy plyometria jest bezpieczna dla stawów?",
+                "answer": "Tak, pod warunkiem posiadania odpowiedniej bazy siłowej i techniki lądowania. Źle dobrane ćwiczenia plyometryczne są częstą przyczyną kontuzji."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "plyo_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "plyo_intro_span_1",
+                        "text": "Siła x Prędkość = Moc. Trening plyometryczny (np. skoki na skrzynię, rzuty piłką lekarską) uczy mięśnie działać jak sprężyna, wykorzystując energię elastyczną zgromadzoną w ścięgnach."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "plyo_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "plyo_head_span_1",
+                        "text": "Zasada SSC"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "plyo_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "plyo_desc_span_1",
+                        "text": "Stretch-Shortening Cycle to mechanizm, w którym mięsień ulega gwałtownemu rozciągnięciu tuż przed skurczem. To właśnie ten mechanizm pozwala skoczyć wyżej po wzięciu zamachu niż ze statycznej pozycji."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Koncentryczna Faza Ruchu",
+        "slug": {
+            "current": "faza-koncentryczna"
+        },
+        "publishedAt": "2024-03-13T10:00:00Z",
+        "excerpt": "Moment, w którym wygrywasz z grawitacją. Faza koncentryczna to skracanie się mięśnia pod obciążeniem – podnoszenie ciężaru.",
+        "tags": [
+            "biomechanika",
+            "technika",
+            "podstawy"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Jak szybko wykonywać fazę koncentryczną?",
+                "answer": "Zazwyczaj zaleca się intencję maksymalnej prędkości (dynamikę), nawet jeśli ciężar porusza się wolno. To angażuje najwięcej jednostek motorycznych."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "conc_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "conc_intro_span_1",
+                        "text": "Jest to 'pozytywna' część powtórzenia. Wyciskanie sztangi w górę, wstawanie z przysiadu, podciąganie się na drążku. W tej fazie generujemy siłę, by pokonać opór zewnętrzny."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "conc_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "conc_head_span_1",
+                        "text": "Generowanie Siły"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "conc_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "conc_desc_span_1",
+                        "text": "Faza koncentryczna jest najtrudniejsza energetycznie, ale jesteśmy w niej biomechanicznie słabsi niż w fazie opuszczania (ekscentrycznej)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Ekscentryczna Faza Ruchu",
+        "slug": {
+            "current": "faza-ekscentryczna"
+        },
+        "publishedAt": "2024-03-14T10:00:00Z",
+        "excerpt": "Kontrolowane opuszczanie. Faza ekscentryczna to klucz do hipertrofii, powodujący najwięcej mikrouszkodzeń i stymulujący wzrost.",
+        "tags": [
+            "hipertrofia",
+            "biomechanika",
+            "technika"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Dlaczego mam zakwasy po opuszczaniu ciężaru?",
+                "answer": "Faza ekscentryczna generuje największe siły rozrywające we włóknach mięśniowych (mikrouszkodzenia), co prowadzi do silniejszej reakcji zapalnej (DOMS) i adaptacji."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "ecc_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "ecc_intro_span_1",
+                        "text": "Faza 'negatywna'. Mięsień wydłuża się pod obciążeniem, hamując działanie grawitacji. Jesteś tutaj o 20-40% silniejszy niż w fazie koncentrycznej."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "ecc_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "ecc_head_span_1",
+                        "text": "Tempo i Kontrola"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "ecc_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "ecc_desc_span_1",
+                        "text": "Zaniedbywanie tej fazy (rzucanie ciężaru) to najczęstszy błąd na siłowni. Kontrolowane opuszczanie przez 2-3 sekundy drastycznie zwiększa czas pod napięciem (TUT) i skuteczność treningu."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Stabilizacja Centralna (Core)",
+        "slug": {
+            "current": "stabilizacja-centralna-core"
+        },
+        "publishedAt": "2024-03-15T10:00:00Z",
+        "excerpt": "Core to nie kaloryfer na brzuchu. To gorset mięśniowy chroniący kręgosłup i transferujący energię między górną a dolną połową ciała.",
+        "tags": [
+            "core",
+            "zdrowy kręgosłup",
+            "fundamenty"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Funkcjonalny",
+                "url": "/oferta/trening-funkcjonalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy brzuszki to dobry trening core?",
+                "answer": "Nie. Brzuszki trenują zgięcie kręgosłupa. Główną funkcją core jest stabilizacja, czyli zapobieganie ruchowi (anty-zgięcie, anty-rotacja)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "core_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "core_intro_span_1",
+                        "text": "Core to cylinder obejmujący przeponę (góra), mięśnie dna miednicy (dół), mięsień poprzeczny brzucha i wielodzielny (bok i tył). Jego zadaniem jest usztywnienie tułowia, aby kończyny mogły generować siłę."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "core_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "core_head_span_1",
+                        "text": "Funkcje Core"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "core_list_1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "core_list_span_1",
+                        "text": "Anty-wyprost (np. Plank, Dead Bug)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "core_list_2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "core_list_span_2",
+                        "text": "Anty-rotacja (np. Pallof Press)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "core_list_3",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "core_list_span_3",
+                        "text": "Anty-zgięcie boczne (np. Spacer Farmera jednorącz)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Mobilność (Mobility)",
+        "slug": {
+            "current": "mobilnosc-mobility"
+        },
+        "publishedAt": "2024-03-16T10:00:00Z",
+        "excerpt": "Mobilność to nie to samo co elastyczność. To zdolność do aktywnego kontrolowania stawu w pełnym zakresie ruchu. Bez niej siła jest bezużyteczna.",
+        "tags": [
+            "zdrowie",
+            "prehabilitacja",
+            "fundamenty"
+        ],
+        "relatedServices": [
+            {
+                "title": "Przygotowanie Motoryczne",
+                "url": "/oferta/motoryka"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czym różni się mobilność od rozciągania?",
+                "answer": "Rozciąganie (elastyczność) to bierny zakres ruchu (ktoś popycha Twoją nogę). Mobilność to zakres aktywny (sam unosisz nogę siłą mięśni)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "mob_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "mob_intro_span_1",
+                        "text": "Większość kontuzji na siłowni nie wynika z nadmiaru ciężaru, ale z braku mobilności, by ten ciężar bezpiecznie obsłużyć. Mobilność to połączenie elastyczności tkanek z siłą układu nerwowego, która pozwala kontrolować ruch w skrajnych zakresach."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "mob_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "mob_head_span_1",
+                        "text": "Uwolnij potencjał"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "mob_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "mob_desc_span_1",
+                        "text": "Jeśli nie masz mobilności w barkach, wyciskając sztangę nad głowę, kompensujesz to wyginaniem kręgosłupa lędźwiowego. Poprawa mobilności to najszybsza droga do poprawy techniki i bezpieczeństwa."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Stabilność (Stability)",
+        "slug": {
+            "current": "stabilnosc-stawow"
+        },
+        "publishedAt": "2024-03-17T10:00:00Z",
+        "excerpt": "Stabilność to kontrola. To zdolność przeciwstawiania się niechcianemu ruchowi. Fundament, na którym buduje się siłę i moc.",
+        "tags": [
+            "bezpieczeństwo",
+            "kontrola motoryczna",
+            "fundamenty"
+        ],
+        "relatedServices": [
+            {
+                "title": "Rehabilitacja Ruchowa",
+                "url": "/oferta/rehabilitacja"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy stabilność dotyczy tylko 'core'?",
+                "answer": "Nie. Każdy staw wymaga stabilności. Np. stabilność kolana zapobiega jego koślawieniu podczas przysiadu, a stabilność łopatki chroni barki."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "stab_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "stab_intro_span_1",
+                        "text": "Można powiedzieć, że stabilność to hamulce w samochodzie wyścigowym. Bez nich nie możesz bezpiecznie przyspieszyć. W treningu oznacza to umiejętność utrzymania stawu w bezpiecznej pozycji mimo działających na niego sił zewnętrznych."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "stab_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "stab_head_span_1",
+                        "text": "Zasada 'Joint-by-Joint'"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "stab_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "stab_desc_span_1",
+                        "text": "Ciało to łańcuch naprzemiennych potrzeb: stopa (stabilność) -> kostka (mobilność) -> kolano (stabilność) -> biodro (mobilność). Zaburzenie jednego ogniwa wpływa na cały łańcuch."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Zakres Ruchu (ROM)",
+        "slug": {
+            "current": "zakres-ruchu-rom"
+        },
+        "publishedAt": "2024-03-18T10:00:00Z",
+        "excerpt": "Range of Motion (ROM). Pełny zakres ruchu to pełny rozwój mięśnia. Poznaj różnice między pełnym zakresem a celowym ruchem częściowym.",
+        "tags": [
+            "technika",
+            "hipertrofia",
+            "biomechanika"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy zawsze trzeba ćwiczyć w pełnym zakresie?",
+                "answer": "Dla ogólnego rozwoju – tak. Jednak zaawansowani mogą używać niepełnych zakresów (np. pół-przysiady) do specyficznych celów, jak przeładowanie konkretnego kąta stawowego."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "rom_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rom_intro_span_1",
+                        "text": "ROM (Range of Motion) określa drogę, jaką pokonuje staw podczas ćwiczenia. Badania jednoznacznie wskazują, że trenowanie w pełnym, dostępnym zakresie ruchu (zwłaszcza w pozycji rozciągnięcia mięśnia) daje lepsze efekty hipertroficzne."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rom_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rom_head_span_1",
+                        "text": "Aktywny vs Pasywny"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "rom_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "rom_desc_span_1",
+                        "text": "Twój treningowy ROM powinien kończyć się tam, gdzie kończy się Twoja kontrola. Wymuszanie głębszego przysiadu poprzez 'wpadanie' w stawy (bierność) to prosta droga do kontuzji."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Pamięć Mięśniowa",
+        "slug": {
+            "current": "pamiec-miesniowa"
+        },
+        "publishedAt": "2024-03-19T10:00:00Z",
+        "excerpt": "Powrót do formy jest łatwiejszy niż jej budowanie. To nie magia, to biologia. Jądra komórkowe raz zdobyte, zostają z nami na lata.",
+        "tags": [
+            "fizjologia",
+            "motywacja",
+            "powrót do treningu"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Jak długo działa pamięć mięśniowa?",
+                "answer": "Badania sugerują, że dodatkowe jądra komórkowe (myonuclei) mogą pozostawać w mięśniach przez 15 lat, a nawet całe życie, ułatwiając ponowny wzrost."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "mem_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "mem_intro_span_1",
+                        "text": "Kiedy trenujesz i budujesz mięśnie, Twój organizm 'rekrutuje' nowe jądra komórkowe do obsługi większych włókien. Gdy przestajesz ćwiczyć (atrofia), włókna się kurczą, ale jądra pozostają na miejscu."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "mem_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "mem_head_span_1",
+                        "text": "Mechanizm powrotu"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "mem_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "mem_desc_span_1",
+                        "text": "Dlatego powrót do formy po przerwie jest znacznie szybszy niż budowanie jej od zera. Masz już gotową infrastrukturę komórkową, wystarczy dostarczyć bodziec i budulec."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Włókna Mięśniowe Szybkokurczliwe",
+        "slug": {
+            "current": "wlokna-szybkokurczliwe-typ-2"
+        },
+        "publishedAt": "2024-03-20T10:00:00Z",
+        "excerpt": "Włókna typu II to elita siły i dynamiki. Mają największy potencjał do wzrostu, ale szybko się męczą. To one odpowiadają za Twoje rekordy.",
+        "tags": [
+            "fizjologia",
+            "genetyka",
+            "siła"
+        ],
+        "relatedServices": [
+            {
+                "title": "Przygotowanie Motoryczne",
+                "url": "/oferta/motoryka"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy mogę zmienić typ włókien?",
+                "answer": "W ograniczonym zakresie. Trening może zmienić podtyp włókien (np. IIx na IIa), ale konwersja włókien wolnych (I) na szybkie (II) jest fizjologicznie bardzo trudna i ograniczona."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "fib_intro_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "fib_intro_span_1",
+                        "text": "Włókna typu II (białe) są stworzone do pracy beztlenowej o wysokiej intensywności. To one pracują przy sprincie, skoku czy podnoszeniu ciężaru powyżej 80% 1RM."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "fib_head_1",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "fib_head_span_1",
+                        "text": "Trening pod Typ II"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "fib_desc_1",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "fib_desc_span_1",
+                        "text": "Włókna te reagują najlepiej na duży ciężar (niskie powtórzenia) oraz dynamikę. Mają o ok. 50% większy potencjał do hipertrofii niż włókna wolnokurczliwe, co sprawia, że są priorytetem w treningu sylwetkowym."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Włókna Mięśniowe Wolnokurczliwe (Typ I)",
+        "slug": {
+            "current": "wlokna-wolnokurczliwe-typ-1"
+        },
+        "publishedAt": "2024-03-21T10:00:00Z",
+        "excerpt": "Czerwone włókna wytrzymałościowe. Nie generują wielkiej mocy, ale mogą pracować godzinami. Fundament kondycji i zdrowia metabolicznego.",
+        "tags": [
+            "fizjologia",
+            "wytrzymałość",
+            "zdrowie"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Funkcjonalny",
+                "url": "/oferta/trening-funkcjonalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy trening siłowy rozwija włókna wolne?",
+                "answer": "W mniejszym stopniu. Włókna typu I są rekrutowane przy niskim obciążeniu i dużej liczbie powtórzeń (powyżej 15-20) lub przy izometrii."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "fib1_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "fib1_span1",
+                        "text": "Włókna typu I są gęsto unaczynione i bogate w mioglobinę (stąd czerwony kolor). Są odporne na zmęczenie i wykorzystują tlenowe szlaki energetyczne. To one utrzymują Twoją postawę przez cały dzień."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "fib1_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "fib1_h_span",
+                        "text": "Rola w treningu"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "fib1_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "fib1_d_span",
+                        "text": "Choć w kulturystyce skupiamy się na włóknach szybkich (Typ II), włókna wolne są kluczowe dla szybszej regeneracji między seriami oraz ogólnej wydolności organizmu."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Superkompensacja",
+        "slug": {
+            "current": "superkompensacja"
+        },
+        "publishedAt": "2024-03-22T10:00:00Z",
+        "excerpt": "Magiczny moment, w którym stajesz się lepszą wersją siebie. Zrozum cykl: bodziec -> zmęczenie -> regeneracja -> wzrost.",
+        "tags": [
+            "teoria treningu",
+            "planowanie",
+            "regeneracja"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Co się stanie, jeśli pominę trening w fazie superkompensacji?",
+                "answer": "Organizm wróci do stanu wyjściowego (inwolucja). Aby notować stały progres, kolejny trening musi nastąpić na szczycie fali superkompensacji."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "super_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "super_span1",
+                        "text": "Trening nie buduje formy – trening ją niszczy (katabolizm). Forma buduje się, gdy odpoczywasz. Superkompensacja to reakcja obronna organizmu, który odbudowuje zasoby z nadwyżką, by lepiej znieść przyszły stres."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "super_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "super_h_span",
+                        "text": "Timing jest wszystkim"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "super_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "super_d_span",
+                        "text": "Za wcześnie = przetrenowanie. Za późno = stagnacja. Sztuka planowania treningowego polega na idealnym wstrzeleniu się w okno anaboliczne."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "ATP (Adenozynotrifosforan)",
+        "slug": {
+            "current": "atp-energia"
+        },
+        "publishedAt": "2024-03-23T10:00:00Z",
+        "excerpt": "Waluta energetyczna Twojego ciała. Bez ATP żaden mięsień nie drgnie. Dowiedz się, skąd organizm bierze energię do dźwigania żelaza.",
+        "tags": [
+            "fizjologia",
+            "biochemia",
+            "energia"
+        ],
+        "relatedServices": [
+            {
+                "title": "Suplementacja (Konsultacje)",
+                "url": "/oferta/dietetyka"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Jak szybko zużywa się ATP?",
+                "answer": "Zasoby czystego ATP w mięśniach starczają na zaledwie 1-2 sekundy maksymalnego wysiłku. Potem organizm musi je resyntetyzować (np. z fosfokreatyny)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "atp_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "atp_span1",
+                        "text": "ATP to cząsteczka, której rozpad uwalnia energię potrzebną do skurczu mięśnia. Twoje ciało nie magazynuje dużych ilości ATP, lecz nieustannie je produkuje w mitochondriach."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "atp_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "atp_h_span",
+                        "text": "Systemy energetyczne"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "atp_list1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "atp_l1_span",
+                        "text": "Fosfagenowy (do 10s): Sprint, bicie rekordu (1RM)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "atp_list2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "atp_l2_span",
+                        "text": "Glikolityczny (do 2 min): Typowa seria kulturystyczna."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Próg Mleczanowy",
+        "slug": {
+            "current": "prog-mleczanowy"
+        },
+        "publishedAt": "2024-03-24T10:00:00Z",
+        "excerpt": "Moment, w którym pieczenie staje się nie do zniesienia. Próg mleczanowy wyznacza granicę między wysiłkiem tlenowym a beztlenowym.",
+        "tags": [
+            "wydolność",
+            "fizjologia",
+            "bieganie"
+        ],
+        "relatedServices": [
+            {
+                "title": "Przygotowanie Motoryczne",
+                "url": "/oferta/motoryka"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy kwas mlekowy powoduje zakwasy?",
+                "answer": "Absolutnie nie. To mit obalony dekady temu. Kwas mlekowy jest paliwem, a ból potreningowy (DOMS) to mikrouszkodzenia."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "lact_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "lact_span1",
+                        "text": "Próg mleczanowy (LT) to intensywność wysiłku, powyżej której stężenie mleczanu we krwi rośnie szybciej, niż organizm jest w stanie go usuwać. To punkt, w którym 'odcina prąd'."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "lact_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "lact_h_span",
+                        "text": "Przesuwanie granicy"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "lact_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "lact_d_span",
+                        "text": "Wytrenowani sportowcy mogą pracować blisko swojego maksimum przez dłuższy czas, ponieważ ich próg mleczanowy jest przesunięty w prawo – ich organizm sprawniej utylizuje produkty przemiany materii."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Pułap Tlenowy (VO2 Max)",
+        "slug": {
+            "current": "pulap-tlenowy-vo2-max"
+        },
+        "publishedAt": "2024-03-25T10:00:00Z",
+        "excerpt": "Pojemność Twojego silnika. VO2 Max określa maksymalną ilość tlenu, jaką Twój organizm może pobrać i zużyć w ciągu minuty.",
+        "tags": [
+            "wydolność",
+            "kardio",
+            "zdrowie"
+        ],
+        "relatedServices": [
+            {
+                "title": "Przygotowanie Motoryczne",
+                "url": "/oferta/motoryka"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy VO2 Max jest ważne dla pakera?",
+                "answer": "Tak. Wyższe VO2 Max oznacza szybszą regenerację ATP między seriami, co pozwala wykonać większą objętość treningową na jednej sesji."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "vo2_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "vo2_span1",
+                        "text": "VO2 Max jest uznawane za złoty standard oceny wydolności sercowo-naczyniowej. To wskaźnik, który mówi nam, jak wydajne są Twoje płuca, serce, krew i mięśnie w transporcie tlenu."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "vo2_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "vo2_h_span",
+                        "text": "Genetyka a trening"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "vo2_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "vo2_d_span",
+                        "text": "Pułap tlenowy jest w dużej mierze uwarunkowany genetycznie, ale odpowiednim treningiem interwałowym można go podnieść o 15-20%."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Trening Interwałowy (HIIT)",
+        "slug": {
+            "current": "trening-interwalowy-hiit"
+        },
+        "publishedAt": "2024-03-26T10:00:00Z",
+        "excerpt": "High Intensity Interval Training. Maksymalny efekt w minimalnym czasie. Spalanie kalorii trwa długo po zakończeniu treningu (efekt EPOC).",
+        "tags": [
+            "spalanie tłuszczu",
+            "kondycja",
+            "metody treningowe"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy HIIT buduje mięśnie?",
+                "answer": "Może pomóc w ich utrzymaniu przy redukcji, ale nie jest optymalną metodą budowania masy. Jego głównym celem jest adaptacja metaboliczna."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "hiit_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "hiit_span1",
+                        "text": "HIIT polega na przeplataniu okresów maksymalnego wysiłku (90-100% HRmax) z okresami niskiej intensywności lub odpoczynku. To szok dla organizmu, który drastycznie podkręca metabolizm."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "hiit_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "hiit_h_span",
+                        "text": "Nie dla każdego"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "hiit_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "hiit_d_span",
+                        "text": "Prawdziwy HIIT jest ekstremalnie obciążający dla układu nerwowego (CUN). Nie powinien być wykonywany częściej niż 2-3 razy w tygodniu i nie jest zalecany dla osób początkujących bez bazy tlenowej."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Tabata",
+        "slug": {
+            "current": "tabata-protokol"
+        },
+        "publishedAt": "2024-03-27T10:00:00Z",
+        "excerpt": "4 minuty piekła. Protokół dr. Izumi Tabaty to specyficzna odmiana HIIT: 20 sekund pracy, 10 sekund przerwy, 8 rund.",
+        "tags": [
+            "hiit",
+            "wytrzymałość",
+            "szybki trening"
+        ],
+        "relatedServices": [
+            {
+                "title": "Zajęcia Grupowe",
+                "url": "/oferta/zajecia-grupowe"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy można robić Tabatę codziennie?",
+                "answer": "Jeśli robisz ją poprawnie (na 100% intensywności), nie będziesz w stanie robić jej codziennie. To narzędzie wysokiej intensywności."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "tab_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "tab_span1",
+                        "text": "Oryginalny protokół Tabaty został opracowany dla łyżwiarzy olimpijskich. Kluczem jest intensywność – w ciągu 20 sekund pracy musisz dać z siebie absolutnie wszystko, doprowadzając do długu tlenowego."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "tab_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "tab_h_span",
+                        "text": "Mit Tabaty"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "tab_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "tab_d_span",
+                        "text": "Większość zajęć fitness nazywanych 'Tabatą' to po prostu stacyjny trening interwałowy. Prawdziwa Tabata jest bolesna, nieprzyjemna i niezwykle skuteczna w budowaniu VO2 Max."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Kalistenika",
+        "slug": {
+            "current": "kalistenika-trening-wlasna-masa"
+        },
+        "publishedAt": "2024-03-28T10:00:00Z",
+        "excerpt": "Siła zrodzona z walki z grawitacją. Trening z wykorzystaniem masy własnego ciała – pompki, podciągania, dipy. Powrót do korzeni sprawności.",
+        "tags": [
+            "trening domowy",
+            "siła względna",
+            "bodyweight"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy kalisteniką można zbudować dużą masę?",
+                "answer": "Do pewnego momentu tak. Później konieczne jest dodanie obciążenia zewnętrznego (Weighted Calisthenics), aby zachować zasadę progresywnego przeładowania."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "cali_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "cali_span1",
+                        "text": "Kalistenika (z gr. piękno i siła) uczy panowania nad ciałem w przestrzeni. Rozwija świetną stabilizację centralną, koordynację i tzw. siłę względną (siłę w stosunku do masy ciała)."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "cali_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "cali_h_span",
+                        "text": "Progresja bez ciężaru"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "cali_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "cali_d_span",
+                        "text": "Zamiast dokładać talerze na sztangę, w kalistenice zmieniamy dźwignię. Pompka klasyczna -> pompka diamentowa -> pompka na jednej ręce. To wymaga ogromnej świadomości ciała."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Trening Oporowy",
+        "slug": {
+            "current": "trening-oporowy-silowy"
+        },
+        "publishedAt": "2024-03-29T10:00:00Z",
+        "excerpt": "Każdy trening, który zmusza mięśnie do pokonania siły zewnętrznej. Podstawa kształtowania sylwetki, gęstości kości i długowieczności.",
+        "tags": [
+            "fundamenty",
+            "zdrowie",
+            "sylwetka"
+        ],
+        "relatedServices": [
+            {
+                "title": "Plany Treningowe Online",
+                "url": "/oferta/plany-online"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy trening oporowy hamuje wzrost u nastolatków?",
+                "answer": "To stary mit. Prawidłowo nadzorowany trening oporowy jest bezpieczny i korzystny dla rozwoju układu kostnego młodzieży."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "res_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "res_span1",
+                        "text": "Trening oporowy to nie tylko sztangi. To gumy, maszyny, kettlebells, a nawet woda. Celem jest wywołanie napięcia mechanicznego we włóknach mięśniowych, co jest głównym bodźcem do hipertrofii."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "res_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "res_h_span",
+                        "text": "Korzyści zdrowotne"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "res_desc",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "res_d_span",
+                        "text": "Poza estetyką, trening oporowy zwiększa gęstość kości (profilaktyka osteoporozy), poprawia wrażliwość insulinową i przyspiesza metabolizm spoczynkowy."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_type": "baza-wiedzy",
+        "title": "Rozgrzewka Dynamiczna",
+        "slug": {
+            "current": "rozgrzewka-dynamiczna"
+        },
+        "publishedAt": "2024-03-30T10:00:00Z",
+        "excerpt": "Koniec z kręceniem bioderkami w miejscu. Rozgrzewka dynamiczna to przygotowanie wzorców ruchowych, podniesienie temperatury i aktywacja układu nerwowego.",
+        "tags": [
+            "prehabilitacja",
+            "bezpieczeństwo",
+            "mobilność"
+        ],
+        "relatedServices": [
+            {
+                "title": "Trening Personalny",
+                "url": "/oferta/trening-personalny"
+            }
+        ],
+        "faq": [
+            {
+                "question": "Czy rozciąganie statyczne przed treningiem jest dobre?",
+                "answer": "Przed treningiem siłowym – nie. Rozciąganie statyczne może tymczasowo osłabić generowanie mocy. Zostaw je na sesję potreningową (cool-down)."
+            }
+        ],
+        "content": [
+            {
+                "_type": "block",
+                "_key": "warm_intro",
+                "style": "normal",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "warm_span1",
+                        "text": "Rozgrzewka ma na celu przejście ze stanu spoczynku do gotowości bojowej. Dynamiczne ruchy (wykroki, wymachy, skipping) zwiększają przepływ krwi i 'naoliwiają' stawy mazią stawową."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "warm_head",
+                "style": "h2",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "warm_h_span",
+                        "text": "Protokół RAMP"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "warm_list1",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "warm_l1_span",
+                        "text": "R (Raise): Podniesienie tętna i temperatury."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "warm_list2",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "warm_l2_span",
+                        "text": "AM (Activate & Mobilize): Aktywacja kluczowych mięśni i mobilizacja stawów."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "_key": "warm_list3",
+                "style": "bullet",
+                "markDefs": [],
+                "children": [
+                    {
+                        "_type": "span",
+                        "_key": "warm_l3_span",
+                        "text": "P (Potentiate): Pobudzenie układu nerwowego (np. skok, rzut)."
+                    }
+                ]
+            }
+        ]
+    }
+]

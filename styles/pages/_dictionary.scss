@@ -1,180 +1,135 @@
-// Dictionary / Knowledge Base Styles
+.dictionary-page {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background-color: #0c0c0d;
+    min-height: 100vh;
+}
 
-// Listing Grid
-.dictionary-listing {
-    padding: 180px 2rem 4rem; // Top padding to clear fixed header
-    max-width: 1200px;
+.dictionary-header {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    &__title {
+        font-family: 'Nexa', sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            font-size: 4rem;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.125rem;
+        color: #9ca3af;
+        margin-bottom: 3rem;
+    }
+}
+
+.dictionary-search {
+    position: relative;
+    max-width: 600px;
     margin: 0 auto;
 
-    &__heading {
-        text-align: center;
-        margin-bottom: 3rem;
+    &__icon {
+        position: absolute;
+        left: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        width: 1.25rem;
+        height: 1.25rem;
+        pointer-events: none;
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 500;
-            color: $text-color;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__clear {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding: 0;
+        display: flex;
+
+        &:hover {
+            color: $green-color;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        background-color: #1e1f20;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        padding: 1rem 3rem 1rem 3.5rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        color: #ffffff;
+        outline: none;
+        transition: all 0.3s ease;
+
+        &::placeholder {
+            color: #6b7280;
         }
 
-        p {
-            color: #666;
-            margin-top: 1rem;
+        &:focus {
+            border-color: $green-color;
+            box-shadow: 0 0 15px rgba($green-color, 0.2);
+            background-color: #262729;
         }
     }
 }
 
 .dictionary-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 640px) {
+        grid-template-columns: 2fr;
     }
 
     @media (min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 3fr 3fr;
+    }
+
+    @media (min-width: 1280px) {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-.dictionary-card {
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 1.5rem;
-    background-color: #fff;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.dictionary-link {
+    display: block; // Block display as requested
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #d1d5db;
+    text-decoration: none;
+    transition: all 0.3s ease;
 
+    // Hover effect: Green color + Slight Scale
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        border-color: $green-color;
-    }
-
-    &__title {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: $text-color;
-    }
-
-    &__tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
-    &__tag {
-        font-size: 0.75rem;
-        color: #555;
-        background-color: #f0f0f0;
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
-    }
-
-    &__date {
-        font-size: 0.8rem;
-        color: #999;
-        text-align: right;
+        color: $green-color;
+        transform: scale(1.05);
+        transform-origin: left center;
     }
 }
 
-// Single Entry View
-.dictionary-entry {
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    padding: 180px 1.5rem 0;
-
-    &__header {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    &__title {
-        font-size: 2.5rem;
-        font-weight: 800;
-        margin-bottom: 1rem;
-        line-height: 1.2;
-        color: $text-color;
-    }
-
-    &__meta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        color: #666;
-        font-size: 0.9rem;
-    }
-
-    &__tags {
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    &__tag {
-        color: $green-color;
-        font-weight: 600;
-    }
-
-    &__separator {
-        width: 100%;
-        height: 1px;
-        background-color: #eee;
-        margin: 2rem 0;
-    }
-
-    &__content {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #333;
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        ul,
-        ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        blockquote {
-            border-left: 4px solid $green-color;
-            padding-left: 1rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: #555;
-        }
-
-        a {
-            color: #a2c206;
-            text-decoration: underline;
-
-            &:hover {
-                color: $text-color;
-            }
-        }
-    }
+.dictionary-empty {
+    text-align: center;
+    padding: 4rem 0;
+    color: #6b7280;
+    font-family: 'Inter', sans-serif;
 }

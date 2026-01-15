@@ -3,30 +3,56 @@ import { Post } from "../types";
 
 export const revalidate = 3600; // 1 hour
 
+export function calculateReadingTime(body: any): string {
+  if (!body) return "1 min";
+  const text = body.map((block: any) => block.children?.map((child: any) => child.text).join(" ")).join(" ");
+  const words = text.split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return `${minutes} min`;
+}
+
 export async function getPosts(): Promise<Post[]> {
-    const query = `*[_type == "post"] | order(publishedAt desc) {
+  const query = `*[_type == "blog"] | order(publishedAt desc) {
     _id,
     title,
     slug,
-    mainImage,
+    "mainImage": image.asset->{
+      _id,
+      url,
+      altText
+    },
+    excerpt,
+    "categories": categories[]->title,
+    "author": author->{name, image},
     publishedAt,
-    "categories": categories[]->title
+    "categories": categories[]->title,
+    "tags": tags,
+    "author": author->{name, image},
+    body
   }`;
 
-    return client.fetch(query, {}, { next: { revalidate } });
+  return client.fetch(query, {}, { next: { revalidate } });
 }
 
 export async function getPost(slug: string): Promise<Post | null> {
-    const query = `*[_type == "post" && slug.current == $slug][0] {
+  const query = `*[_type == "blog" && slug.current == $slug][0] {
     _id,
     title,
     slug,
-    mainImage,
+    "mainImage": image.asset->{
+      _id,
+      url,
+      altText
+    },
+    excerpt,
+    faq[] { question, answer },
+    relatedServices[] { title, url },
     publishedAt,
     body,
     "author": author->{name, image},
-    "categories": categories[]->title
+    "categories": categories[]->title,
+    "tags": tags
   }`;
 
-    return client.fetch(query, { slug }, { next: { revalidate } });
+  return client.fetch(query, { slug }, { next: { revalidate } });
 }

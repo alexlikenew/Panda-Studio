@@ -1,5 +1,5 @@
 import { getEntries } from "@/features/dictionary/services/dictionaryService";
-import DictionaryList from "@/features/dictionary/components/DictionaryList";
+import DictionaryIndexPage from "@/features/dictionary/DictionaryIndexPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,14 +10,5 @@ export const metadata: Metadata = {
 export default async function KnowledgeBasePage() {
     const entries = await getEntries();
 
-    return (
-        <main className="dictionary-listing">
-            <div className="dictionary-listing__heading">
-                <h1>Baza Wiedzy</h1>
-                <p>Dowiedz się więcej o technikach ćwiczeń i zdrowym stylu życia.</p>
-            </div>
-
-            <DictionaryList entries={entries} />
-        </main>
-    );
+    return <DictionaryIndexPage entries={entries} />;
 }

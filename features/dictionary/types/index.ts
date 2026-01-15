@@ -1,6 +1,6 @@
 import { PortableTextBlock } from "sanity";
 
-export interface KnowledgeEntry {
+export interface DictionaryEntry {
     _id: string;
     title: string;
     slug: {
@@ -8,5 +8,18 @@ export interface KnowledgeEntry {
     };
     content: PortableTextBlock[];
     publishedAt: string;
-    tags?: string[]; // Assuming tags/categories might exist as string array or objects? keeping generic for now or based on schema "categories"
+    tags?: string[];
+    excerpt?: string;
+    faq?: {
+        question: string;
+        answer: string;
+    }[];
+    relatedServices?: {
+        title: string;
+        url: string;
+    }[];
+    relatedTerms?: {
+        title: string;
+        slug: string;
+    }[];
 }

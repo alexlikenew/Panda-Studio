@@ -1,0 +1,489 @@
+.blog-post-page {
+    background-color: #0c0c0d;
+    min-height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    transition: color 0.3s ease;
+
+    svg {
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        color: $green-color;
+
+        svg {
+            transform: translateX(-4px);
+        }
+    }
+}
+
+// =========================================
+// HERO SECTION
+// =========================================
+.post-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        order: 2; // Image first on mobile? No, text first is usually better for SEO/UX.
+
+        @media (min-width: 992px) {
+            order: 1;
+        }
+    }
+
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    &__badge {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $green-color;
+        border: 1px solid $green-color;
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        background: transparent;
+        letter-spacing: 0.05em;
+    }
+
+    &__title {
+        font-family: 'Nexa', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 4rem;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &__meta-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__separator {
+        width: 1px;
+        height: 2rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: none;
+
+        @media (min-width: 640px) {
+            display: block;
+        }
+    }
+
+    &__author-image {
+        position: relative;
+        height: 3.5rem;
+        width: 3.5rem;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 2px solid $green-color;
+    }
+
+    &__author-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: #9ca3af;
+        letter-spacing: 0.05em;
+        line-height: 1.2;
+    }
+
+    &__name,
+    &__date,
+    &__time {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    &__date,
+    &__time {
+        // Date and Time might just reuse the bold style or be slightly different
+        font-weight: 500;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        min-height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba($green-color, 0.3);
+        box-shadow: 0 0 30px rgba($green-color, 0.15);
+        order: 1;
+
+        @media (min-width: 992px) {
+            height: 500px;
+            order: 2;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+// =========================================
+// CONTENT SECTION
+// =========================================
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    // TYPOGRAPHY
+    color: #e5e7eb; // Light Gray, improved contrast
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    // LEAD PARAGRAPH (Excerpt)
+    .post-lead {
+        font-size: 1.35rem;
+        line-height: 1.6;
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 2rem;
+    }
+
+    // CTA BOX
+    .post-cta {
+        margin: 4rem 0;
+        padding: 2.5rem;
+        background: linear-gradient(145deg, #161617 0%, #0c0c0d 100%);
+        border: 1px solid $green-color;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 10px 40px -10px rgba($green-color, 0.2);
+
+        &__title {
+            font-family: 'Nexa', sans-serif;
+            font-size: 1.75rem;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            border: none;
+            padding: 0;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        &__service {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.125rem;
+            color: #d1d5db;
+            font-weight: 500;
+        }
+
+        &__button {
+            display: inline-block;
+            background-color: $green-color;
+            color: #0c0c0d;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            padding: 0.875rem 2rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            border: none;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #ffffff;
+                color: #0c0c0d;
+                transform: translateY(-3px);
+                box-shadow: 0 5px 20px rgba($green-color, 0.4);
+            }
+        }
+    }
+
+    // FAQ SECTION
+    .post-faq {
+        margin: 5rem 0;
+
+        &__title {
+            font-family: 'Nexa', sans-serif;
+            font-size: 2rem;
+            color: $green-color;
+            margin-bottom: 2.5rem;
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+
+        &__item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1.5rem;
+
+            &[open] {
+                .post-faq__icon {
+                    transform: rotate(45deg);
+                    color: $green-color;
+                }
+            }
+        }
+
+        &__question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #ffffff;
+            list-style: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $green-color;
+            }
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+        }
+
+        &__icon {
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            color: #6b7280;
+        }
+
+        &__answer {
+            padding-bottom: 2rem;
+            font-family: 'Inter', sans-serif;
+            color: #d1d5db;
+            line-height: 1.7;
+            font-size: 1.125rem;
+        }
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: 'Nexa', sans-serif;
+        color: #ffffff;
+        font-weight: 800;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        color: $green-color; // Accent color for main subtitles
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        border-left: 4px solid $green-color;
+        padding-left: 1rem;
+    }
+
+    // BLOCKQUOTE
+    blockquote {
+        margin: 3rem 0;
+        background: linear-gradient(145deg, #1a1a1a 0%, #0c0c0d 100%);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-left: 4px solid $green-color;
+        padding: 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.35rem;
+        font-style: italic;
+        color: #ffffff;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+        &::before {
+            content: '“';
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 5rem;
+            line-height: 1;
+            color: rgba($green-color, 0.1);
+            font-family: serif;
+        }
+    }
+
+    // LISTS
+    ul,
+    ol {
+        margin-bottom: 2.5rem;
+        padding-left: 1.5rem;
+    }
+
+    ul li {
+        position: relative;
+        padding-left: 1rem;
+        margin-bottom: 0.75rem;
+
+        &::marker {
+            color: $green-color;
+            font-size: 1.25rem;
+        }
+    }
+
+    ol li {
+        margin-bottom: 0.75rem;
+        padding-left: 0.5rem;
+
+        &::marker {
+            color: $green-color;
+            font-weight: 700;
+            font-family: 'Nexa', sans-serif;
+        }
+    }
+
+    // LINKS
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 2px solid $green-color;
+        transition: all 0.2s ease;
+        padding-bottom: 2px;
+
+        &:hover {
+            background-color: $green-color;
+            color: #000000;
+            border-bottom-color: transparent;
+        }
+    }
+
+    // IMAGES IN TEXT
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 1.5rem;
+        margin: 3rem 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    strong {
+        color: $green-color;
+        font-weight: 600;
+    }
+}
+
+// =========================================
+// FOOTER
+// =========================================
+.post-footer {
+    margin-top: 6rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__tag {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #9ca3af;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1.25rem;
+        border-radius: 9999px;
+        transition: all 0.3s ease;
+        background: #1a1a1a;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $green-color;
+            color: $green-color;
+            transform: translateY(-2px);
+        }
+    }
+}

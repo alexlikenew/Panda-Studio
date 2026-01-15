@@ -12,22 +12,27 @@ export default function Navbar() {
     setIsMobileMenuOpen((prev) => !prev);
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     };
-  }, [isMobileMenuOpen]);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="nav">
+    <nav className={`nav ${isScrolled ? "nav--scrolled" : ""}`}>
       <div className="wrapper">
         <div className="navigation">
-          {/* Logo */}
           {/* Logo */}
           <Link className="navigation__logo" href="/" title="Strona główna Panda Studio">
             <img
@@ -77,10 +82,11 @@ export default function Navbar() {
                   Kontakt
                 </Link>
               </li>
+              <li className="navigation__separator">|</li>
               <li>
                 <button
                   aria-label="Spróbuj teraz - otwórz formularz"
-                  className="text"
+                  className="navigation__cta-btn"
                   data-dialog="dialogOne"
                   onClick={openModal}
                 >

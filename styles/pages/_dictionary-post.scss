@@ -1,0 +1,367 @@
+.dictionary-article {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ffffff;
+
+    &__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #9ca3af;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin-bottom: 3rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $green-color;
+            transform: translateX(-5px);
+        }
+    }
+
+    // HEADER
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+    &__label {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: $green-color;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: 'Nexa', sans-serif;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1;
+        margin-bottom: 2rem;
+        font-size: 3rem; // Mobile
+
+        @media (min-width: 768px) {
+            font-size: 4rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 5rem;
+        }
+    }
+
+    &__meta {
+        font-family: 'Inter', sans-serif;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    // SEPARATOR
+    &__separator {
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, $green-color 0%, transparent 100%);
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        opacity: 0.5;
+    }
+
+    // LEAD / EXCERPT
+    .dictionary-lead {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: #e5e7eb; // Lighter gray
+        font-style: italic;
+        margin-bottom: 2rem;
+        border-left: 2px solid $green-color;
+        padding-left: 1rem;
+    }
+
+    // CONTENT
+    &__content {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.125rem; // 18px
+        line-height: 1.8;
+        color: #d1d5db; // Light Gray
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-family: 'Nexa', sans-serif;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            border-left: 4px solid $green-color;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: $green-color;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        // LISTS
+        ul,
+        ol {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+
+            &::marker {
+                color: $green-color;
+            }
+        }
+
+        ol li {
+            margin-bottom: 0.5rem;
+
+            &::marker {
+                color: $green-color;
+                font-weight: 700;
+            }
+        }
+
+        // BLOCKQUOTE
+        blockquote {
+            margin: 3rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: $green-color;
+            border-top: 1px solid rgba($green-color, 0.2);
+            border-bottom: 1px solid rgba($green-color, 0.2);
+            padding: 2rem 0;
+            font-family: 'Nexa', sans-serif;
+        }
+
+        // LINKS
+        a {
+            color: $green-color;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #ffffff;
+                background-color: rgba($green-color, 0.1);
+            }
+        }
+    }
+
+    // CTA BOX
+    .dictionary-cta {
+        margin: 4rem 0;
+        padding: 2rem;
+        background: linear-gradient(145deg, #161617 0%, #0c0c0d 100%);
+        border: 1px solid $green-color;
+        border-radius: 1rem;
+        text-align: center;
+
+        &__title {
+            font-family: 'Nexa', sans-serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        &__service {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #d1d5db;
+        }
+
+        &__button {
+            display: inline-block;
+            background-color: $green-color;
+            color: #0c0c0d;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #ffffff;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba($green-color, 0.3);
+            }
+        }
+    }
+
+    // FAQ SECTION
+    .dictionary-faq {
+        margin: 4rem 0;
+
+        &__title {
+            font-family: 'Nexa', sans-serif;
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            border-left: 4px solid $green-color;
+            padding-left: 1rem;
+        }
+
+        &__item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+
+            &[open] {
+                .dictionary-faq__icon {
+                    transform: rotate(45deg);
+                    color: $green-color;
+                }
+            }
+        }
+
+        &__question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #ffffff;
+            list-style: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+        }
+
+        &__icon {
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            color: #6b7280;
+        }
+
+        &__answer {
+            padding-bottom: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+    }
+
+    // RELATED TERMS (See Also)
+    .dictionary-related {
+        margin: 4rem 0;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        &__label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        &__link {
+            display: inline-block;
+            color: $green-color;
+            font-family: 'Nexa', sans-serif;
+            font-size: 1.125rem;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-bottom-color: $green-color;
+                color: #ffffff;
+            }
+        }
+    }
+
+    // FOOTER (Tags)
+    &__footer {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    &__tag {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $green-color;
+        border: 1px solid $green-color;
+        padding: 0.5rem 1rem;
+        border-radius: 9999px; // Pill shape
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $green-color;
+            color: #0c0c0d;
+            box-shadow: 0 0 10px rgba($green-color, 0.4);
+        }
+    }
+}

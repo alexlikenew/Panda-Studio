@@ -1,5 +1,5 @@
 import { getPost } from "@/features/blog/services/blogService";
-import PostView from "@/features/blog/components/PostView";
+import BlogPostPage from "@/features/blog/BlogPostPage";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function Page({ params }: Props) {
     const { slug } = await params;
     const post = await getPost(slug);
 
@@ -29,5 +29,5 @@ export default async function BlogPostPage({ params }: Props) {
         notFound();
     }
 
-    return <PostView post={post} />;
+    return <BlogPostPage post={post} />;
 }

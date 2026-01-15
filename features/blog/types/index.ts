@@ -10,10 +10,18 @@ export interface Post {
         name: string;
         image?: any;
     };
-    mainImage?: any;
-    categories?: {
-        title: string;
+    excerpt?: string;
+    faq?: {
+        question: string;
+        answer: string;
     }[];
+    relatedServices?: {
+        title: string;
+        url: string;
+    }[];
+    mainImage?: any;
+    categories?: string[];
+    tags?: string[];
     publishedAt: string;
     body: PortableTextBlock[];
 }

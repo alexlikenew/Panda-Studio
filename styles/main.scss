@@ -2,7 +2,11 @@
 @import './base/colors';
 @import './base/typography';
 @import './base/base';
+@import './components/buttons';
+@import './pages/blog';
+@import './pages/dictionary';
 // FONTS
+
 
 // PRELOADER
 #preloader {
@@ -225,70 +229,7 @@ dialog .closeDialog {
 	}
 }
 
-dialog button,
-dialog .btn-reservation {
-	position: relative;
-	padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
-	margin-top: 1rem;
-	z-index: 0;
-	background-color: transparent;
-	background-image: none;
-	cursor: pointer;
-	font-family: 'Inter', sans-serif;
-	font-size: clamp(16px, 0.938vw, 22px);
-	font-style: normal;
-	font-weight: 700;
-	line-height: 120%;
-	text-transform: uppercase;
-
-	border-color: transparent;
-	z-index: 1000;
-
-	// color: #fff;
-	&::before,
-	&::after {
-		height: 100%;
-		position: absolute;
-		top: 0;
-		transition: all 0.3s;
-		content: '';
-	}
-
-	&::before {
-		width: 100%;
-		left: 0;
-		border-radius: 20px;
-		background-color: $green-color;
-		z-index: -1;
-	}
-
-	&::after {
-		width: 0;
-		left: 50%;
-		border-top: 1px solid transparent;
-		border-bottom: 1px solid transparent;
-		transform: translate(-50%, 0);
-		z-index: 1;
-	}
-
-	&:hover {
-		color: $green-color;
-
-		&::before {
-			transform: scale(0, 1);
-		}
-
-		&::after {
-			width: 100%;
-			border-color: $green-color;
-			transition-delay: 0.2s;
-		}
-	}
-}
-
-dialog .btn-reservation {
-	color: $main-color;
-}
+// Button styles moved to components/buttons
 
 // NAVIGATION
 .nav {

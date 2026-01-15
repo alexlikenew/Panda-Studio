@@ -13,7 +13,7 @@ export default function Footer() {
                     </div>
                     <div className="footer__social__images">
                         <ul>
-                            <li><a href="https://www.facebook.com/Pandamasaz/" title="Facebbok Panda Masaz">
+                            <li><a href="https://www.facebook.com/Pandamasaz/" title="Facebook Panda Masaż">
                                 <svg fill="none"
                                     height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -21,7 +21,7 @@ export default function Footer() {
                                         fill="#D7FB00"></path>
                                 </svg>
                             </a></li>
-                            <li><a href="https://www.instagram.com/panda_masaz/" title="Facebbok Panda Masaz">
+                            <li><a href="https://www.instagram.com/panda_masaz/" title="Instagram Panda Masaż">
                                 <svg fill="none"
                                     height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -37,9 +37,9 @@ export default function Footer() {
                     {/* Footer left */}
                     <div className="footer__info__left">
                         {/* Logo image */}
-                        <Link className="navigation__logo" href="/">
-                            <img alt="Logo niedzwiedzia" className="navigation__logo__panda" src="/img/pandastuio_logo_png.png" />
-                            <img alt="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
+                        <Link className="navigation__logo" href="/" title="Strona główna Panda Studio">
+                            <img alt="Logo niedźwiedzia" title="Logo niedźwiedzia" className="navigation__logo__panda" src="/img/pandastuio_logo_png.png" />
+                            <img alt="Logo FIT" title="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
                         </Link>
                         {/* Info text */}
                         <p>Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów
@@ -50,16 +50,16 @@ export default function Footer() {
                         <ul className="footer__right__ul">
                             <li>
                                 <div className="icon-box">
-                                    <img alt="Ikonka lokalizacji" src="/img/location-icon.png" />
+                                    <img alt="Ikonka lokalizacji" title="Ikonka lokalizacji" src="/img/location-icon.png" />
                                 </div>
                                 <div className="text">
                                     <p className="text__title">Adres:</p>
-                                    <p className="text__content"><a href="https://g.co/kgs/P3n3EtW"><strong>Treningi:</strong>
+                                    <p className="text__content"><a href="https://g.co/kgs/P3n3EtW" title="Zobacz treningi w Mapach Google"><strong>Treningi:</strong>
                                         Myśliwska 255,
                                         Rzeszów,
                                         PL
                                         35-242</a></p>
-                                    <p className="text__content"><a href="https://g.co/kgs/MBEjdC3"><strong>Masaże:</strong>
+                                    <p className="text__content"><a href="https://g.co/kgs/MBEjdC3" title="Zobacz masaże w Mapach Google"><strong>Masaże:</strong>
                                         Podkarpacka 12a,
                                         Rzeszów, PL
                                         35-082</a></p>
@@ -67,18 +67,18 @@ export default function Footer() {
                             </li>
                             <li>
                                 <div className="icon-box">
-                                    <img alt="Ikonka telefonu" src="/img/phone-icon.png" />
+                                    <img alt="Ikonka telefonu" title="Ikonka telefonu" src="/img/phone-icon.png" />
                                 </div>
                                 <div className="text">
                                     <p className="text__title">Telefon:</p>
                                     <p className="text__content">
-                                        <a href="tel:694 906 749" title="694 906 749">694 906 749</a></p>
+                                        <a href="tel:694 906 749" title="Zadzwoń do nas: 694 906 749">694 906 749</a></p>
 
                                 </div>
                             </li>
                             <li>
                                 <div className="icon-box">
-                                    <img alt="Ikonka zegarka" src="/img/clock-icon.png" />
+                                    <img alt="Ikonka zegarka" title="Ikonka zegarka" src="/img/clock-icon.png" />
                                 </div>
                                 <div className="text">
                                     <p className="text__title">Godziny pracy:</p>
@@ -91,7 +91,7 @@ export default function Footer() {
                 <br />
                 <p className="footer__rights">©
                     {new Date().getFullYear()}
-                    Wszystkie prawa <Link href="/">PandaStudioTeam.</Link> Design &amp;
+                    Wszystkie prawa <Link href="/" title="Strona główna">PandaStudioTeam.</Link> Design &amp;
                     Developed By alexlikenew
                 </p>
             </div>

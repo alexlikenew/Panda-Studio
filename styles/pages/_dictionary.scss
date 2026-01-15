@@ -1,0 +1,180 @@
+// Dictionary / Knowledge Base Styles
+
+// Listing Grid
+.dictionary-listing {
+    padding: 180px 2rem 4rem; // Top padding to clear fixed header
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: $text-color;
+        }
+
+        p {
+            color: #666;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.dictionary-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.dictionary-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-color: $green-color;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: $text-color;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__tag {
+        font-size: 0.75rem;
+        color: #555;
+        background-color: #f0f0f0;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+    }
+
+    &__date {
+        font-size: 0.8rem;
+        color: #999;
+        text-align: right;
+    }
+}
+
+// Single Entry View
+.dictionary-entry {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 180px 1.5rem 0;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        color: $text-color;
+    }
+
+    &__meta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &__tag {
+        color: $green-color;
+        font-weight: 600;
+    }
+
+    &__separator {
+        width: 100%;
+        height: 1px;
+        background-color: #eee;
+        margin: 2rem 0;
+    }
+
+    &__content {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid $green-color;
+            padding-left: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        a {
+            color: #a2c206;
+            text-decoration: underline;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+}

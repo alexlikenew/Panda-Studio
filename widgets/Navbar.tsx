@@ -28,17 +28,19 @@ export default function Navbar() {
       <div className="wrapper">
         <div className="navigation">
           {/* Logo */}
-          <Link className="navigation__logo" href="/">
+          {/* Logo */}
+          <Link className="navigation__logo" href="/" title="Strona główna Panda Studio">
             <img
-              alt="Logo niedzwiedzia"
+              alt="Logo niedźwiedzia"
+              title="Logo niedźwiedzia"
               className="navigation__logo__panda"
               src="/img/pandastuio_logo_png.png"
             />
-            <img alt="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
+            <img alt="Logo FIT" title="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
           </Link>
           {/* Mobile navigation bars */}
           <button
-            aria-label="Otworz menu"
+            aria-label="Otwórz menu nawigacji"
             className="burger-btn"
             id="burgerButton"
             onClick={toggleMenu}
@@ -51,33 +53,33 @@ export default function Navbar() {
           <div className="navigation__desktop-menu">
             <ul className="navigation__desktop-menu__ul">
               <li>
-                <Link href="/cennik" title="Trening">
+                <Link href="/cennik" title="Zobacz cennik">
                   Cennik
                 </Link>
               </li>
               <li>
-                <Link href="/blog" title="Blog">
+                <Link href="/blog" title="Czytaj naszego bloga">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/trening" title="Trening">
+                <Link href="/trening" title="Oferta treningowa">
                   Trening
                 </Link>
               </li>
               <li>
-                <Link href="/masaz" title="Masaż">
+                <Link href="/masaz" title="Oferta masażu">
                   Masaż
                 </Link>
               </li>
               <li>
-                <Link href="/contact" title="Kontakt">
+                <Link href="/contact" title="Skontaktuj się z nami">
                   Kontakt
                 </Link>
               </li>
               <li>
                 <button
-                  aria-label="SPRÓBUJ!"
+                  aria-label="Spróbuj teraz - otwórz formularz"
                   className="text"
                   data-dialog="dialogOne"
                   onClick={openModal}
@@ -93,42 +95,43 @@ export default function Navbar() {
               }`}
           >
             <ul className="navigation__mobile-menu__ul">
-              <Link className="navigation__logo" href="/">
+              <Link className="navigation__logo" href="/" title="Strona główna Panda Studio">
                 <img
-                  alt="Logo niedzwiedzia"
+                  alt="Logo niedźwiedzia"
+                  title="Logo niedźwiedzia"
                   className="navigation__logo__panda"
                   src="/img/pandastuio_logo_png.png"
                 />
-                <img alt="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
+                <img alt="Logo FIT" title="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
               </Link>
               <li>
-                <Link href="/cennik" title="Trening">
+                <Link href="/cennik" title="Zobacz cennik">
                   Cennik
                 </Link>
               </li>
               <li>
-                <Link href="/blog" title="Blog">
+                <Link href="/blog" title="Czytaj naszego bloga">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/trening" title="Trening">
+                <Link href="/trening" title="Oferta treningowa">
                   Trening
                 </Link>
               </li>
               <li>
-                <Link href="/masaz" title="Masaż">
+                <Link href="/masaz" title="Oferta masażu">
                   Masaż
                 </Link>
               </li>
               <li>
-                <Link href="/contact" title="Kontakt">
+                <Link href="/contact" title="Skontaktuj się z nami">
                   Kontakt
                 </Link>
               </li>
               <li>
                 <button
-                  aria-label="SPRÓBUJ!"
+                  aria-label="Spróbuj teraz - otwórz formularz"
                   className="text"
                   data-dialog="dialogOne"
                   onClick={() => {
@@ -144,7 +147,7 @@ export default function Navbar() {
                   <a
                     className="navigation__mobile-menu__contact"
                     href="https://g.co/kgs/P3n3EtW"
-                    title="Adres"
+                    title="Zobacz treningi w Mapach Google"
                   >
                     <strong>Treningi:</strong>
                     Myśliwska 255, Rzeszów, PL 35-242
@@ -156,6 +159,7 @@ export default function Navbar() {
                   <a
                     className="navigation__mobile-menu__contact"
                     href="https://g.co/kgs/MBEjdC3"
+                    title="Zobacz masaże w Mapach Google"
                   >
                     <strong>Masaże:</strong>
                     Podkarpacka 12a, Rzeszów, PL 35-082
@@ -167,7 +171,7 @@ export default function Navbar() {
                   <a
                     className="navigation__mobile-menu__contact"
                     href="tel:694 906 749"
-                    title="694 906 749"
+                    title="Zadzwoń do nas: 694 906 749"
                   >
                     <strong>Kontakt:</strong>
                     +48 694 906 749

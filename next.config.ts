@@ -14,7 +14,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  serverExternalPackages: ["jsdom", "isomorphic-dompurify"],
   async redirects() {
     return [];
   },

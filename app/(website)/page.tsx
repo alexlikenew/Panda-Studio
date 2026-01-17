@@ -10,22 +10,29 @@ import BooksyCTA from "@/features/home/components/BooksyCTA";
 import ClassesCategorySection from "@/features/home/components/ClassesCategorySection";
 import NutritionTipsSection from "@/features/home/components/NutritionTipsSection";
 import ImpactStatsSection from "@/features/home/components/ImpactStatsSection";
+import ReviewsSection from "@/features/home/components/ReviewsSection";
+import ServicesAccordionSection from "@/features/home/components/ServicesAccordionSection";
+import KnowledgeBase from "@/features/home/components/KnowledgeBase";
 
 export default function Home() {
   return (
     <main>
-      {/* <DialogOne /> */}
-      {/* <Hero /> */}
+      <Hero />
       <TransformLife />
-      <Services />
-      <Testimonials />
+      <ServicesAccordionSection />
+      {/* <Services /> */}
+      <ClassesCategorySection />
       <CommunityReels />
+      {/* <NutritionTipsSection /> */}
+      <ImpactStatsSection />
       <BooksyCTA />
+      <ReviewsSection />
+
       <LatestNews />
       <Locations />
-      <ClassesCategorySection />
-      <NutritionTipsSection />
-      <ImpactStatsSection />
+      {/* <Testimonials /> */}
+      {/* <DialogOne /> */}
+      <KnowledgeBase />
     </main>
   );
 }

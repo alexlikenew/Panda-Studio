@@ -11,6 +11,13 @@
 @import './features/community-reels';
 @import './features/booksy-cta';
 @import './sections/hero';
+@import './sections/services-split';
+@import './sections/classes-category';
+@import './sections/services-accordion';
+@import './sections/knowledge-base';
+
+
+
 // FONTS
 
 
@@ -507,198 +514,11 @@ dialog .closeDialog {
 // HEADER
 // HEADER STYLES REMOVED - NOW IN _hero.scss
 
-// TRANSFOR LIFE
-.transform-life {
-	.wrapper {
-		padding: 40px 16px;
-	}
 
-	&__box {
-		&__training {
-			max-width: 100%;
-			overflow: hidden;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
 
-			a {
-				max-width: 100%;
-				max-height: 100%;
-				overflow: hidden;
-				margin-top: 4rem;
-				max-height: 20rem;
-				position: relative;
-				color: $main-color;
-				border-radius: 20px;
-				color: $lightest-gray;
 
-				&:hover {
-					.transform-life__box__training__image-box img {
-						transform: scale(1.1);
-					}
-				}
 
-				.transform-life__box__training__image-box {
-					img {
-						transition: transform 0.5s;
-						max-width: 100%;
-						z-index: 1;
-					}
-				}
 
-				.transform-life__box__training__text-box,
-				.transform-life__box__training__text-box--massage {
-					position: absolute;
-					max-width: 70%;
-					z-index: 100;
-					left: 0;
-					top: 0;
-					padding: 2rem;
-
-					font-weight: 500;
-
-					h2 {
-						// Font styles removed, use .heading-h3
-						color: $green-color;
-					}
-
-					p {
-						margin-top: 1rem;
-						// Font styles removed, use .text-medium-normal
-
-						span {
-							font-weight: 900;
-						}
-					}
-
-					button {
-						border-radius: clamp(8px, 0.625vw, 24px);
-						border: 0;
-						padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
-						z-index: 0;
-						-webkit-tap-highlight-color: transparent;
-
-						background-color: $main-color;
-						background-image: none;
-						color: $lightest-gray;
-						cursor: pointer;
-						// Font styles removed, use .text-medium-bold
-						margin: 1rem 0;
-						text-transform: uppercase;
-						transition: color 0.5s, background-color 0.5s;
-
-						&:hover {
-							background-color: $lightest-gray;
-							color: $main-color;
-						}
-					}
-				}
-
-				.transform-life__box__training__text-box--massage {
-
-					h2,
-					p {
-						color: $lightest-gray;
-					}
-				}
-			}
-		}
-	}
-}
-
-// SERVICES
-.services {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	&__heading {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 20px 0;
-
-		h3 {
-			font-weight: 500;
-			// Font styles removed, use .heading-h4
-			text-align: center;
-
-			span {
-				color: $green-color;
-			}
-		}
-	}
-
-	&__box {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 20px 0;
-
-		&__link {
-			&:hover {
-				.services__box__link__block__title__image {
-					transform: translateX(10px);
-				}
-
-				.services__box__link__block__title__heading {
-					color: $green-color;
-				}
-			}
-
-			&__block {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				padding: 20px 0;
-				border-top: 1px solid #92949f;
-
-				&__title {
-					width: 100%;
-					display: flex;
-					flex-direction: row;
-
-					align-items: center;
-
-					&__image {
-						width: 40%;
-						transition: transform 0.5s;
-						color: #d7fb00;
-
-						img {
-							max-width: 100%;
-							border-radius: 40px;
-						}
-					}
-
-					&__heading {
-						width: 60%;
-						// Font styles removed, use .heading-h5
-						color: $lightest-gray;
-						text-align: center;
-						transition: color 0.5s;
-					}
-				}
-
-				&__text {
-					margin-top: 20px;
-					color: $lightest-gray;
-
-					p {
-						line-height: 150%;
-
-						span {
-							font-weight: 900;
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
 // REVIEWS
 .testimonials {
@@ -1252,6 +1072,8 @@ dialog .closeDialog {
 		// }
 	}
 
+
+
 	.services {
 		&__box {
 			&__link {
@@ -1314,6 +1136,14 @@ dialog .closeDialog {
 		// }
 	}
 
+	.services__heading {
+		padding: 6rem 1rem;
+
+		h3 {
+			font-size: 3.8rem;
+		}
+	}
+
 	.transform-life {
 		display: flex;
 		align-items: center;
@@ -1333,13 +1163,7 @@ dialog .closeDialog {
 		}
 	}
 
-	.services__heading {
-		padding: 6rem 1rem;
 
-		h3 {
-			font-size: 3.8rem;
-		}
-	}
 }
 
 //MEDIA QUERIES 992px - 1200px
@@ -1375,6 +1199,8 @@ dialog .closeDialog {
 		// 	font-size: 80px;
 		// }
 	}
+
+
 
 	.services__box__link__block {
 		flex-direction: row;
@@ -1504,6 +1330,8 @@ dialog .closeDialog {
 		}
 	}
 
+
+
 	// SERVICES
 	.services__heading {
 		font-family: 'Inter', sans-serif;
@@ -1549,3 +1377,6 @@ dialog .closeDialog {
 @import 'sections/classes-category';
 @import 'sections/nutrition-tips';
 @import 'sections/impact-stats';
+@import 'sections/reviews';
+@import 'sections/services-accordion';
+@import 'sections/services';

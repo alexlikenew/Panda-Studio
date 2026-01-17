@@ -6,6 +6,7 @@ export default function Locations() {
             <div className="wrapper">
                 <h2 className="locations-section__header heading-h3">Znajdź nas na mapie</h2>
 
+
                 <div className="locations-section__grid">
                     {/* Card 1: STUDIO TRENINGOWE */}
                     <div className="location-card">

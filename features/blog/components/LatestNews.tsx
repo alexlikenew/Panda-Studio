@@ -7,7 +7,7 @@ export default async function LatestNews() {
     return (
         <section className="latest-news">
             <div className="wrapper">
-                <h2 className="latest-news__header heading-h2">
+                <h2 className="latest-news__header heading-h3">
                     Ostatnie <span>Aktualności</span>
                 </h2>
 

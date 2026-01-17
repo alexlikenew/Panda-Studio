@@ -4,34 +4,33 @@ import Image from 'next/image';
 const classesData = [
     {
         id: 1,
-        title: 'HEAVY WEIGHT',
-        description: 'Join our Heavy Weight class for strong muscle.',
+        title: 'TRENING SIŁOWY',
+        description: 'Zbuduj maksymalną siłę i wytrzymałość mięśniową dzięki pracy z wolnymi ciężarami.',
         imageSrc: '/img/classes/heavy-weight.png',
         linkUrl: '/classes/heavy-weight',
     },
     {
         id: 2,
         title: 'INDOOR CYCLING',
-        description: 'Join our Indoor Cycling class for cardio endurance.',
-        imageSrc: '/img/classes/indoor-cycling.png',
+        description: 'Intensywny trening cardio budujący żelazną kondycję w rytm energetycznej muzyki.',
+        imageSrc: '/img/classes/indoor-cycling.webp',
         linkUrl: '/classes/indoor-cycling',
     },
     {
         id: 3,
-        title: 'WEIGHT LOSS',
-        description: 'Join our Weight Loss class for a healthier you.',
+        title: 'SPALANIE & REDUKCJA',
+        description: 'Dynamiczne zajęcia nastawione na szybką utratę tkanki tłuszczowej i poprawę metabolizmu.',
         imageSrc: '/img/classes/weight-loss.png',
         linkUrl: '/classes/weight-loss',
     },
     {
         id: 4,
-        title: 'BODY BUILDING',
-        description: 'Join our Body Building class for ultimate strength.',
+        title: 'MODELOWANIE',
+        description: 'Praca nad estetyką, proporcjami i definicją mięśni dla idealnej sylwetki.',
         imageSrc: '/img/classes/body-building.png',
         linkUrl: '/classes/body-building',
     },
 ];
-
 export default function ClassesCategorySection() {
     return (
         <section className="classes-section">
@@ -44,17 +43,17 @@ export default function ClassesCategorySection() {
                             className="classes-section__card"
                         >
                             <div className="classes-section__card-content">
-                                <div>
-                                    <h3 className="classes-section__card-title">
+                                <div className="classes-section__card-content">
+                                    <h3 className="classes-section__card-title heading-h4">
                                         {item.title}
                                     </h3>
-                                    <p className="classes-section__card-description">
+                                    <p className="classes-section__card-description text-small-normal md:text-regular-normal">
                                         {item.description}
                                     </p>
                                 </div>
 
                                 <div className="classes-section__card-action">
-                                    <span className="classes-section__link">
+                                    <span className="classes-section__link text-small-bold">
                                         Learn More
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"

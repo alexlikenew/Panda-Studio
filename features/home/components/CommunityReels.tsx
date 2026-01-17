@@ -12,9 +12,9 @@ export default async function CommunityReels() {
         <section className="community-reels">
             <div className="wrapper">
                 <header className="community-reels__header">
-                    <h2 className="heading-h2">FS8 COMMUNITY</h2>
+                    <h2 className="heading-h2">PANDA COMMUNITY</h2>
                     <p className="text-large-normal community-reels__description">
-                        Zobacz, jak nasi klienci osiągają swoje cele fitness i dzielą się swoimi sukcesami.
+                        Dołącz do nas online. Zobacz, jak trenujemy, regenerujemy i budujemy formę każdego dnia
                     </p>
                 </header>
             </div>

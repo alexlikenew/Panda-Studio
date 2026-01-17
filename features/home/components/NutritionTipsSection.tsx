@@ -29,7 +29,7 @@ export default function NutritionTipsSection() {
         <section className="nutrition-tips">
             <div className="nutrition-tips__wrapper">
                 <header className="nutrition-tips__header">
-                    <h2>{nutritionData.title}</h2>
+                    <h2 className="heading-h2">{nutritionData.title}</h2>
                 </header>
 
                 <div className="nutrition-tips__grid">
@@ -49,7 +49,7 @@ export default function NutritionTipsSection() {
                             </div>
 
                             <div className="nutrition-tips__content">
-                                <div className={`nutrition-tips__badge nutrition-tips__badge--${card.badgeType}`}>
+                                <div className={`nutrition-tips__badge nutrition-tips__badge--${card.badgeType} text-small-bold`}>
                                     {card.badgeType === 'good' ? (
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /><path d="M12 14v6" /><path d="M12 8h.01" /><path d="M8 8a4 4 0 1 0 8 0" /></svg>
                                     ) : (
@@ -58,7 +58,7 @@ export default function NutritionTipsSection() {
                                     <span>{card.badge}</span>
                                 </div>
 
-                                <div className="nutrition-tips__text">
+                                <div className="nutrition-tips__text text-regular-normal">
                                     <p>{card.textP1}</p>
                                     <p>{card.textP2}</p>
                                 </div>

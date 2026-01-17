@@ -9,25 +9,33 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__background">
         <Image
-          src="/images/header-main.png"
+          src="/img/panda-masaz-ivan-mishchenko-glowna.webp"
           alt="Panda Studio - Trening, Masaż, Fizjoterapia"
           fill
           priority
-          quality={90}
+          // Opcja 1 (Najpewniejsza dla jakości): Wyłącza optymalizację Next.js.
+          // Obrazek będzie taki sam jak oryginał na dysku.
+          unoptimized
+
+          // Opcja 2 (Alternatywa): Jeśli chcesz zachować optymalizację rozmiaru,
+          // ale chcesz maksymalną jakość JPG/WEBP, użyj quality={100}.
+          // quality={100} 
+
           sizes="100vw"
+          style={{ objectFit: "cover" }} // Dodatkowe zabezpieczenie styli
         />
       </div>
 
       <div className="hero__container">
         <div className="hero__content">
           <div className="hero__content__titles">
-            <h1 className="hero-title-functional heading-h1 hero-title-functional--outline">
+            <h1 className="hero-title-functional heading-h1 hero-title-functional--outline delay-1">
               TRENING
             </h1>
-            <h1 className="hero-title-functional heading-h1 hero-title-functional--filled">
+            <h1 className="hero-title-functional heading-h1 hero-title-functional--filled delay-2">
               MASAŻ
             </h1>
-            <h1 className="hero-title-functional heading-h1 hero-title-functional--outline">
+            <h1 className="hero-title-functional heading-h1 hero-title-functional--outline delay-3">
               FIZJOTERAPIA
             </h1>
           </div>

@@ -1,0 +1,152 @@
+// Reviews Section
+// High volume scrollable container layout
+
+.reviews-section {
+    background-color: $main-color;
+    padding: 6rem 0;
+    color: $white-color;
+
+    &__wrapper {
+        @extend .wrapper;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        h2 {
+            margin-bottom: 0.5rem;
+            color: $white-color;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $light-gray;
+        }
+    }
+
+    // List Wrapper
+    &__list-wrapper {
+        position: relative;
+        // CLEANUP: No ::before or ::after pseudo-elements here anymore.
+        // The fading is now handled directly by the scroll container's mask.
+    }
+
+    // SCROLLABLE CONTAINER
+    &__scroll-container {
+        max-height: 55vh;
+        overflow-y: auto;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+
+        // THE FIX: CSS MASKING
+        // This makes the content itself fade out, preventing any "hard line" overlay artifacts.
+        // It keeps content 100% visible until 70% down, then fades to transparent.
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+
+        // Custom Scrollbar Styling
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba($white-color, 0.05);
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba($light-gray, 0.3);
+            border-radius: 4px;
+
+            &:hover {
+                background: rgba($light-gray, 0.5);
+            }
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    // CARD DESIGN
+    &__card {
+        background-color: #1c1c1e; // Slightly lighter than black
+        border: 1px solid rgba($light-gray, 0.1);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            border-color: rgba($orange, 0.3);
+        }
+    }
+
+    &__card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    &__author-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__author {
+        color: $white-color;
+        margin: 0 0 0.25rem 0;
+    }
+
+    &__role {
+        color: $light-gray;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    &__stars {
+        color: $orange;
+        display: flex;
+        gap: 2px;
+        flex-shrink: 0;
+    }
+
+    &__star {
+        // SVG styling
+    }
+
+    &__card-body {
+        flex-grow: 1;
+        margin-bottom: 1.5rem;
+
+        p {
+            color: darken($lightest-gray, 10%);
+        }
+    }
+
+    &__card-footer {
+        border-top: 1px solid rgba($white-color, 0.05);
+        padding-top: 1rem;
+
+        time {
+            color: darken($light-gray, 20%);
+        }
+    }
+}

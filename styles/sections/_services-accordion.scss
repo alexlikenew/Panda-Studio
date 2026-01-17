@@ -1,0 +1,227 @@
+@import '../base/colors';
+@import '../base/typography';
+
+.services-accordion-section {
+    background-color: $main-color;
+    padding: 100px 0 60px;
+    color: $white-color;
+    position: relative;
+    overflow: hidden;
+
+    .services-accordion__wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        @media (min-width: 1024px) {
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+        }
+    }
+}
+
+// Left Column Styles
+.services-accordion__left-column {
+    position: relative;
+
+    .services-accordion__sticky-content {
+        @media (min-width: 1024px) {
+            position: sticky;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+    }
+}
+
+.services-accordion__badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid $green-color;
+    color: $green-color;
+    border-radius: 50px;
+    font-family: $font-primary;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.services-accordion__title {
+
+    margin: 0 0 2rem 0;
+    font-weight: 500; // Reduced weight as requested
+
+    &-span {
+        color: $green-color;
+        font-weight: 400;
+    }
+}
+
+.services-accordion__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .btn-primary-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        color: $black-color;
+        padding: 12px 32px;
+        border-radius: 50px;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            background-color: darken($white-color, 5%);
+        }
+    }
+
+    .btn-secondary-play {
+        background: transparent;
+        border: none;
+        color: $white-color;
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        padding: 0;
+
+        .icon-play {
+            width: 32px;
+            height: 32px;
+            border: 1px solid rgba($white-color, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            .icon-play {
+                border-color: $white-color;
+                background-color: rgba($white-color, 0.1);
+            }
+        }
+    }
+}
+
+// Right Column (Accordion) Styles
+.services-accordion__right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-accordion__item {
+    border-bottom: 1px solid rgba($white-color, 0.1);
+    padding: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:first-child {
+        border-top: 1px solid rgba($white-color, 0.1);
+    }
+
+    .services-accordion__item-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        min-height: 120px;
+    }
+
+    .services-accordion__item-info {
+        flex: 1;
+        padding-right: 20px;
+        z-index: 2;
+    }
+
+    .services-accordion__item-title {
+        margin: 0 0 1rem 0;
+        transition: color 0.3s ease;
+        color: rgba($white-color, 0.5); // Default inactive state
+
+        &:hover {
+            color: rgba($white-color, 0.8);
+        }
+    }
+
+    // Active state for item
+    &.active {
+        .services-accordion__item-title {
+            color: $white-color;
+        }
+
+        .services-accordion__ghost-number {
+            color: $white-color;
+            -webkit-text-stroke: 0;
+        }
+    }
+
+    .services-accordion__item-description-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.4s ease-out;
+        overflow: hidden;
+
+        &.open {
+            grid-template-rows: 1fr;
+            margin-top: 20px;
+        }
+
+        .services-accordion__item-description {
+            min-height: 0;
+            color: $light-gray;
+            max-width: 500px;
+        }
+    }
+}
+
+// Ghost Number
+.services-accordion__item-visuals {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 200px;
+    height: 100%;
+
+    @media (min-width: 768px) {
+        width: 300px;
+    }
+
+    .services-accordion__ghost-number {
+        font-family: $font-secondary;
+        font-size: 80px;
+        line-height: 1;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba($white-color, 0.3);
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 1;
+
+        @media (min-width: 768px) {
+            font-size: 120px;
+        }
+    }
+}

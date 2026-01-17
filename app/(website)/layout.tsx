@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    url: "https://pandastudio.rzeszow.pl",
+    url: "https://panda-studio-puce.vercel.app/",
     siteName: "FIT Panda Studio",
     title: "FIT Panda Studio Treningu & Masażu Rzeszów",
     description:

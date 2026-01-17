@@ -8,8 +8,8 @@ export default function Footer() {
                 {/* Footer social media */}
                 <div className="footer__social">
                     <div className="footer__social__text">
-                        <p>S u b s k r y b u j &nbsp; n a s z e &nbsp; m e d i a </p>
-                        <h2>Stay in touch</h2>
+                        <p className="text-small-bold">S u b s k r y b u j &nbsp; n a s z e &nbsp; m e d i a </p>
+                        <h2 className="heading-h2">Stay in touch</h2>
                     </div>
                     <div className="footer__social__images">
                         <ul>
@@ -42,7 +42,7 @@ export default function Footer() {
                             <img alt="Logo FIT" title="Logo FIT" src="/img/pandastudio_logo_text_png.png" />
                         </Link>
                         {/* Info text */}
-                        <p>Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów
+                        <p className="text-medium-normal">Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów
                             się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.</p>
                     </div>
                     {/* Footer right */}
@@ -53,13 +53,13 @@ export default function Footer() {
                                     <img alt="Ikonka lokalizacji" title="Ikonka lokalizacji" src="/img/location-icon.png" />
                                 </div>
                                 <div className="text">
-                                    <p className="text__title">Adres:</p>
-                                    <p className="text__content"><a href="https://g.co/kgs/P3n3EtW" title="Zobacz treningi w Mapach Google"><strong>Treningi:</strong>
+                                    <p className="text__title text-medium-normal">Adres:</p>
+                                    <p className="text__content text-medium-normal"><a href="https://g.co/kgs/P3n3EtW" title="Zobacz treningi w Mapach Google"><strong>Treningi:</strong>
                                         Myśliwska 255,
                                         Rzeszów,
                                         PL
                                         35-242</a></p>
-                                    <p className="text__content"><a href="https://g.co/kgs/MBEjdC3" title="Zobacz masaże w Mapach Google"><strong>Masaże:</strong>
+                                    <p className="text__content text-medium-normal"><a href="https://g.co/kgs/MBEjdC3" title="Zobacz masaże w Mapach Google"><strong>Masaże:</strong>
                                         Podkarpacka 12a,
                                         Rzeszów, PL
                                         35-082</a></p>
@@ -70,8 +70,8 @@ export default function Footer() {
                                     <img alt="Ikonka telefonu" title="Ikonka telefonu" src="/img/phone-icon.png" />
                                 </div>
                                 <div className="text">
-                                    <p className="text__title">Telefon:</p>
-                                    <p className="text__content">
+                                    <p className="text__title text-medium-normal">Telefon:</p>
+                                    <p className="text__content text-medium-normal">
                                         <a href="tel:694 906 749" title="Zadzwoń do nas: 694 906 749">694 906 749</a></p>
 
                                 </div>
@@ -81,15 +81,15 @@ export default function Footer() {
                                     <img alt="Ikonka zegarka" title="Ikonka zegarka" src="/img/clock-icon.png" />
                                 </div>
                                 <div className="text">
-                                    <p className="text__title">Godziny pracy:</p>
-                                    <p className="text__content">Pon-Sob: 08:00 - 16:00</p>
+                                    <p className="text__title text-medium-normal">Godziny pracy:</p>
+                                    <p className="text__content text-medium-normal">Pon-Sob: 08:00 - 16:00</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <br />
-                <p className="footer__rights">©
+                <p className="footer__rights text-small-normal">©
                     {new Date().getFullYear()}
                     Wszystkie prawa <Link href="/" title="Strona główna">PandaStudioTeam.</Link> Design &amp;
                     Developed By alexlikenew

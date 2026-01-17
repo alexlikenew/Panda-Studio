@@ -18,12 +18,12 @@ export default function TransformLife() {
                                 />
                             </div>
                             <div className="transform-life__box__training__text-box">
-                                <h2>Trening</h2>
-                                <p>
+                                <h2 className="heading-h5">Trening</h2>
+                                <p className="text-small-normal">
                                     Rehabilitacja & transformacja ciała <br />
                                     <span className="text-box--bolder">ul.Myśliwska 255</span>
                                 </p>
-                                <button aria-label="UMÓW SIĘ">UMÓW SIĘ</button>
+                                <button aria-label="UMÓW SIĘ" className="text-medium-bold">UMÓW SIĘ</button>
                             </div>
                         </Link>
                         <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow">
@@ -37,12 +37,12 @@ export default function TransformLife() {
                                 />
                             </div>
                             <div className="transform-life__box__training__text-box">
-                                <h2>Masaż</h2>
-                                <p>
+                                <h2 className="heading-h5">Masaż</h2>
+                                <p className="text-small-normal">
                                     Relaksacyjny odpoczynek ciała <br />
                                     <span className="text-box--bolder"> Podkarpacka 12a</span>
                                 </p>
-                                <button aria-label="UMÓW SIĘ">UMÓW SIĘ</button>
+                                <button aria-label="UMÓW SIĘ" className="text-medium-bold">UMÓW SIĘ</button>
                             </div>
                         </a>
                     </div>

@@ -56,3 +56,24 @@ export async function getPost(slug: string): Promise<Post | null> {
 
   return client.fetch(query, { slug }, { next: { revalidate } });
 }
+
+export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
+  const query = `*[_type == "blog"] | order(publishedAt desc)[0...$limit] {
+    _id,
+    title,
+    slug,
+    "mainImage": image.asset->{
+      _id,
+      url,
+      altText
+    },
+    excerpt,
+    "categories": categories[]->title,
+    "tags": tags,
+    "author": author->{name, image},
+    publishedAt,
+    body
+  }`;
+
+  return client.fetch(query, { limit }, { next: { revalidate } });
+}

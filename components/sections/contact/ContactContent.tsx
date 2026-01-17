@@ -17,8 +17,8 @@ export default function ContactContent() {
         <section className="contact">
             <div className="wrapper">
                 <div className="contact__info">
-                    <h2>Skontaktuj się z nami</h2>
-                    <p>
+                    <h2 className="heading-h3">Skontaktuj się z nami</h2>
+                    <p className="text-medium-normal">
                         Zadzwoń do nas w dowolnym momencie, staramy się odpowiadać na
                         wszystkie zapytania w ciągu 24 godzin w dni robocze. Chętnie
                         odpowiemy na Twoje pytania.
@@ -31,14 +31,14 @@ export default function ContactContent() {
                                         <Image alt="Ikonka lokalizacji" src="/img/location-icon.png" width={24} height={24} />
                                     </div>
                                     <div className="text">
-                                        <p className="text__title">Adres:</p>
-                                        <p className="text__content">
+                                        <p className="text__title text-small-bold">Adres:</p>
+                                        <p className="text__content text-medium-normal">
                                             <a href="https://g.co/kgs/P3n3EtW">
                                                 <strong>Treningi:</strong> Myśliwska 255, Rzeszów, PL
                                                 35-242
                                             </a>
                                         </p>
-                                        <p className="text__content">
+                                        <p className="text__content text-medium-normal">
                                             <a href="https://g.co/kgs/MBEjdC3">
                                                 <strong>Masaże:</strong> Podkarpacka 12a, Rzeszów, PL
                                                 35-082
@@ -51,8 +51,8 @@ export default function ContactContent() {
                                         <Image alt="Ikonka telefonu" src="/img/phone-icon.png" width={24} height={24} />
                                     </div>
                                     <div className="text">
-                                        <p className="text__title">Telefon:</p>
-                                        <p className="text__content">
+                                        <p className="text__title text-small-bold">Telefon:</p>
+                                        <p className="text__content text-medium-normal">
                                             <a href="tel:694 906 749" title="694 906 749">
                                                 694 906 749
                                             </a>
@@ -64,8 +64,8 @@ export default function ContactContent() {
                                         <Image alt="Ikonka zegarka" src="/img/clock-icon.png" width={24} height={24} />
                                     </div>
                                     <div className="text">
-                                        <p className="text__title">Godziny pracy:</p>
-                                        <p className="text__content">Pon-Sob: 08:00 - 16:00</p>
+                                        <p className="text__title text-small-bold">Godziny pracy:</p>
+                                        <p className="text__content text-medium-normal">Pon-Sob: 08:00 - 16:00</p>
                                     </div>
                                 </li>
                             </ul>
@@ -74,7 +74,7 @@ export default function ContactContent() {
                 </div>
                 <div className="contact__form">
                     <form action={formAction}>
-                        <h2>Zadaj swoje pytanie</h2>
+                        <h2 className="heading-h3">Zadaj swoje pytanie</h2>
                         {state.success && (
                             <p style={{ color: "#d1fd08", marginBottom: "1rem", fontWeight: "bold" }}>
                                 {state.message}
@@ -86,13 +86,13 @@ export default function ContactContent() {
                             </p>
                         )}
 
-                        <p>
+                        <p className="text-medium-normal">
                             Zapraszamy do kontakt z nami za pomocą poniższego formularza
                             kontaktowego. Chętnie Cię wysłuchamy.
                         </p>
                         <div className="contact__form__input-block">
                             <input
-                                className="form-control"
+                                className="form-control text-medium-normal"
                                 id="firstName"
                                 name="name"
                                 placeholder="Imię"
@@ -119,7 +119,7 @@ export default function ContactContent() {
                         </div>
                         <div className="contact__form__input-block">
                             <input
-                                className="form-control"
+                                className="form-control text-medium-normal"
                                 id="e-mail"
                                 name="email"
                                 placeholder="Email"
@@ -142,7 +142,7 @@ export default function ContactContent() {
                         </div>
                         <div className="contact__form__input-block">
                             <input
-                                className="form-control"
+                                className="form-control text-medium-normal"
                                 id="phone"
                                 name="phone"
                                 placeholder="Telefon"
@@ -165,7 +165,7 @@ export default function ContactContent() {
                         </div>
                         <div className="contact__form__input-block">
                             <input
-                                className="form-control"
+                                className="form-control text-medium-normal"
                                 id="subject"
                                 name="subject"
                                 placeholder="Temat"
@@ -176,7 +176,7 @@ export default function ContactContent() {
                         </div>
                         <div className="contact__form__input-block">
                             <textarea
-                                className="form-control"
+                                className="form-control text-medium-normal"
                                 id="comments"
                                 name="message"
                                 placeholder="Wpisz swoją wiadomość"
@@ -184,7 +184,7 @@ export default function ContactContent() {
                             ></textarea>
                             {state.errors?.message && <p style={{ color: "red", fontSize: "0.8rem", marginTop: "0.25rem" }}>{state.errors.message[0]}</p>}
                         </div>
-                        <button type="submit" disabled={isPending}>
+                        <button type="submit" disabled={isPending} className="text-medium-bold">
                             {isPending ? "Wysyłanie..." : "Wyślij"}
                         </button>
                     </form>

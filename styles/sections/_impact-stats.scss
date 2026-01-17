@@ -1,0 +1,95 @@
+// Impact Stats Section
+@import '../base/colors';
+@import '../base/typography';
+
+.impact-stats {
+    background-color: $main-color;
+    padding: 8rem 0;
+    color: $white-color;
+
+    &__wrapper {
+        @extend .wrapper;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+        // Uses existing heading styles from typography
+        @extend h2;
+        color: $white-color;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        list-style: none;
+        padding: 0;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    &__circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 1px solid rgba($white-color, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            border-color: $green-color;
+        }
+    }
+
+    &__value {
+        font-family: 'Nexa', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        color: $white-color;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__badge {
+        display: inline-block;
+        background-color: $green-color;
+        color: $black-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+    }
+
+    &__desc {
+        @extend .text-regular-normal;
+        color: $lightest-gray;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

@@ -16,8 +16,8 @@ export default function DictionaryIndexPage({ entries }: DictionaryIndexPageProp
         <div className="dictionary-page">
             <div className="wrapper">
                 <header className="dictionary-header">
-                    <h1 className="dictionary-header__title">Baza Wiedzy</h1>
-                    <p className="dictionary-header__subtitle">
+                    <h1 className="dictionary-header__title heading-h1">Baza Wiedzy</h1>
+                    <p className="dictionary-header__subtitle text-medium-normal">
                         Poznaj terminologię treningową i dietetyczną.
                     </p>
 

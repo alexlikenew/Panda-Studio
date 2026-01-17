@@ -5,52 +5,51 @@ import Link from "next/link";
 import { useUIContext } from "@/providers/UIContext";
 
 export default function Hero() {
-  const { openModal } = useUIContext();
-
   return (
-    <header className="header">
-      <div className="bg-box"></div>
-      <div className="wrapper">
-        <div className="header__text-box">
-          <h1 className="header__text-box__title--training">
-            TRENING
-            <br />
-            MASAŻ
-          </h1>
-          <h2 className="header__text-box__title">UWOLNIJ</h2>
-          <h2 className="header__text-box__title header__text-box__title--green">
-            SPORTOWCA
-          </h2>
-          <h2 className="header__text-box__title">ZRELAKSUJ</h2>
-          <h2 className="header__text-box__title header__text-box__title--orange">
-            UMYSŁ
-          </h2>
-          <button
-            aria-label="SPRÓBUJ TERAZ"
-            className="header__text-box__button"
-            data-dialog="dialogOne"
-            onClick={openModal}
-          >
+    <section className="hero">
+      <div className="hero__background">
+        <Image
+          src="/images/header-main.png"
+          alt="Panda Studio - Trening, Masaż, Fizjoterapia"
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+        />
+      </div>
+
+      <div className="hero__container">
+        <div className="hero__content">
+          <div className="hero__content__titles">
+            <h1 className="hero-title-functional heading-h1 hero-title-functional--outline">
+              TRENING
+            </h1>
+            <h1 className="hero-title-functional heading-h1 hero-title-functional--filled">
+              MASAŻ
+            </h1>
+            <h1 className="hero-title-functional heading-h1 hero-title-functional--outline">
+              FIZJOTERAPIA
+            </h1>
+          </div>
+
+          <div className="hero-slogan">
+            <h2 className="heading-h3 text-white">
+              TWOJA DROGA DO <span className="text-green">LEPSZEJ SIŁY</span>
+            </h2>
+          </div>
+
+          <Link href="/kontakt" className="btn-primary text-small-bold">
             SPRÓBUJ TERAZ
-          </button>
-          <div className="header__text-box__more-info">
-            {/* 
-            <div className="header__text-box__more-info__image">
-                <img alt="Ikonka informacji szczegowolych" src="./img/panda_studio_more-info.png">
-                <a href="">
-                    <img alt="Przycisk odtwarzania" src="./img/panda_studio-play-icon.png">
-                </a>
-            </div> 
-            */}
-            <p>
-              Moje studio to <span>kameralna</span> przestrzeń wyposażona w
-              wolne ciężary i wszystko, czego potrzeba, by skutecznie dbać o
-              sylwetkę i zdrowie – z fizjoterapeutycznym podejściem do ruchu
-              jako fundamentu dobrego samopoczucia.
+          </Link>
+
+          <div className="hero__info-box">
+            <p className="text-light-normal">
+              Profesjonalne studio treningu personalnego i fizjoterapii w sercu miasta.
+              <span className="text-green font-bold"> Pierwszy trening za darmo.</span>
             </p>
           </div>
         </div>
       </div>
-    </header>
+    </section>
   );
 }

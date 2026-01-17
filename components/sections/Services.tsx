@@ -7,7 +7,7 @@ export default function Services() {
             <div className="wrapper">
                 {/* Services Heading */}
                 <div className="services__heading">
-                    <h3>
+                    <h3 className="heading-h4">
                         <span>Aktywność fizyczna </span> to fundament zdrowia, który wspiera
                         prawidłowe funkcjonowanie układu ruchu, harmonizuje napięcia
                         mięśniowe i daje ciału szansę na regenerację oraz pełnię sprawności.
@@ -171,11 +171,11 @@ export default function Services() {
                                         height={100}
                                     />
                                 </div>
-                                <div className="services__box__link__block__title__heading">
+                                <div className="services__box__link__block__title__heading heading-h5">
                                     Masaż
                                 </div>
                             </div>
-                            <div className="services__box__link__block__text">
+                            <div className="services__box__link__block__text text-small-normal">
                                 <p>
                                     Naszym celem jest pomaganie klientom w osiąganiu stanu
                                     głębokiego relaksu, ulgi od bólu oraz poprawy ogólnego

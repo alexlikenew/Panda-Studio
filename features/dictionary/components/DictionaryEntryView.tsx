@@ -40,9 +40,9 @@ export default function DictionaryEntryView({ entry }: Props) {
             />
 
             <header className="dictionary-article__header">
-                <span className="dictionary-article__label">POJĘCIE / BAZA WIEDZY</span>
+                <span className="dictionary-article__label text-small-bold">POJĘCIE / BAZA WIEDZY</span>
                 <h1 className="dictionary-article__title">{entry.title}</h1>
-                <div className="dictionary-article__meta">
+                <div className="dictionary-article__meta text-small-normal">
                     <time dateTime={entry.publishedAt}>
                         {new Date(entry.publishedAt).toLocaleDateString("pl-PL", {
                             day: "numeric",
@@ -58,7 +58,7 @@ export default function DictionaryEntryView({ entry }: Props) {
             {/* Excerpt / Lead */}
             {entry.excerpt && (
                 <div className="dictionary-article__excerpt">
-                    <p className="dictionary-lead">{entry.excerpt}</p>
+                    <p className="dictionary-lead text-large-light">{entry.excerpt}</p>
                 </div>
             )}
 
@@ -69,12 +69,12 @@ export default function DictionaryEntryView({ entry }: Props) {
             {/* Related Services CTA */}
             {entry.relatedServices && entry.relatedServices.length > 0 && (
                 <div className="dictionary-cta">
-                    <h3 className="dictionary-cta__title">Chcesz to sprawdzić w praktyce?</h3>
+                    <h3 className="dictionary-cta__title heading-h5">Chcesz to sprawdzić w praktyce?</h3>
                     <div className="dictionary-cta__items">
                         {entry.relatedServices.map((service, index) => (
                             <div key={index} className="dictionary-cta__item">
-                                <span className="dictionary-cta__service">{service.title}</span>
-                                <a href={service.url} className="dictionary-cta__button">
+                                <span className="dictionary-cta__service text-medium-normal">{service.title}</span>
+                                <a href={service.url} className="dictionary-cta__button text-small-bold">
                                     Umów wizytę
                                 </a>
                             </div>
@@ -86,15 +86,15 @@ export default function DictionaryEntryView({ entry }: Props) {
             {/* FAQ Section */}
             {entry.faq && entry.faq.length > 0 && (
                 <div className="dictionary-faq">
-                    <h3 className="dictionary-faq__title">Najczęściej zadawane pytania</h3>
+                    <h3 className="dictionary-faq__title heading-h3">Najczęściej zadawane pytania</h3>
                     <div className="dictionary-faq__list">
                         {entry.faq.map((item, index) => (
                             <details key={index} className="dictionary-faq__item">
-                                <summary className="dictionary-faq__question">
+                                <summary className="dictionary-faq__question text-medium-semi-bold">
                                     {item.question}
                                     <span className="dictionary-faq__icon">+</span>
                                 </summary>
-                                <div className="dictionary-faq__answer">
+                                <div className="dictionary-faq__answer text-medium-normal">
                                     {item.answer}
                                 </div>
                             </details>
@@ -106,7 +106,7 @@ export default function DictionaryEntryView({ entry }: Props) {
             {/* Related Terms / See Also */}
             {entry.relatedTerms && entry.relatedTerms.length > 0 && (
                 <div className="dictionary-related">
-                    <h4 className="dictionary-related__label">Zobacz również:</h4>
+                    <h4 className="dictionary-related__label text-small-bold">Zobacz również:</h4>
                     <ul className="dictionary-related__list">
                         {entry.relatedTerms.map((term, index) => (
                             <li key={index} className="dictionary-related__item">
@@ -122,7 +122,7 @@ export default function DictionaryEntryView({ entry }: Props) {
             {entry.tags && entry.tags.length > 0 && (
                 <footer className="dictionary-article__footer">
                     <div className="dictionary-article__tags">
-                        {entry.tags.map(tag => <span key={tag} className="dictionary-article__tag">#{tag}</span>)}
+                        {entry.tags.map(tag => <span key={tag} className="dictionary-article__tag text-tiny-bold">#{tag}</span>)}
                     </div>
                 </footer>
             )}

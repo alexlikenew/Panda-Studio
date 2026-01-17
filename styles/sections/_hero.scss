@@ -1,0 +1,166 @@
+@import '../base/colors';
+@import '../base/typography';
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    background-color: $main-color;
+    overflow: hidden;
+
+    // Background Image & Overlay
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        // Parallax/Scale Effect
+        animation: heroScale 20s infinite alternate ease-in-out;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        // Gradient Sandwich: Dark left -> Transparent right
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    #0c0c0d 30%,
+                    rgba(12, 12, 13, 0.8) 50%,
+                    rgba(12, 12, 13, 0.2) 70%,
+                    transparent 100%);
+            z-index: 2;
+        }
+    }
+
+    // Main Content Container
+    &__container {
+        position: relative;
+        z-index: 10; // Above background
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 5%; // Global side padding override if needed, or rely on wrapper
+        width: 100%;
+        max-width: 1800px; // Ultra-wide support
+        margin: 0 auto;
+    }
+
+    // Text Content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 650px; // Restrict width to keep on the left side
+
+        // Staggered Layout for Functional Titles
+        &__titles {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    // Typography Modifiers
+    // Functional Titles (TRENING, MASAZ, DIETETYK)
+    .hero-title-functional {
+        line-height: 0.9;
+        text-transform: uppercase;
+
+        // Outline Effect for specific keywords
+        &--outline {
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            font-weight: 800; // Extra Bold
+        }
+
+        &--filled {
+            color: $green-color;
+            text-shadow: 0 0 20px rgba($green-color, 0.4);
+        }
+    }
+
+    // Slogan (TWOJA DROGA...)
+    .hero-slogan {
+        margin-bottom: 3rem;
+        position: relative;
+
+        // Creative underline or accent
+        &::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: $green-color;
+            margin-top: 1rem;
+        }
+    }
+
+    // Glass info box
+    &__info-box {
+        margin-top: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-left: 3px solid $green-color;
+        padding: 1.5rem;
+        max-width: 450px;
+
+        p {
+            margin: 0;
+            color: $lightest-gray;
+        }
+    }
+
+    // Mobile Optimization
+    @media (max-width: 992px) {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px; // Navbar spacing
+
+        &__background {
+            &::after {
+                // Vertical gradient for mobile
+                background: linear-gradient(0deg,
+                        #0c0c0d 40%,
+                        rgba(12, 12, 13, 0.6) 70%,
+                        transparent 100%);
+            }
+
+            img {
+                object-position: center top;
+            }
+        }
+
+        &__container {
+            align-items: flex-end; // Push content to bottom
+            padding-bottom: 4rem;
+        }
+
+        &__content {
+            max-width: 100%;
+        }
+    }
+}
+
+@keyframes heroScale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}

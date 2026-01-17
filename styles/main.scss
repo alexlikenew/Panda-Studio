@@ -7,6 +7,10 @@
 @import './pages/blog-post';
 @import './pages/dictionary';
 @import './pages/dictionary-post';
+@import './pages/home';
+@import './features/community-reels';
+@import './features/booksy-cta';
+@import './sections/hero';
 // FONTS
 
 
@@ -75,6 +79,17 @@
 
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+// Shimmer Animation for Text
+@keyframes shimmer {
+	0% {
+		background-position: -200% center;
+	}
+
+	100% {
+		background-position: 200% center;
 	}
 }
 
@@ -304,11 +319,7 @@ dialog .closeDialog {
 				span {
 					cursor: pointer;
 					color: $lightest-gray;
-					font-family: 'Poppins', sans-serif;
-					font-size: 15px;
-					font-style: normal;
-					font-weight: 600;
-					line-height: 150%;
+					// Font styles removed, use .text-small-semi-bold
 					letter-spacing: 1px;
 					padding: 8px 12px;
 					text-transform: uppercase;
@@ -331,9 +342,7 @@ dialog .closeDialog {
 					background-color: $green-color;
 					color: $main-color;
 					cursor: pointer;
-					font-family: 'Inter', sans-serif;
-					font-size: 14px;
-					font-weight: 700;
+					// Font styles removed, use .text-small-bold
 					letter-spacing: 0.5px;
 					line-height: 120%;
 					text-transform: uppercase;
@@ -403,10 +412,7 @@ dialog .closeDialog {
 				justify-content: space-between;
 				line-height: 30px;
 				color: #FAFAFA;
-				font-size: 18px;
-				font-family: "Poppins", sans-serif;
-				text-transform: capitalize;
-				font-weight: 500;
+				// Font styles removed, use utility classes in Mobile menu if accessible
 				height: 46px;
 				letter-spacing: 0.8px;
 				align-items: center;
@@ -499,189 +505,7 @@ dialog .closeDialog {
 }
 
 // HEADER
-.header {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	background-image: url('/img/panda-masaz-ivan-mishchenko-o-mnie-mobile.webp');
-	z-index: 1;
-
-	.wrapper {
-		height: 100%;
-		position: relative;
-	}
-
-	.bg-box {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.63);
-		z-index: 1;
-	}
-
-	&__text-box {
-		display: flex;
-		position: relative;
-		flex-direction: column;
-		align-items: flex-start;
-		padding-top: 20rem;
-		z-index: 1000;
-		height: 100%;
-
-		&__title {
-			// margin-top: 18rem;
-			font-size: 54px;
-			font-weight: 900;
-			line-height: 100%;
-			letter-spacing: -4.8px;
-			font-style: normal;
-			font-family: 'Nexa', sans-serif;
-			background: linear-gradient(180deg, #fafafa 50%, rgba(153, 153, 153, 0.2) 89.06%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-
-			// margin-bottom: 40px;
-			&--training,
-			&--massage {
-				font-weight: 500;
-				font-size: 23px;
-				color: $green-color;
-			}
-
-			&--massage {
-				// color: $orange;
-				margin-bottom: 1rem;
-			}
-
-			&--green {
-				background: linear-gradient(180deg, #d1fd08 50%, rgba(153, 153, 153, 0.2) 89.06%);
-				background-clip: text;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-
-			&--orange {
-				background: linear-gradient(180deg, #f98f1c 60%, rgba(153, 153, 153, 0.2) 89.06%);
-				background-clip: text;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		}
-
-		&__text {
-			margin-top: 1rem;
-			color: $green-color;
-		}
-
-		button {
-			position: relative;
-			margin-top: 2rem;
-			padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
-			z-index: 0;
-			background-color: transparent;
-			background-image: none;
-			cursor: pointer;
-			font-family: 'Inter', sans-serif;
-			font-size: clamp(16px, 0.938vw, 22px);
-			font-style: normal;
-			font-weight: 500;
-			line-height: 120%;
-			text-transform: uppercase;
-			position: relative;
-			border-color: transparent;
-			z-index: 1000;
-
-			// color: #fff;
-			&::before,
-			&::after {
-				height: 100%;
-				position: absolute;
-				top: 0;
-				transition: all 0.3s;
-				content: '';
-			}
-
-			&::before {
-				width: 100%;
-				left: 0;
-				border-radius: 20px;
-				background-color: $green-color;
-				z-index: -1;
-			}
-
-			&::after {
-				width: 0;
-				left: 50%;
-				border-top: 1px solid transparent;
-				border-bottom: 1px solid transparent;
-				transform: translate(-50%, 0);
-				z-index: 1;
-			}
-
-			&:hover {
-				color: $green-color;
-
-				&::before {
-					transform: scale(0, 1);
-				}
-
-				&::after {
-					width: 100%;
-					border-color: $green-color;
-					transition-delay: 0.2s;
-				}
-			}
-		}
-
-		&__more-info {
-			position: absolute;
-			bottom: 5rem;
-			left: 0;
-			z-index: 2000;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-			align-items: center;
-			z-index: 1;
-
-			&__image {
-				max-width: 20%;
-				position: relative;
-
-				img {
-					max-width: 100%;
-					border: 1px solid #faf7f2;
-					border-radius: 14px;
-				}
-
-				a {
-					position: absolute;
-					top: -14px;
-					left: -14px;
-					z-index: 10;
-
-					img {
-						border: none;
-					}
-				}
-			}
-
-			p {
-				max-width: 70%;
-
-				span {
-					color: $green-color;
-				}
-			}
-		}
-	}
-}
+// HEADER STYLES REMOVED - NOW IN _hero.scss
 
 // TRANSFOR LIFE
 .transform-life {
@@ -735,16 +559,13 @@ dialog .closeDialog {
 					font-weight: 500;
 
 					h2 {
-						font-weight: 900;
-						line-height: 100%;
-						font-style: normal;
-						font-family: 'Nexa', sans-serif;
-						font-size: 3rem;
+						// Font styles removed, use .heading-h3
+						color: $green-color;
 					}
 
 					p {
 						margin-top: 1rem;
-						font-size: 19px;
+						// Font styles removed, use .text-medium-normal
 
 						span {
 							font-weight: 900;
@@ -762,11 +583,7 @@ dialog .closeDialog {
 						background-image: none;
 						color: $lightest-gray;
 						cursor: pointer;
-						font-family: 'Inter', sans-serif;
-						font-size: clamp(16px, 0.938vw, 22px);
-						font-style: normal;
-						font-weight: 500;
-						line-height: 120%;
+						// Font styles removed, use .text-medium-bold
 						margin: 1rem 0;
 						text-transform: uppercase;
 						transition: color 0.5s, background-color 0.5s;
@@ -804,7 +621,7 @@ dialog .closeDialog {
 
 		h3 {
 			font-weight: 500;
-			font-size: 27px;
+			// Font styles removed, use .heading-h4
 			text-align: center;
 
 			span {
@@ -859,8 +676,7 @@ dialog .closeDialog {
 
 					&__heading {
 						width: 60%;
-						font-size: 30px;
-						font-weight: 500;
+						// Font styles removed, use .heading-h5
 						color: $lightest-gray;
 						text-align: center;
 						transition: color 0.5s;
@@ -927,7 +743,7 @@ dialog .closeDialog {
 		}
 
 		h2 {
-			font-size: 30px;
+			// Font styles removed, use utility classes
 		}
 	}
 
@@ -952,10 +768,7 @@ dialog .closeDialog {
 			row-gap: 2rem;
 
 			p {
-				font-family: 'Poppins', sans-serif;
-				font-size: clamp(16px, 0.938vw, 22px);
-				font-style: normal;
-				font-weight: 400;
+				// Font styles removed, use .text-medium-light
 				line-height: 150%;
 			}
 
@@ -966,11 +779,7 @@ dialog .closeDialog {
 				background-color: transparent;
 				background-image: none;
 				cursor: pointer;
-				font-family: 'Inter', sans-serif;
-				font-size: clamp(16px, 0.938vw, 22px);
-				font-style: normal;
-				font-weight: 500;
-				line-height: 120%;
+				// Font styles removed, use .text-medium-bold
 				text-transform: uppercase;
 				position: relative;
 				border-color: transparent;
@@ -1053,11 +862,7 @@ dialog .closeDialog {
 
 			&__title {
 				color: $green-color;
-				font-family: 'Poppins', sans-serif;
-				font-size: clamp(22px, 0.938vw, 28px);
-				font-style: normal;
-				font-weight: 500;
-				line-height: 150%;
+				// Font styles removed, use .heading-h4
 				padding-bottom: 2rem;
 				border-bottom: 1px solid $green-color;
 				text-align: center;
@@ -1077,11 +882,7 @@ dialog .closeDialog {
 					padding: 2rem;
 					border-bottom: 1px solid gray;
 					text-align: center;
-
-					font-family: 'Poppins', sans-serif;
-					font-size: clamp(16px, 0.938vw, 22px);
-					font-style: normal;
-					font-weight: 600;
+					// Font styles removed, use .text-medium-normal
 					line-height: 150%;
 
 					img {
@@ -1103,11 +904,7 @@ dialog .closeDialog {
 				background-color: transparent;
 				background-image: none;
 				cursor: pointer;
-				font-family: 'Inter', sans-serif;
-				font-size: clamp(16px, 0.938vw, 22px);
-				font-style: normal;
-				font-weight: 500;
-				line-height: 120%;
+				// Font styles removed, use .text-medium-bold
 				text-transform: uppercase;
 				position: relative;
 				border-color: transparent;
@@ -1224,9 +1021,8 @@ dialog .closeDialog {
 			border-radius: clamp(8px, 0.625vw, 24px);
 			border: 0.5px solid #92949f;
 			background: #1e1f20;
-			font-family: 'Poppins', sans-serif;
-			font-size: 16px;
-			font-style: normal;
+			// Font styles removed, use .text-medium-normal
+			font-size: 16px; // Keeping base size if needed, or remove if class handles it
 			font-weight: 400;
 			line-height: 150%;
 			position: relative;
@@ -1261,10 +1057,7 @@ dialog .closeDialog {
 			background-image: none;
 			color: #1e1f20;
 			cursor: pointer;
-			font-family: 'Inter', sans-serif;
-			font-size: clamp(16px, 0.938vw, 22px);
-			font-style: normal;
-			font-weight: 500;
+			// Font styles removed, use .text-medium-bold
 			line-height: 120%;
 
 			text-transform: uppercase;
@@ -1307,17 +1100,14 @@ dialog .closeDialog {
 
 		&__text {
 			p {
-				font-size: 13px;
 				color: $green-color;
 				padding: 10px 0;
 				text-transform: uppercase;
-				line-height: 120%;
-				font-weight: 600;
+				// Font styles removed, use .text-small-bold
 			}
 
 			h2 {
-				font-size: 30px;
-				font-weight: 500;
+				// Font styles removed, use .heading-h4
 				line-height: 36px;
 			}
 		}
@@ -1372,11 +1162,7 @@ dialog .closeDialog {
 			gap: 1.5rem;
 
 			p {
-				font-family: 'Poppins', sans-serif;
-				font-size: clamp(16px, 0.938vw, 22px);
-				font-style: normal;
-				font-weight: 400;
-				line-height: 150%;
+				// Font styles removed, use .text-medium-normal
 				color: rgb(146, 148, 159);
 			}
 		}
@@ -1413,11 +1199,7 @@ dialog .closeDialog {
 						gap: 0.5rem;
 
 						&__title {
-							font-family: 'Poppins', sans-serif;
-							font-size: 1.6rem;
-							font-style: normal;
-							font-weight: 400;
-							line-height: 150%;
+							// Font styles removed, use .text-medium-normal
 						}
 
 						&__content {
@@ -1465,9 +1247,9 @@ dialog .closeDialog {
 	}
 
 	.header__text-box {
-		h2 {
-			font-size: 66px;
-		}
+		// h2 {
+		// 	font-size: 66px;
+		// }
 	}
 
 	.services {
@@ -1527,9 +1309,9 @@ dialog .closeDialog {
 	}
 
 	.header__text-box {
-		h2 {
-			font-size: 76px;
-		}
+		// h2 {
+		// 	font-size: 76px;
+		// }
 	}
 
 	.transform-life {
@@ -1589,9 +1371,9 @@ dialog .closeDialog {
 	}
 
 	.header__text-box {
-		h2 {
-			font-size: 80px;
-		}
+		// h2 {
+		// 	font-size: 80px;
+		// }
 	}
 
 	.services__box__link__block {
@@ -1705,9 +1487,9 @@ dialog .closeDialog {
 	}
 
 	.header__text-box {
-		h2 {
-			font-size: 100px;
-		}
+		// h2 {
+		// 	font-size: 100px;
+		// }
 	}
 
 	.header__text-box__more-info {
@@ -1740,7 +1522,7 @@ dialog .closeDialog {
 	// FOOTER
 	.footer__social__text {
 		p {
-			font-size: clamp(13px, 0.729vw, 19px);
+			// font-size: clamp(13px, 0.729vw, 19px);
 		}
 
 		h2 {
@@ -1751,15 +1533,19 @@ dialog .closeDialog {
 	.footer__info__left,
 	.footer__info__right {
 		p {
-			font-size: clamp(16px, 0.938vw, 22px);
+			// font-size: clamp(16px, 0.938vw, 22px);
 		}
 	}
 
 	.footer__info__right ul li .text__title {
-		font-size: clamp(16px, 0.938vw, 22px);
+		// font-size: clamp(16px, 0.938vw, 22px);
 	}
 
 	.footer__info__right {
 		align-items: center;
 	}
 }
+
+@import 'sections/classes-category';
+@import 'sections/nutrition-tips';
+@import 'sections/impact-stats';

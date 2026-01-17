@@ -20,19 +20,19 @@ export default function Testimonials() {
                         />
                     </div>
                     <div className="testimonials__box__text">
-                        <h2>Doswiadczenie oczami klientów</h2>
-                        <p>
+                        <h2 className="heading-h3">Doswiadczenie oczami klientów</h2>
+                        <p className="text-medium-light">
                             &quot;To studio treningu to prawdziwy game-changer! Profesjonalny
                             sprzęt, przyjazna atmosfera i wsparcie doświadczonych trenerów
                             sprawiają, że każda wizyta staje się przyjemnością.&quot;
                         </p>
-                        <p>
+                        <p className="text-medium-light">
                             &quot;Kameralne studio treningowe to prawdziwa perełka dla osób
                             ceniących indywidualne podejście i spokojną atmosferę. To
                             miejsce, gdzie można skupić się na swoich celach bez zgiełku
                             typowego dla dużych siłowni.&quot;
                         </p>
-                        <Link href="/contact">Skontaktuj się</Link>
+                        <Link href="/contact" className="text-medium-bold">Skontaktuj się</Link>
                     </div>
                 </div>
             </div>

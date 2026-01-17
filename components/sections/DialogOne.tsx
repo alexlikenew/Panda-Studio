@@ -11,7 +11,7 @@ export default function DialogOne() {
         <dialog id="dialogOne" open={isModalOpen}>
             <div className="dialogOne__info">
                 <div className="dialogOne__info__training">
-                    <h2>Trening</h2>
+                    <h2 className="heading-h3">Trening</h2>
                     <Image
                         alt="Dziewczyna trenuje Crossfit"
                         className="showElement"
@@ -20,17 +20,17 @@ export default function DialogOne() {
                         height={200}
                     />
                     <div className="text">
-                        <p className="text__title">Address:</p>
-                        <p className="text__content">
+                        <p className="text__title text-small-bold">Address:</p>
+                        <p className="text__content text-medium-normal">
                             <a href="https://g.co/kgs/P3n3EtW">
                                 Myśliwska 255, Rzeszów, PL 35-242
                             </a>
                         </p>
                     </div>
                     <div className="text">
-                        <p className="text__title">Telefon:</p>
+                        <p className="text__title text-small-bold">Telefon:</p>
                         <a
-                            className="text__content"
+                            className="text__content text-medium-normal"
                             href="tel:694906749"
                             title="Zarezerwuj"
                         >
@@ -38,7 +38,7 @@ export default function DialogOne() {
                         </a>
                     </div>
                     <Link
-                        className="btn-reservation"
+                        className="btn-reservation text-medium-bold"
                         href="/contact"
                         title="Zarezerwuj"
                         onClick={closeModal}
@@ -48,7 +48,7 @@ export default function DialogOne() {
                 </div>
                 <div className="showElement dialogOne__info__line"></div>
                 <div className="dialogOne__info__massage">
-                    <h2>Masaż</h2>
+                    <h2 className="heading-h3">Masaż</h2>
                     <Image
                         alt="Zdjecie masazu mezczyzny"
                         className="showElement"
@@ -57,17 +57,17 @@ export default function DialogOne() {
                         height={200}
                     />
                     <div className="text">
-                        <p className="text__title">Address:</p>
-                        <p className="text__content">
+                        <p className="text__title text-small-bold">Address:</p>
+                        <p className="text__content text-medium-normal">
                             <a href="https://g.co/kgs/P3n3EtW">
                                 Myśliwska 255, Rzeszów, PL 35-242
                             </a>
                         </p>
                     </div>
                     <div className="text">
-                        <p className="text__title">Telefon:</p>
+                        <p className="text__title text-small-bold">Telefon:</p>
                         <a
-                            className="text__content"
+                            className="text__content text-medium-normal"
                             href="tel:694906749"
                             title="Zarezerwuj"
                         >
@@ -75,7 +75,7 @@ export default function DialogOne() {
                         </a>
                     </div>
                     <a
-                        className="btn-reservation"
+                        className="btn-reservation text-medium-bold"
                         href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
                         title="Zarezerwuj"
                     >
@@ -85,7 +85,7 @@ export default function DialogOne() {
             </div>
             <button
                 aria-label="Zamknij"
-                className="closeDialog"
+                className="closeDialog text-medium-bold"
                 onClick={closeModal}
             >
                 Zamknij

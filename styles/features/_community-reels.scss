@@ -1,0 +1,189 @@
+// Community Reels Section
+// Aspect Ratio & Scale based layout
+
+.community-reels {
+    width: 100%;
+    padding: 100px 0;
+    overflow: hidden;
+    background-color: $main-color;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+
+        h2 {
+            color: $green-color;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__description {
+        color: $light-gray;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__slider-container {
+        width: 100%;
+        position: relative;
+        max-width: 100%;
+
+        // Center tracks
+        .slick-track {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .slick-list {
+            overflow: visible;
+            padding: 60px 0;
+        }
+
+        // SLIDE CONTAINER
+        .slick-slide {
+            // No fixed width or margin here. Slick handles the grid.
+            transition: all 0.5s ease;
+            outline: none;
+            position: relative;
+            z-index: 1;
+            padding: 0 10px; // Optional small padding to prevent touch edge touching
+        }
+
+        // Center stack
+        .slick-center {
+            z-index: 10;
+        }
+
+        // Custom arrows
+        .custom-slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: $green-color;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background-color: $green-color;
+                color: $main-color;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .custom-slick-prev {
+            left: 40px;
+        }
+
+        .custom-slick-next {
+            right: 40px;
+        }
+    }
+
+    // INNER CARD (The actual visible part)
+    &__slide-inner {
+        width: 100%;
+        aspect-ratio: 9/16; // Maintain vertical video shape
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        background: #000;
+
+        // INACTIVE STATE DEFAULT
+        opacity: 0.6;
+        transform: scale(0.85);
+        transition: all 0.5s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+
+        video,
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    // ACTIVE STATE STYLING (Applied via parent class .slick-center)
+    .slick-center {
+        .community-reels__slide-inner {
+            opacity: 1;
+            transform: scale(1); // Pop to full size
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: linear-gradient(to top,
+                rgba(12, 12, 13, 0.9) 0%,
+                rgba(12, 12, 13, 0.6) 50%,
+                transparent 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 0 0 20px 20px;
+        pointer-events: none;
+    }
+
+    &__slide-inner:hover &__overlay {
+        opacity: 1;
+    }
+
+    // RESPONSIVE
+    @include breakpoint(phone) {
+        padding: 60px 0;
+
+        &__header {
+            margin-bottom: 2rem;
+        }
+
+        &__slider-container {
+            .custom-slick-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+
+            .custom-slick-prev {
+                left: 10px;
+            }
+
+            .custom-slick-next {
+                right: 10px;
+            }
+        }
+    }
+
+    @include breakpoint(tablet) {
+        padding: 80px 0;
+
+        &__slider-container {
+            .custom-slick-prev {
+                left: 20px;
+            }
+
+            .custom-slick-next {
+                right: 20px;
+            }
+        }
+    }
+
+    @include breakpoint(desktop) {
+        padding: 120px 0;
+    }
+}

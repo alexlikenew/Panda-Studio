@@ -9,7 +9,7 @@ export default function DictionaryList({ entries }: DictionaryListProps) {
     if (!entries || entries.length === 0) {
         return (
             <div className="dictionary-empty">
-                <p>Nie znaleziono haseł spełniających kryteria wyszukiwania.</p>
+                <p className="text-medium-normal">Nie znaleziono haseł spełniających kryteria wyszukiwania.</p>
             </div>
         );
     }
@@ -20,7 +20,7 @@ export default function DictionaryList({ entries }: DictionaryListProps) {
                 <Link
                     key={entry._id}
                     href={`/baza-wiedzy/${entry.slug.current}`}
-                    className="dictionary-link"
+                    className="dictionary-link text-medium-normal"
                 >
                     {entry.title}
                 </Link>

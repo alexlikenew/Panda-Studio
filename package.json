@@ -19,10 +19,13 @@
     "nodemailer": "^7.0.12",
     "react": "19.2.1",
     "react-dom": "19.2.1",
+    "react-slick": "^0.31.0",
     "sanitize-html": "^2.17.0",
     "sanity": "^4.21.1",
     "sass": "^1.97.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.19",
+    "swiper": "^12.0.3",
     "zod": "^4.3.5"
   },
   "devDependencies": {
@@ -31,6 +34,7 @@
     "@types/nodemailer": "^7.0.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
     "@types/sanitize-html": "^2.16.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",

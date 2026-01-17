@@ -61,9 +61,8 @@
     }
 
     &__badge {
-        font-family: 'Inter', sans-serif;
-        font-size: 0.75rem;
-        font-weight: 700;
+        display: inline-block;
+        // Font styles removed, use .text-tiny-bold
         text-transform: uppercase;
         color: $green-color;
         border: 1px solid $green-color;
@@ -74,20 +73,15 @@
     }
 
     &__title {
-        font-family: 'Nexa', sans-serif;
-        font-size: 2.5rem;
+        @include heading(64px); // 4rem
         font-weight: 900;
         color: #ffffff;
         line-height: 1.1;
         text-transform: uppercase;
         margin: 0;
 
-        @media (min-width: 768px) {
-            font-size: 3.5rem;
-        }
-
-        @media (min-width: 1200px) {
-            font-size: 4rem;
+        @include breakpoint(phone) {
+            @include heading(40px);
         }
     }
 
@@ -112,8 +106,8 @@
         background-color: rgba(255, 255, 255, 0.1);
         display: none;
 
-        @media (min-width: 640px) {
-            display: block;
+        @include breakpoint(tablet) {
+            display: block; // min-width: 640px was originally used, check breakpoint
         }
     }
 
@@ -132,8 +126,7 @@
     }
 
     &__label {
-        font-family: 'Inter', sans-serif;
-        font-size: 0.75rem;
+        // Font styles removed, use .text-tiny-normal
         text-transform: uppercase;
         color: #9ca3af;
         letter-spacing: 0.05em;
@@ -143,17 +136,11 @@
     &__name,
     &__date,
     &__time {
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
+        // Font styles removed, use .text-regular-bold (name) and .text-regular-medium (date/time)
         color: #ffffff;
-        font-size: 1rem;
     }
 
-    &__date,
-    &__time {
-        // Date and Time might just reuse the bold style or be slightly different
-        font-weight: 500;
-    }
+
 
     &__image-wrapper {
         position: relative;
@@ -166,7 +153,7 @@
         box-shadow: 0 0 30px rgba($green-color, 0.15);
         order: 1;
 
-        @media (min-width: 992px) {
+        @include breakpoint(desktop) {
             height: 500px;
             order: 2;
         }
@@ -193,8 +180,7 @@
 
     // TYPOGRAPHY
     color: #e5e7eb; // Light Gray, improved contrast
-    font-family: 'Inter', sans-serif;
-    font-size: 1.125rem;
+    @include text-style(18px, 400); // 1.125rem
     line-height: 1.8;
 
     p {
@@ -203,10 +189,9 @@
 
     // LEAD PARAGRAPH (Excerpt)
     .post-lead {
-        font-size: 1.35rem;
+        // Font styles removed, use .text-large-medium
         line-height: 1.6;
         color: #ffffff;
-        font-weight: 500;
         margin-bottom: 3rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 2rem;
@@ -223,8 +208,7 @@
         box-shadow: 0 10px 40px -10px rgba($green-color, 0.2);
 
         &__title {
-            font-family: 'Nexa', sans-serif;
-            font-size: 1.75rem;
+            @include heading(28px); // 1.75rem
             color: #ffffff;
             margin-top: 0;
             margin-bottom: 2rem;
@@ -238,7 +222,7 @@
             gap: 1.5rem;
             align-items: center;
 
-            @media (min-width: 768px) {
+            @include breakpoint(tablet) {
                 flex-direction: row;
                 justify-content: center;
                 gap: 2rem;
@@ -253,23 +237,19 @@
         }
 
         &__service {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.125rem;
+            // Font styles removed, use .text-medium-medium
             color: #d1d5db;
-            font-weight: 500;
         }
 
         &__button {
             display: inline-block;
             background-color: $green-color;
             color: #0c0c0d;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
+            // Font styles removed, use .text-small-bold
             padding: 0.875rem 2rem;
             border-radius: 9999px;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 0.875rem;
             letter-spacing: 0.05em;
             border: none;
             transition: all 0.3s ease;
@@ -288,8 +268,7 @@
         margin: 5rem 0;
 
         &__title {
-            font-family: 'Nexa', sans-serif;
-            font-size: 2rem;
+            @include heading(32px); // 2rem
             color: $green-color;
             margin-bottom: 2.5rem;
             margin-top: 0;
@@ -315,9 +294,7 @@
             align-items: center;
             padding: 1rem 0;
             cursor: pointer;
-            font-family: 'Inter', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 600;
+            // Font styles removed, use .text-large-semi-bold
             color: #ffffff;
             list-style: none;
             transition: color 0.3s ease;
@@ -339,10 +316,9 @@
 
         &__answer {
             padding-bottom: 2rem;
-            font-family: 'Inter', sans-serif;
+            // Font styles removed, use .text-medium-normal
             color: #d1d5db;
             line-height: 1.7;
-            font-size: 1.125rem;
         }
     }
 
@@ -358,12 +334,12 @@
     }
 
     h2 {
-        font-size: 2.25rem;
+        @include heading(36px);
         color: $green-color; // Accent color for main subtitles
     }
 
     h3 {
-        font-size: 1.75rem;
+        @include heading(28px);
         border-left: 4px solid $green-color;
         padding-left: 1rem;
     }
@@ -469,9 +445,7 @@
     }
 
     &__tag {
-        font-family: 'Inter', sans-serif;
-        font-size: 0.875rem;
-        font-weight: 500;
+        // Font styles removed, use .text-small-medium
         color: #9ca3af;
         border: 1px solid rgba(255, 255, 255, 0.1);
         padding: 0.5rem 1.25rem;

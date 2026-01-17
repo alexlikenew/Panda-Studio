@@ -1,0 +1,67 @@
+// @import '../base/colors'; 
+// Relies on main.scss global import
+
+.booksy-cta {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        img {
+            object-fit: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        h2 {
+            color: $white-color;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: $light-gray;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: $green-color;
+        color: $black-color;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        margin-top: 1rem;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: lighten($green-color, 5%);
+        }
+    }
+}

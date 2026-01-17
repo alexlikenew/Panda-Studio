@@ -10,7 +10,7 @@ export default function BlogIndexPage({ posts }: BlogIndexPageProps) {
         <main className="blog-listing">
             <div className="wrapper">
                 <div className="blog-listing__header">
-                    <h1 className="blog-listing__title">
+                    <h1 className="blog-listing__title heading-h1">
                         Nasze <span>Artykuły</span>
                     </h1>
                     <p className="blog-listing__subtitle">

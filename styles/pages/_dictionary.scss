@@ -10,21 +10,19 @@
     margin-bottom: 5rem;
 
     &__title {
-        font-family: 'Nexa', sans-serif;
-        font-size: 3rem;
-        font-weight: 900;
+        @include heading(60px);
+        font-weight: 900; // heavy
         color: #ffffff;
         margin-bottom: 1rem;
         text-transform: uppercase;
 
-        @media (min-width: 768px) {
-            font-size: 4rem;
+        @include breakpoint(phone) {
+            @include heading(48px);
         }
     }
 
     &__subtitle {
-        font-family: 'Inter', sans-serif;
-        font-size: 1.125rem;
+        // Font styles removed, use .text-medium-normal
         color: #9ca3af;
         margin-bottom: 3rem;
     }
@@ -75,6 +73,7 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 50px;
         padding: 1rem 3rem 1rem 3.5rem;
+        // Font styles for input kept as it is a form element, but using variable if possible
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
         color: #ffffff;
@@ -113,8 +112,7 @@
 
 .dictionary-link {
     display: block; // Block display as requested
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    // Font styles removed, use .text-medium-normal or similar
     color: #d1d5db;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -131,5 +129,5 @@
     text-align: center;
     padding: 4rem 0;
     color: #6b7280;
-    font-family: 'Inter', sans-serif;
+    // Font styles removed
 }

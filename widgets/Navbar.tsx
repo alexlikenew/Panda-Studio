@@ -58,27 +58,27 @@ export default function Navbar() {
           <div className="navigation__desktop-menu">
             <ul className="navigation__desktop-menu__ul">
               <li>
-                <Link href="/cennik" title="Zobacz cennik">
+                <Link href="/cennik" title="Zobacz cennik" className="text-small-semi-bold">
                   Cennik
                 </Link>
               </li>
               <li>
-                <Link href="/blog" title="Czytaj naszego bloga">
+                <Link href="/blog" title="Czytaj naszego bloga" className="text-small-semi-bold">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/trening" title="Oferta treningowa">
+                <Link href="/trening" title="Oferta treningowa" className="text-small-semi-bold">
                   Trening
                 </Link>
               </li>
               <li>
-                <Link href="/masaz" title="Oferta masażu">
+                <Link href="/masaz" title="Oferta masażu" className="text-small-semi-bold">
                   Masaż
                 </Link>
               </li>
               <li>
-                <Link href="/contact" title="Skontaktuj się z nami">
+                <Link href="/contact" title="Skontaktuj się z nami" className="text-small-semi-bold">
                   Kontakt
                 </Link>
               </li>
@@ -86,7 +86,7 @@ export default function Navbar() {
               <li>
                 <button
                   aria-label="Spróbuj teraz - otwórz formularz"
-                  className="navigation__cta-btn"
+                  className="navigation__cta-btn text-small-bold"
                   data-dialog="dialogOne"
                   onClick={openModal}
                 >

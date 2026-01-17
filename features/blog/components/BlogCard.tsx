@@ -33,7 +33,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                     {/* Category Badge */}
                     {post.categories && post.categories.length > 0 && (
                         <div className="blog-card__badges">
-                            <span className="blog-card__badge">
+                            <span className="blog-card__badge text-tiny-semi-bold">
                                 {post.categories[0]}
                             </span>
                         </div>
@@ -43,16 +43,16 @@ export default function BlogCard({ post }: BlogCardProps) {
                 <div className="blog-card__content">
                     {/* Tags */}
                     {post.tags && post.tags.length > 0 && (
-                        <div className="blog-card__tags">
+                        <div className="blog-card__tags text-tiny-normal">
                             {post.tags.map(tag => <span key={tag}>#{tag}</span>)}
                         </div>
                     )}
 
-                    <h2 className="blog-card__title">
+                    <h2 className="blog-card__title heading-h5">
                         {post.title}
                     </h2>
 
-                    <div className="blog-card__meta">
+                    <div className="blog-card__meta text-small-normal">
                         {/* Author */}
                         {post.author && (
                             <div className="blog-card__author">
@@ -67,7 +67,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                                         />
                                     </div>
                                 )}
-                                <span className="blog-card__author-name">{post.author.name}</span>
+                                <span className="blog-card__author-name text-small-medium">{post.author.name}</span>
                             </div>
                         )}
 

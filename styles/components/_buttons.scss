@@ -9,10 +9,7 @@ dialog .btn-reservation {
     background-color: transparent;
     background-image: none;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(16px, 0.938vw, 22px);
-    font-style: normal;
-    font-weight: 500;
+    // Font styles removed, use .text-medium-bold
     line-height: 120%;
     text-transform: uppercase;
 

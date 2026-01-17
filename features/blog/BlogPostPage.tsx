@@ -70,7 +70,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                         {post.categories && post.categories.length > 0 && (
                             <div className="post-hero__badges">
                                 {post.categories.map((cat, index) => (
-                                    <span key={index} className="post-hero__badge">
+                                    <span key={index} className="post-hero__badge text-tiny-bold">
                                         {cat}
                                     </span>
                                 ))}
@@ -95,8 +95,8 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                                         </div>
                                     )}
                                     <div className="post-hero__author-col">
-                                        <span className="post-hero__label">Autor</span>
-                                        <span className="post-hero__name">{post.author.name}</span>
+                                        <span className="post-hero__label text-tiny-normal">Autor</span>
+                                        <span className="post-hero__name text-regular-bold">{post.author.name}</span>
                                     </div>
                                 </div>
                             )}
@@ -105,8 +105,8 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
 
                             {/* Date */}
                             <div className="post-hero__meta-item">
-                                <span className="post-hero__label">Data</span>
-                                <time dateTime={post.publishedAt} className="post-hero__date">
+                                <span className="post-hero__label text-tiny-normal">Data</span>
+                                <time dateTime={post.publishedAt} className="post-hero__date text-regular-medium">
                                     {new Date(post.publishedAt).toLocaleDateString("pl-PL", {
                                         day: "numeric",
                                         month: "long",
@@ -119,8 +119,8 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
 
                             {/* Reading Time */}
                             <div className="post-hero__meta-item">
-                                <span className="post-hero__label">Czas</span>
-                                <span className="post-hero__time">
+                                <span className="post-hero__label text-tiny-normal">Czas</span>
+                                <span className="post-hero__time text-regular-medium">
                                     {readingTime}
                                 </span>
                             </div>
@@ -145,7 +145,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                 <div className="post-content">
                     {/* Excerpt as Lead */}
                     {post.excerpt && (
-                        <p className="post-lead">{post.excerpt}</p>
+                        <p className="post-lead text-large-medium">{post.excerpt}</p>
                     )}
 
                     <PortableText value={post.body} />
@@ -153,12 +153,12 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                     {/* Related Services CTA */}
                     {post.relatedServices && post.relatedServices.length > 0 && (
                         <div className="post-cta">
-                            <h3 className="post-cta__title">Sprawdź również naszą ofertę</h3>
+                            <h3 className="post-cta__title heading-h3">Sprawdź również naszą ofertę</h3>
                             <div className="post-cta__items">
                                 {post.relatedServices.map((service, index) => (
                                     <div key={index} className="post-cta__item">
-                                        <span className="post-cta__service">{service.title}</span>
-                                        <a href={service.url} className="post-cta__button">
+                                        <span className="post-cta__service text-medium-medium">{service.title}</span>
+                                        <a href={service.url} className="post-cta__button text-small-bold">
                                             Zobacz
                                         </a>
                                     </div>
@@ -170,15 +170,15 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                     {/* FAQ Section */}
                     {post.faq && post.faq.length > 0 && (
                         <div className="post-faq">
-                            <h3 className="post-faq__title">FAQ - Częste pytania</h3>
+                            <h3 className="post-faq__title heading-h3">FAQ - Częste pytania</h3>
                             <div className="post-faq__list">
                                 {post.faq.map((item, index) => (
                                     <details key={index} className="post-faq__item">
-                                        <summary className="post-faq__question">
+                                        <summary className="post-faq__question text-large-semi-bold">
                                             {item.question}
                                             <span className="post-faq__icon">+</span>
                                         </summary>
-                                        <div className="post-faq__answer">
+                                        <div className="post-faq__answer text-medium-normal">
                                             {item.answer}
                                         </div>
                                     </details>
@@ -192,7 +192,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                         <footer className="post-footer">
                             <div className="post-footer__tags">
                                 {post.tags.map(tag => (
-                                    <span key={tag} className="post-footer__tag">#{tag}</span>
+                                    <span key={tag} className="post-footer__tag text-small-medium">#{tag}</span>
                                 ))}
                             </div>
                         </footer>

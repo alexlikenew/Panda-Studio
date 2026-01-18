@@ -81,14 +81,15 @@ function ReelItem({ reel, isActive, isMuted, toggleMute }: ReelItemProps) {
                                 e.stopPropagation();
                                 toggleMute();
                             }}
+                            aria-label={isMuted ? "Włącz dźwięk" : "Wycisz"}
                         >
                             {isMuted ? (
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.889 16H2a1 1 0 01-1-1V9a1 1 0 011-1h3.889l5.294-4.332a.5.5 0 01.817.387v15.89a.5.5 0 01-.817.387L5.89 16zm13.13 1.95a1 1 0 01-1.414-1.415 5.5 5.5 0 000-7.778 1 1 0 011.414-1.414 7.5 7.5 0 010 10.607zM16.5 12A4.5 4.5 0 0017.82 8.82 1 1 0 1119.234 7.406 6.5 6.5 0 0116.5 16.5V12z" />
                                     <line x1="2" y1="2" x2="22" y2="22" stroke="white" strokeWidth="2" />
                                 </svg>
                             ) : (
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.889 16H2a1 1 0 01-1-1V9a1 1 0 011-1h3.889l5.294-4.332a.5.5 0 01.817.387v15.89a.5.5 0 01-.817.387L5.89 16zm14.525-4a8.5 8.5 0 00-2.091-5.594 1 1 0 10-1.536 1.282 6.5 6.5 0 011.627 4.312 6.5 6.5 0 01-1.627 4.312 1 1 0 101.536 1.282 8.5 8.5 0 002.091-5.594zm-3.5 0a5.5 5.5 0 00-1.354-3.621 1 1 0 10-1.535 1.282A3.5 3.5 0 0115.5 12a3.5 3.5 0 01-.863 2.339 1 1 0 101.535 1.282A5.5 5.5 0 0016.914 12z" />
                                 </svg>
                             )}

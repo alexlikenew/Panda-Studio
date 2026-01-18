@@ -1,0 +1,286 @@
+// =========================================
+// CONTACT PAGE PREMIUM STYLES
+// =========================================
+
+.contact-page-main {
+    background-color: $main-color;
+}
+
+// =========================================
+// HERO BANNER
+// =========================================
+.title-baner-contact {
+    background: url('/img/title-banner.png') no-repeat; // Using default for now
+    background-position: center;
+    background-size: cover;
+    height: calc(clamp(140px, 15.26vw, 280px) + clamp(64px, 5.573vw, 220px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; // For overlay if needed
+
+    // Optional overlay for better text readability
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    div {
+        z-index: 1;
+    }
+
+    h1 {
+        font-family: 'Nexa', sans-serif;
+        font-size: clamp(48px, 6.25vw, 160px);
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130%;
+        letter-spacing: -3.6px;
+        // Premium Text Gradient
+        background: linear-gradient(180deg, #fafafa 68%, rgba(153, 153, 153, 0.3) 85%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: capitalize;
+        padding-top: clamp(48px, 5vw, 150px);
+        margin: 0;
+    }
+}
+
+// =========================================
+// MAIN BENTO LAYOUT (REVISED)
+// =========================================
+.contact-section {
+    padding: 80px 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint(desktop) {
+        padding: 100px 0;
+    }
+
+    // Grid System
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        @include breakpoint(desktop) {
+            grid-template-columns: repeat(12, 1fr);
+            gap: 60px;
+        }
+    }
+
+    // LEFT COLUMN: INFO STACK (Span 5)
+    .contact-info-stack {
+        @include breakpoint(desktop) {
+            grid-column: span 5;
+        }
+
+        h2.heading-h2 {
+            margin-bottom: 2rem;
+            // Ensure contrast
+            color: $white-color;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    // INFO TILES (Cards)
+    .info-tile {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+
+        // Hover Effect
+        &:hover {
+            border-color: rgba($green-color, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+            .info-tile__icon {
+                color: $main-color;
+                background-color: $green-color;
+                transform: scale(1.1);
+            }
+        }
+
+        &__icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background-color: rgba($green-color, 0.1);
+            color: $green-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            h3 {
+                margin-bottom: 4px;
+                letter-spacing: 1px;
+            }
+
+            p,
+            a {
+                color: $light-gray;
+                // font-size removed, handled by utility class
+                transition: color 0.2s;
+            }
+
+            a:hover {
+                color: $green-color;
+            }
+
+            strong {
+                color: $white-color;
+                font-weight: 600;
+            }
+        }
+    }
+
+    // RIGHT COLUMN: FORM WRAPPER (Span 7)
+    .contact-form-wrapper {
+        @include breakpoint(desktop) {
+            grid-column: span 7;
+            width: 100%; // Wider form as requested
+            max-width: 100%;
+        }
+
+        // MINIMALIST LUXURY STYLE
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0; // Remove container padding to align with content
+
+        @include breakpoint(desktop) {
+            padding: 24px 32px; // Keep some spacing on desktop if needed, or remove completely
+            padding-left: 0; // Align left edge with text above if any
+        }
+
+        // Form specific styles
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px; // Increased gap for airy feel
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px; // Increased gap
+
+            @include breakpoint(tablet) {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+// =========================================
+// MODERN INPUTS (MINIMALIST)
+// =========================================
+.modern-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+
+    label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: 0; // Reset margin
+        font-weight: 600;
+    }
+}
+
+.modern-input {
+    width: 100%;
+    height: 40px;
+    background: transparent; // Transparent background
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); // Bottom border only
+    border-radius: 0; // Square edges
+    padding: 8px 0; // Vertical padding only
+    color: $white-color;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:focus {
+        outline: none;
+        background: transparent;
+        border-bottom-color: $green-color; // Highlight bottom border
+        box-shadow: none;
+    }
+
+    // Textarea variant
+    &--textarea {
+        height: auto;
+        min-height: 80px;
+        padding: 8px 0;
+        resize: vertical;
+    }
+}
+
+// Button Styling (Specific to this form context)
+.btn-submit-contact {
+    width: 100%;
+    height: 48px;
+    background-color: $green-color;
+    color: $main-color;
+    border: none;
+    border-radius: 4px; // Minimal radius
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+
+    &:hover:not(:disabled) {
+        background-color: lighten($green-color, 5%);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba($green-color, 0.2);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        filter: grayscale(1);
+    }
+}

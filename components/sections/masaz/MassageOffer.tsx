@@ -1,115 +1,79 @@
+import Link from "next/link";
 import Image from "next/image";
+
+// Offer Data
+const MASSAGE_OFFERS = [
+    {
+        id: 1,
+        title: "Masaż Leczniczy",
+        description: "Celowana terapia manualna niwelująca ból kręgosłupa i napięcia mięśniowe. Idealny przy pracy siedzącej oraz przewlekłych dolegliwościach.",
+        image: "/img/massage/offer-therapeutic.png",
+        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+    },
+    {
+        id: 2,
+        title: "Masaż Sportowy",
+        description: "Głęboka praca na tkankach przyspieszająca regenerację powysiłkową. Zwiększa mobilność, poprawia ukrwienie i zapobiega kontuzjom.",
+        image: "/img/massage/offer-sports.png",
+        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+    },
+    {
+        id: 3,
+        title: "Masaż Relaksacyjny",
+        description: "Ukojenie dla układu nerwowego. Delikatne techniki redukujące stres, poprawiające jakość snu i głębokie samopoczucie psychosomatyczne.",
+        image: "/img/massage/offer-relax.png",
+        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+    },
+    {
+        id: 4,
+        title: "Masaż Klasyczny",
+        description: "Wszechstronna metoda poprawiająca krążenie i elastyczność mięśni. Fundament dbania o zdrowie fizyczne i utrzymania ciała w dobrej kondycji.",
+        image: "/img/massage/offer-classic.png",
+        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+    }
+];
 
 export default function MassageOffer() {
     return (
-        <section className="services">
+        <section className="massage-section massage-offer z-10 relative">
             <div className="wrapper">
-                <div className="services__heading">
-                    <h3>
-                        <span>Nasza oferta </span>
-                    </h3>
+                <div className="massage-section__header">
+                    <p className="text-small-bold text-green uppercase tracking-wide mb-4">NASZA OFERTA</p>
+                    <h2 className="heading-h2">Rodzaje Masażu</h2>
                 </div>
-                <div className="services__box">
-                    {/* Block 1 */}
-                    <a
-                        className="services__box__link"
-                        href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <div className="services__box__link__block">
-                            <div className="services__box__link__block__title">
-                                <div className="services__box__link__block__title__image">
-                                    <Image alt="Masaż leczniczy" src="/img/masaz_leczniczy.jpg" width={60} height={60} />
-                                </div>
-                                <div className="services__box__link__block__title__heading">
-                                    Masaż leczniczy
-                                </div>
-                            </div>
-                            <div className="services__box__link__block__text">
-                                <p>
-                                    Skierowany na rozwiązywanie problemów związanych z bólem i
-                                    dyskomfortem w ciele. Pomaga w niwelowaniu napięć i
-                                    przywracaniu sprawności układu ruchu. Doskonały dla osób
-                                    zmagających się z urazami czy przewlekłymi dolegliwościami.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
 
-                    {/* Block 2 */}
-                    <a
-                        className="services__box__link"
-                        href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <div className="services__box__link__block">
-                            <div className="services__box__link__block__title">
-                                <div className="services__box__link__block__title__image">
-                                    <Image alt="Masaż sportowy" src="/img/masaze-sportowe-kontuzje.jpg" width={60} height={60} />
-                                </div>
-                                <div className="services__box__link__block__title__heading">
-                                    Masaż sportowy
-                                </div>
+                <div className="massage-offer-grid">
+                    {MASSAGE_OFFERS.map((offer) => (
+                        <article key={offer.id} className="massage-card">
+                            <div className="massage-card__image">
+                                {/* Use a placeholder if image is missing, or user needs to provide assets */}
+                                <Image
+                                    src={offer.image}
+                                    alt={offer.title}
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, 25vw"
+                                />
                             </div>
-                            <div className="services__box__link__block__text">
-                                <p>
-                                    Idealny dla osób aktywnych fizycznie, wspomaga regenerację po
-                                    treningach, poprawia wydolność i pomaga zapobiegać kontuzjom.
-                                    To nieodzowny element zdrowego trybu życia każdego sportowca.
-                                </p>
+                            <div className="massage-card__content">
+                                <h3 className="heading-h4">{offer.title}</h3>
+                                <p className="text-medium-normal">{offer.description}</p>
                             </div>
-                        </div>
-                    </a>
-
-                    {/* Block 3 */}
-                    <a
-                        className="services__box__link"
-                        href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <div className="services__box__link__block">
-                            <div className="services__box__link__block__title">
-                                <div className="services__box__link__block__title__image">
-                                    <Image alt="Masaż relaksacyjny" src="/img/masazach-relaksacyjny.jpg" width={60} height={60} />
-                                </div>
-                                <div className="services__box__link__block__title__heading">
-                                    Masaż relaksacyjny
-                                </div>
+                            <div className="massage-card__footer">
+                                <Link
+                                    href={offer.bookingUrl}
+                                    target="_blank"
+                                    className="flex items-center gap-2 text-green uppercase font-semibold text-sm tracking-wider hover:text-white transition-colors"
+                                >
+                                    Umów wizytę
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </Link>
                             </div>
-                            <div className="services__box__link__block__text">
-                                <p>
-                                    Chwila absolutnego spokoju i odprężenia. Redukuje stres,
-                                    poprawia jakość snu i pozwala zyskać nową energię do
-                                    codziennych wyzwań.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    {/* Block 4 */}
-                    <a
-                        className="services__box__link"
-                        href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
-                        target="_blank" rel="noopener noreferrer"
-                    >
-                        <div className="services__box__link__block">
-                            <div className="services__box__link__block__title">
-                                <div className="services__box__link__block__title__image">
-                                    <Image alt="Masaż klasyczny" src="/img/masaz_klasyczny.jpg" width={60} height={60} />
-                                </div>
-                                <div className="services__box__link__block__title__heading">
-                                    Masaż klasyczny
-                                </div>
-                            </div>
-                            <div className="services__box__link__block__text">
-                                <p>
-                                    Uniwersalna technika, która łączy elementy relaksu i terapii,
-                                    poprawiając krążenie, elastyczność mięśni oraz ogólną
-                                    kondycję ciała.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                        </article>
+                    ))}
                 </div>
             </div>
         </section>

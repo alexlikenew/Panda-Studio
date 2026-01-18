@@ -1,0 +1,116 @@
+// =========================================
+// COMPONENT: FAQ SECTION
+// =========================================
+
+.faq-section {
+    padding: 40px 0;
+    width: 100%;
+    position: relative; // Context for absolute positioning if needed inside
+
+    @include breakpoint(desktop) {
+        padding: 32px 0;
+    }
+
+    .faq-header {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2 {
+            color: $white-color;
+        }
+    }
+
+    .faq-list {
+        width: 100%;
+        max-width: 800px; // Or 3xl equivalent ~768px
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 24px 0;
+        transition: border-color 0.3s ease;
+
+        &:first-child {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        &.is-open {
+            border-bottom-color: rgba($green-color, 0.3);
+        }
+    }
+
+    .faq-question {
+        background: none;
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        cursor: pointer;
+        color: $white-color;
+        transition: color 0.3s ease;
+        text-align: left;
+
+        &:hover {
+            color: $green-color;
+        }
+
+        span:first-child {
+            // Title text styling handled by utility class (text-medium-bold/text-large-normal)
+            line-height: 1.4;
+        }
+    }
+
+    .faq-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        svg {
+            // Ensure distinct color or inherit
+            color: $green-color;
+        }
+    }
+
+    // Active State for Icon
+    .faq-item.is-open .faq-icon {
+        transform: rotate(45deg); // For Plus icon
+    }
+
+    .faq-answer-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s ease-out;
+        overflow: hidden;
+
+        &.open {
+            grid-template-rows: 1fr;
+        }
+    }
+
+    .faq-answer {
+        min-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.7); // $gray-light equivalent
+    }
+
+    .faq-answer-wrapper.open .faq-answer {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .faq-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

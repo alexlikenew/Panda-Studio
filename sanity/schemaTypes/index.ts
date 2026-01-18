@@ -4,7 +4,8 @@ import { knowledgeBaseType } from "@/sanity/schemaTypes/knowledgeBaseType";
 import author from "@/sanity/schemaTypes/author";
 import category from "@/sanity/schemaTypes/category";
 import { socialReel } from "@/sanity/schemaTypes/socialReel";
+import pricing from "@/sanity/schemaTypes/pricing";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [postType, author, category, knowledgeBaseType, socialReel],
+  types: [postType, author, category, knowledgeBaseType, socialReel, pricing],
 }

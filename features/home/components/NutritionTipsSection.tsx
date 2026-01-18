@@ -1,25 +1,26 @@
 import Image from 'next/image';
-
 const nutritionData = {
-    title: "What You Eat Fuels How You Train",
+    title: "Odżywianie to Twoje Paliwo",
     cards: [
         {
             id: 'eat-more',
-            badge: "Eat More",
+            badge: "Wybieraj Świadomie",
             badgeType: 'good',
             imageSrc: '/img/nutrition/eat-more.png',
-            imageAlt: 'Healthy meal prep with fresh lean protein and vegetables',
-            textP1: "Fitness is only one part of the equation—nutrition plays a crucial role. Your body needs quality fuel to perform and recover.",
-            textP2: "Incorporating lean proteins, complex carbs, fiber-rich vegetables, and healthy fats can help you maximize workout results. Staying hydrated is equally important."
+            // Alt tekst pod SEO: opisuje co jest na zdjęciu + kontekst treningowy
+            imageAlt: 'Zdrowy, zbilansowany posiłek z chudym białkiem i warzywami wspierający regenerację',
+            textP1: "Trening to tylko połowa sukcesu – kluczową rolę odgrywa odżywianie. Twój organizm potrzebuje wysokiej jakości paliwa, aby budować formę.",
+            textP2: "Postaw na chude białko, węglowodany złożone i zdrowe tłuszcze. Taka dieta maksymalizuje efekty ćwiczeń i przyspiesza regenerację mięśni."
         },
         {
             id: 'eat-less',
-            badge: "Eat Less",
+            badge: "Ograniczaj",
             badgeType: 'bad',
             imageSrc: '/img/nutrition/eat-less.png',
-            imageAlt: 'Fast food burger and soda to avoid',
-            textP1: "On the flip side, consuming too many sugary drinks, processed snacks, or fast food can hinder your progress.",
-            textP2: "A good rule of thumb? Eat real, whole foods and avoid empty calories. Balanced nutrition supports energy, recovery, and long-term health."
+            // Alt tekst pod SEO: konkretne negatywne przykłady
+            imageAlt: 'Wysokoprzetworzone jedzenie typu fast food i słodzone napoje gazowane',
+            textP1: "Nadmiar cukru, przetworzone przekąski i fast-foody mogą spowolnić Twój metabolizm i zniweczyć wysiłek włożony w trening.",
+            textP2: "Złota zasada? Unikaj pustych kalorii. Wybieraj nieprzetworzone produkty, które dają realną energię, a nie tylko chwilowy skok cukru."
         }
     ]
 };

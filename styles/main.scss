@@ -3,6 +3,7 @@
 @import './base/typography';
 @import './base/base';
 @import './components/buttons';
+@import './components/faq-section';
 @import './pages/blog';
 @import './pages/blog-post';
 @import './pages/dictionary';
@@ -17,79 +18,16 @@
 @import './sections/knowledge-base';
 @import './sections/random-news';
 @import './sections/random-dictionary';
+@import './sections/pricing-tables';
+@import 'pages/contact';
+@import 'sections/classes-category';
+@import 'sections/nutrition-tips';
+@import 'sections/impact-stats';
+@import 'sections/reviews';
+@import 'sections/services-accordion';
+@import 'sections/services';
+@import 'pages/massage';
 
-
-
-// FONTS
-
-
-// PRELOADER
-#preloader {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	display: grid;
-	align-items: center;
-	justify-content: center;
-	z-index: 9999999;
-	background: #1e1f20;
-	transition: opacity 1.5s;
-}
-
-#preloader .preloader {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#preloader .preloader__box {
-	width: 120px;
-	height: 120px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
-
-#preloader .preloader__box span {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	position: absolute;
-	border: 1px solid #d7fb00;
-	pointer-events: none;
-	animation: preloader 1.5s linear infinite;
-}
-
-#preloader .preloader__box span:nth-of-type(1) {
-	border-radius: 48% 52% 68% 32%/46% 40% 60% 54%;
-	box-shadow: 0px 0px 10px 0px rgba(213, 251, 0, 0.829), inset 0px 0px 10px 0px rgba(213, 251, 0, 0.829);
-}
-
-#preloader .preloader__box span:nth-of-type(2) {
-	animation-direction: reverse;
-	border-radius: 27% 73% 64% 36%/69% 39% 61% 31%;
-	box-shadow: 0px 0px 10px 0px rgba(213, 251, 0, 0.5), inset 0px 0px 10px 0px rgba(213, 251, 0, 0.5);
-}
-
-#preloader .preloader__box span:nth-of-type(3) {
-	animation-duration: 3s;
-	border-radius: 58% 42% 30% 70%/38% 59% 41% 62%;
-	box-shadow: 0px 0px 10px 0px rgba(213, 251, 0, 0.7), inset 0px 0px 10px 0px rgba(213, 251, 0, 0.7);
-}
-
-@keyframes preloader {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-}
 
 // Shimmer Animation for Text
 @keyframes shimmer {
@@ -777,115 +715,6 @@ dialog .closeDialog {
 	}
 }
 
-// SECTION CONTACT
-.contact {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	.wrapper {
-		max-width: 1600px;
-		width: 100%;
-		padding: 16px 16px;
-	}
-
-	padding-top: 2rem;
-
-	&__info {
-		h2 {
-			font-weight: 500;
-			margin-bottom: 8px;
-			color: $green-color;
-		}
-
-		p {
-			font-family: 'Poppins', sans-serif;
-			font-size: clamp(16px, 0.938vw, 22px);
-			font-style: normal;
-			font-weight: 400;
-			line-height: 150%;
-		}
-
-		&__details {
-			padding-top: 3rem;
-		}
-	}
-
-	&__form {
-		margin-top: 5rem;
-		padding: clamp(16px, 1.667vw, 48px);
-		border: 1px solid #92949f;
-		border-radius: clamp(18px, 1.25vw, 48px);
-		background: #1e1f20;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 3rem;
-
-		h2 {
-			font-weight: 500;
-			margin-bottom: 8px;
-			color: $green-color;
-		}
-
-		p {
-			font-family: 'Poppins', sans-serif;
-			font-size: clamp(16px, 0.938vw, 22px);
-			font-style: normal;
-			font-weight: 400;
-			line-height: 150%;
-		}
-
-		.form-control {
-			padding: clamp(12px, 1.042vw, 24px) clamp(16px, 1.25vw, 40px);
-			border-radius: clamp(8px, 0.625vw, 24px);
-			border: 0.5px solid #92949f;
-			background: #1e1f20;
-			// Font styles removed, use .text-medium-normal
-			font-size: 16px; // Keeping base size if needed, or remove if class handles it
-			font-weight: 400;
-			line-height: 150%;
-			position: relative;
-			color: #fafafa;
-			box-shadow: none;
-			width: 100%;
-		}
-
-		&__input-block {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			gap: 3rem;
-			margin-top: 2rem;
-		}
-
-		&__input-block svg {
-			position: absolute;
-			top: 20px;
-			right: clamp(16px, 1.25vw, 32px);
-		}
-
-		button {
-			margin-top: 3rem;
-			border-radius: clamp(8px, 0.625vw, 24px);
-			border: 0;
-			padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
-			z-index: 0;
-			background-color: #d7fb00;
-			background-image: none;
-			color: #1e1f20;
-			cursor: pointer;
-			// Font styles removed, use .text-medium-bold
-			line-height: 120%;
-
-			text-transform: uppercase;
-		}
-	}
-}
 
 // FOOTER
 .footer {
@@ -1375,10 +1204,3 @@ dialog .closeDialog {
 		align-items: center;
 	}
 }
-
-@import 'sections/classes-category';
-@import 'sections/nutrition-tips';
-@import 'sections/impact-stats';
-@import 'sections/reviews';
-@import 'sections/services-accordion';
-@import 'sections/services';

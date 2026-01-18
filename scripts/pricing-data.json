@@ -1,0 +1,133 @@
+[
+    {
+        "title": "Trening Personalny",
+        "subtitle": "Indywidualna opieka trenerska",
+        "type": "training",
+        "packages": [
+            {
+                "name": "1 trening (60min)",
+                "price": "150zł",
+                "features": [
+                    "Diagnostyka ruchowa",
+                    "Indywidualne podejście",
+                    "Pełna godzina zegarowa"
+                ],
+                "isPopular": false
+            },
+            {
+                "name": "Pakiet 4 treningów",
+                "price": "560zł",
+                "features": [
+                    "140zł za trening",
+                    "Idealny na start",
+                    "Nauka poprawnej techniki"
+                ],
+                "isPopular": false
+            },
+            {
+                "name": "Pakiet 8 treningów",
+                "price": "1080zł",
+                "features": [
+                    "135zł za trening",
+                    "Regularność (2x w tygodniu)",
+                    "Stały monitoring postępów"
+                ],
+                "isPopular": true
+            },
+            {
+                "name": "Pakiet 12 treningów",
+                "price": "1560zł",
+                "features": [
+                    "130zł za trening",
+                    "Maksymalne efekty",
+                    "Kompleksowa opieka"
+                ],
+                "isPopular": false
+            }
+        ]
+    },
+    {
+        "title": "Trening w Parach",
+        "subtitle": "Trenuj z partnerem / partnerką",
+        "type": "training",
+        "packages": [
+            {
+                "name": "1 trening (60min)",
+                "price": "220zł",
+                "features": [
+                    "110zł za osobę",
+                    "Wspólna motywacja",
+                    "Rywalizacja i zabawa"
+                ],
+                "isPopular": false
+            },
+            {
+                "name": "Pakiet 4 treningów",
+                "price": "840zł",
+                "features": [
+                    "105zł za osobę / trening",
+                    "Wspólny czas",
+                    "Efektywny trening duo"
+                ],
+                "isPopular": false
+            },
+            {
+                "name": "Pakiet 8 treningów",
+                "price": "1640zł",
+                "features": [
+                    "102,50zł za osobę / trening",
+                    "Regularne spotkania",
+                    "Wspólne budowanie formy"
+                ],
+                "isPopular": true
+            },
+            {
+                "name": "Pakiet 12 treningów",
+                "price": "2400zł",
+                "features": [
+                    "100zł za osobę / trening",
+                    "Najkorzystniejsza oferta",
+                    "Długoterminowa współpraca"
+                ],
+                "isPopular": false
+            }
+        ]
+    },
+    {
+        "title": "Zajęcia w Grupach",
+        "subtitle": "Małe grupy, duża energia",
+        "type": "training",
+        "packages": [
+            {
+                "name": "Wejście jednorazowe",
+                "price": "70zł",
+                "features": [
+                    "Cena stała",
+                    "Bez długoterminowych umów",
+                    "Kameralna grupa",
+                    "Opieka trenera"
+                ],
+                "isPopular": false
+            }
+        ]
+    },
+    {
+        "title": "Masaż i Fizjoterapia",
+        "subtitle": "Regeneracja i zdrowie",
+        "type": "massage",
+        "bookingUrl": "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow",
+        "packages": [
+            {
+                "name": "Rezerwacja Wizyty",
+                "price": "Booksy",
+                "features": [
+                    "Masaż Tkanek Głębokich",
+                    "Masaż Sportowy",
+                    "Fizjoterapia",
+                    "Sprawdź wolne terminy"
+                ],
+                "isPopular": false
+            }
+        ]
+    }
+]

@@ -1,34 +1,46 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function MassageWelcome() {
     return (
-        <section className="testimonials testimonials--masaz">
+        <section className="massage-section massage-welcome">
             <div className="wrapper">
-                <div className="testimonials__box">
-                    <div className="testimonials__box__image">
+                <div className="massage-split">
+                    <div className="massage-split__image">
                         <Image
-                            alt="Zdjecie silowni Fit Panda Studio"
-                            src="/img/panda-masaz-ivan-mishchenko-section-masaz.jpg"
-                            width={500}
-                            height={350}
-                            style={{ width: "100%", height: "auto" }}
+                            src="/img/massage/studio-interior.png"
+                            alt="Gabinet masażu Panda Studio Rzeszów"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
-                    <div className="testimonials__box__text">
-                        <h2>Witamy w naszym Studiu Masażu Panda</h2>
-                        <p>
-                            W kameralnej i przytulnej przestrzeni naszego studia oferujemy
-                            profesjonalne masaże, które wspierają regenerację, relaks i
-                            profilaktykę zdrowia. Masaż to nie tylko chwila wytchnienia, ale
-                            przede wszystkim inwestycja w zdrowie Twojego ciała i umysłu.
+                    <div className="massage-split__content">
+                        <p className="text-small-bold text-green uppercase tracking-wide mb-4">
+                            Strefa Regeneracji
                         </p>
-                        <p>
-                            Zapraszamy do świata, gdzie troska o Twoją formę i samopoczucie
-                            jest naszym priorytetem.
+                        <h2 className="heading-h2">
+                            Witamy w Świecie <br />
+                            <span className="text-white-dim">Profesjonalnej Odnowy</span>
+                        </h2>
+                        <p className="text-medium-normal text-gray mb-8">
+                            W Panda Studio wiemy, że trening to tylko połowa sukcesu. Prawdziwy progres zaczyna się tam, gdzie kończy się wysiłek – w regeneracji. Stworzyliśmy przestrzeń, w której Twoje ciało odzyska równowagę, a umysł spokój.
                         </p>
-                        <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" target="_blank" rel="noopener noreferrer">
-                            Zarezerwuj
-                        </a>
+                        <p className="text-medium-normal text-gray mb-10">
+                            Nasi terapeuci łączą techniki manualne z wiedzą fizjoterapeutyczną, aby skutecznie eliminować ból, napięcia i stres. To nie jest zwykły masaż – to inwestycja w Twoją sprawność na lata.
+                        </p>
+
+                        <Link
+                            href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+                            target="_blank"
+                            className="btn-primary inline-flex items-center gap-2"
+                        >
+                            Umów wizytę przez Booksy
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </Link>
                     </div>
                 </div>
             </div>

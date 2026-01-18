@@ -61,7 +61,7 @@ function ReelItem({ reel, isActive, isMuted, toggleMute }: ReelItemProps) {
     }, [isMuted]);
 
     return (
-        <div className={`community-reels__slide ${isActive ? 'is-active' : ''}`}>
+        <div id='community-reels' className={`community-reels__slide ${isActive ? 'is-active' : ''}`}>
             <div className="community-reels__slide-inner">
                 {reel.videoUrl ? (
                     <>

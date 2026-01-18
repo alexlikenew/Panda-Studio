@@ -1,0 +1,162 @@
+// =========================================
+// PRICING TABLES SECTION (Category-Based)
+// =========================================
+
+.pricing-tables-container {
+    width: 100%;
+}
+
+.pricing-section {
+    padding: 100px 0; // Increased padding for "breathing room"
+
+    &__header {
+        text-align: center;
+        margin-bottom: 70px;
+
+        p {
+            color: $green-color;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px; // Elegant spacing
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem; // Larger impact
+        }
+    }
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px; // Larger gap for separation
+
+    @include breakpoint(desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.pricing-category-card {
+    // 1. CARD CONTAINER
+    background: linear-gradient(145deg, #161617 0%, #060606 100%); // Subtle deep dark gradient
+    border: 1px solid rgba(255, 255, 255, 0.05); // Very subtle refined border
+    border-radius: 24px; // Modern smooth radius
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); // Smooth luxury float
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); // Deep tangible shadow
+
+    // 4. HOVER INTERACTION
+    &:hover {
+        transform: translateY(-8px); // Lift up
+        border-color: rgba($green-color, 0.3); // Border glow
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba($green-color, 0.1); // Intense shadow + faint glow ring
+    }
+
+    // 2. CARD HEADER
+    &__header {
+        margin-bottom: 35px; // More spacing
+        text-align: center;
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05); // Ultra subtle divider
+        position: relative;
+
+        h3 {
+            color: $white-color;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+
+        }
+
+        // Sleek accent element below title
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; // On the border line
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: $green-color;
+            border-radius: 2px;
+        }
+    }
+
+    &__list {
+        flex-grow: 1;
+        margin-bottom: 40px;
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+}
+
+// 3. PACKAGE LIST
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0; // Increased vertical padding
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03); // Barely visible separator
+    transition: background-color 0.2s ease;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &__name {
+        color: rgba(255, 255, 255, 0.85);
+        flex: 1;
+        padding-right: 20px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    &__price {
+        color: $green-color;
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 1.1rem; // Distinct pricing
+        text-shadow: 0 0 10px rgba($green-color, 0.2); // Subtle glow on price
+    }
+}
+
+.pricing-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid rgba($green-color, 0.5);
+    color: $white-color;
+
+    &.w-full {
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: $green-color;
+        color: $main-color;
+        border-color: $green-color;
+        box-shadow: 0 0 20px rgba($green-color, 0.4); // Button glow
+        transform: translateY(-2px);
+    }
+}

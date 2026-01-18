@@ -50,12 +50,12 @@ const ServicesAccordionSection = () => {
                         </h2>
 
                         <div className="services-accordion__buttons">
-                            <Link href="/oferta" className="btn-primary-pill">
+                            <Link href="/cennik" className="btn-primary-pill">
                                 SPRAWDŹ OFERTĘ
                             </Link>
-                            <button className="btn-secondary-play">
+                            <Link href="/#community-reels" className="btn-secondary-play">
                                 ZOBACZ WIDEO <span className="icon-play">▶</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

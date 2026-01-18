@@ -7,7 +7,8 @@ export default function BooksyCTA() {
             <div className="booksy-cta__bg">
                 <Image
                     src="/img/booksy-cta-bg.webp"
-                    alt="Gym interior background"
+                    alt="Tło z wnętrzem siłowni Panda Studio"
+                    title="Profesjonalna strefa treningowa"
                     fill
                     quality={90}
                     priority
@@ -24,6 +25,7 @@ export default function BooksyCTA() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="booksy-cta__button text-medium-bold"
+                        title="Przejdź do Booksy i umów wizytę"
                     >
                         UMÓW WIZYTĘ
                     </Link>

@@ -89,6 +89,7 @@ export default function Services() {
                                             <Image
                                                 src={item.image}
                                                 alt={item.title}
+                                                title={`Usługa: ${item.title}`}
                                                 fill
                                                 style={{ objectFit: 'cover' }}
                                                 sizes="(max-width: 768px) 100vw, 800px"

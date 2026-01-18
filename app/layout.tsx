@@ -1,9 +1,79 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Inter, Poppins } from "next/font/google"; // Added fonts
 import "@/styles/main.scss";
+import Navbar from "@/widgets/Navbar"; // Added Navbar
+import Footer from "@/widgets/Footer"; // Added Footer
+import ClientProviders from "@/providers/ClientProviders"; // Added Providers
+
+const inter = Inter({
+    variable: "--font-inter",
+    subsets: ["latin"],
+    display: "swap",
+});
+
+const poppins = Poppins({
+    variable: "--font-poppins",
+    weight: ["400", "600", "700"],
+    subsets: ["latin"],
+    display: "swap",
+});
+
+export const viewport: Viewport = {
+    themeColor: "#0c0c0d",
+    width: "device-width",
+    initialScale: 1,
+};
 
 export const metadata: Metadata = {
-    title: "Panda Studio - Trening Personalny i Masaż Rzeszów",
-    description: "Twoje miejsce na mapie Rzeszowa. Treningi personalne, masaż, fizjoterapia. Zadbaj o swoje zdrowie z profesjonalistami.",
+    metadataBase: new URL("https://pandastudio.rzeszow.pl"),
+    title: {
+        default: "FIT Panda Studio Treningu & Masażu Rzeszów",
+        template: "%s | FIT Panda Studio",
+    },
+    description:
+        "Panda Studio Team – profesjonalne studio treningowe w Rzeszowie. Treningi personalne, grupowe i funkcjonalne. Zadbaj o formę z doświadczonym trenerem! Rehabilitacja ruchowa i masaż.",
+    keywords: [
+        "studio treningowe Rzeszów",
+        "trener personalny",
+        "siłownia Rzeszów",
+        "Panda Studio Team",
+        "odchudzanie Rzeszów",
+        "rehabilitacja ruchowa Rzeszów",
+        "masaż",
+        "fitness",
+        "trening funkcjonalny",
+        "zdrowy kręgosłup",
+    ],
+    authors: [{ name: "Panda Studio Team" }],
+    creator: "Panda Studio Team",
+    publisher: "Panda Studio Team",
+    openGraph: {
+        type: "website",
+        locale: "pl_PL",
+        url: "https://panda-studio-puce.vercel.app/",
+        siteName: "FIT Panda Studio",
+        title: "FIT Panda Studio Treningu & Masażu Rzeszów",
+        description:
+            "Panda Studio Team – profesjonalne studio treningowe w Rzeszowie. Treningi personalne, grupowe i funkcjonalne.",
+        images: [
+            {
+                url: "/img/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Panda Studio Team Rzeszów",
+            },
+        ],
+    },
+    icons: {
+        icon: "/favicon/favicon-32x32.png",
+        apple: "/favicon/apple-touch-icon.png",
+    },
+    other: {
+        "geo.region": "PL-PK",
+        "geo.placename": "Rzeszów",
+        "geo.position": "50.0413;21.9990",
+        ICBM: "50.0413, 21.9990",
+    },
     robots: {
         index: false,
         follow: false,
@@ -101,12 +171,16 @@ export default function RootLayout({
 
     return (
         <html lang="pl">
-            <body className="antialiased">
+            <body className={`${inter.variable} ${poppins.variable} antialiased`}>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
-                {children}
+                <ClientProviders>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                </ClientProviders>
             </body>
         </html>
     );

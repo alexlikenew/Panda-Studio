@@ -32,6 +32,7 @@ export default function TrainingOffer() {
                         <div className="testimonials__box__block__image">
                             <Image
                                 alt="Dziewczyna trenuje Crossfit"
+                                title="Trening spalający tkankę tłuszczową - Panda Studio"
                                 src="/img/panda_studio_spalania.png"
                                 width={500}
                                 height={350}
@@ -44,7 +45,8 @@ export default function TrainingOffer() {
                     <div className="testimonials__box__block">
                         <div className="testimonials__box__block__image">
                             <Image
-                                alt="Mezczyzna robi trening funkcjonalny"
+                                alt="Mężczyzna wykonuje trening funkcjonalny"
+                                title="Trening funkcjonalny budujący siłę i sprawność"
                                 src="/img/panda_studio_bodybuilding.png"
                                 width={500}
                                 height={350}
@@ -81,7 +83,8 @@ export default function TrainingOffer() {
                         </div>
                         <div className="testimonials__box__block__image">
                             <Image
-                                alt="Trening dwoch osob w parach"
+                                alt="Trening dwóch osób w parach"
+                                title="Wspólny trening w parach (Duo) w Panda Studio"
                                 src="/img/panda_studio_crossfit.png"
                                 width={500}
                                 height={350}
@@ -94,7 +97,8 @@ export default function TrainingOffer() {
                     <div className="testimonials__box__block">
                         <div className="testimonials__box__block__image">
                             <Image
-                                alt="Zdjecie rechabilitacji mezczyzny"
+                                alt="Zdjęcie rehabilitacji mężczyzny"
+                                title="Rehabilitacja ruchowa i powrót do sprawności po kontuzji"
                                 src="/img/panda_studio_rehabiltacja.jpg"
                                 width={500}
                                 height={350}
@@ -134,7 +138,8 @@ export default function TrainingOffer() {
                         </div>
                         <div className="testimonials__box__block__image">
                             <Image
-                                alt="Zdjecie masazu mezczyzny"
+                                alt="Zdjęcie masażu mężczyzny"
+                                title="Zajęcia grupowe i indywidualne w studiu"
                                 src="/img/panda_studio_grupy.jpg"
                                 width={500}
                                 height={350}

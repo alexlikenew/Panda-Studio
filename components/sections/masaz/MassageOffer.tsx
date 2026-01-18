@@ -50,6 +50,7 @@ export default function MassageOffer() {
                                 <Image
                                     src={offer.image}
                                     alt={offer.title}
+                                    title={`Oferta: ${offer.title} w Panda Studio`}
                                     fill
                                     className="object-cover"
                                     sizes="(max-width: 768px) 100vw, 25vw"
@@ -63,6 +64,7 @@ export default function MassageOffer() {
                                 <Link
                                     href={offer.bookingUrl}
                                     target="_blank"
+                                    title={`Umów wizytę na ${offer.title.toLowerCase()} w Panda Studio`}
                                     className="flex items-center gap-2 text-green uppercase font-semibold text-sm tracking-wider hover:text-white transition-colors"
                                 >
                                     Umów wizytę

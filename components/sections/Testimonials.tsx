@@ -13,6 +13,7 @@ export default function Testimonials() {
                     <div className="testimonials__box__image">
                         <Image
                             alt="Zdjecie silowni Fit Panda Studio"
+                            title="Wnętrze Panda Studio przy ul. Myśliwskiej"
                             src="/img/panda_studio_silownia.jpg"
                             width={600}
                             height={400}
@@ -32,7 +33,7 @@ export default function Testimonials() {
                             miejsce, gdzie można skupić się na swoich celach bez zgiełku
                             typowego dla dużych siłowni.&quot;
                         </p>
-                        <Link href="/contact" className="text-medium-bold">Skontaktuj się</Link>
+                        <Link href="/contact" className="text-medium-bold" title="Skontaktuj się i dołącz do zadowolonych klientów">Skontaktuj się</Link>
                     </div>
                 </div>
             </div>

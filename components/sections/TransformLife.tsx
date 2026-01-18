@@ -7,10 +7,11 @@ export default function TransformLife() {
             <div className="wrapper">
                 <div className="services-split__grid">
                     {/* Card 1: Training (Internal Link) */}
-                    <Link href="/contact" className="services-split__card">
+                    <Link href="/contact" className="services-split__card" title="Umów się na trening personalny przy ul. Myśliwskiej">
                         <Image
                             src="/img/panda_studio_trening.webp"
                             alt="Trening Personalny w Panda Studio"
+                            title="Sala treningowa Panda Studio - Rzeszów ul. Myśliwska"
                             fill
                             className="services-split__image"
                             sizes="(max-width: 768px) 100vw, 50vw"
@@ -31,10 +32,12 @@ export default function TransformLife() {
                         className="services-split__card"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title="Zarezerwuj masaż na Booksy - Gabinet przy ul. Podkarpackiej"
                     >
                         <Image
                             src="/img/panda_studio_massage.webp"
                             alt="Masaż i Regeneracja w Panda Studio"
+                            title="Gabinet masażu Panda Studio - Rzeszów ul. Podkarpacka"
                             fill
                             className="services-split__image"
                             sizes="(max-width: 768px) 100vw, 50vw"

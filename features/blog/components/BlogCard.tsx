@@ -13,7 +13,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 
     return (
         <article className="blog-card">
-            <Link href={`/blog/${post.slug.current}`} className="blog-card__link">
+            <Link href={`/blog/${post.slug.current}`} className="blog-card__link" title={`Przeczytaj artykuł: ${post.title}`}>
                 <div className="blog-card__image-box">
                     {post.mainImage ? (
                         <Image

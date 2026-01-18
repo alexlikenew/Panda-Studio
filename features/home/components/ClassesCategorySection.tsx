@@ -41,6 +41,7 @@ export default function ClassesCategorySection() {
                             key={item.id}
                             href={item.linkUrl}
                             className="classes-section__card"
+                            title={`Sprawdź szczegóły zajęć: ${item.title}`}
                         >
                             <div className="classes-section__card-content">
                                 <div className="classes-section__card-content">
@@ -77,7 +78,8 @@ export default function ClassesCategorySection() {
                                 <div className="classes-section__card-overlay" />
                                 <Image
                                     src={item.imageSrc}
-                                    alt={`${item.title} class`}
+                                    alt={`Zajęcia grupowe: ${item.title}`}
+                                    title={`Zdjęcie ilustrujące zajęcia: ${item.title}`}
                                     fill
                                     className="classes-section__image"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"

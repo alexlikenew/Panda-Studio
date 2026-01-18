@@ -88,6 +88,7 @@ export default function MassageBenefits() {
                         <Image
                             src="/img/massage/benefits-detail.png"
                             alt="Korzyści z masażu w Panda Studio"
+                            title="Szczegółowy opis korzyści płynących z masażu"
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 50vw"

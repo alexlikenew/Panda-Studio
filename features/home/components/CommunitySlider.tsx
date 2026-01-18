@@ -99,6 +99,7 @@ function ReelItem({ reel, isActive, isMuted, toggleMute }: ReelItemProps) {
                     <img
                         src={reel.thumbnail}
                         alt={reel.thumbnailAlt}
+                        title={`Miniaturka wideo od użytkownika ${reel.username}`}
                         className="community-reels__image"
                     />
                 )}
@@ -111,6 +112,7 @@ function ReelItem({ reel, isActive, isMuted, toggleMute }: ReelItemProps) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="community-reels__username text-small-bold"
+                        title={`Zobacz profil ${reel.username} na Instagramie/Facebooku`}
                     >
                         {reel.username}
                     </a>

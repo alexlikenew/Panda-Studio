@@ -14,15 +14,16 @@ export default function DialogOne() {
                     <h2 className="heading-h3">Trening</h2>
                     <Image
                         alt="Dziewczyna trenuje Crossfit"
+                        title="Trening funkcjonalny - Panda Studio"
                         className="showElement"
                         src="/img/panda_studio_spalania.png"
                         width={200}
                         height={200}
                     />
                     <div className="text">
-                        <p className="text__title text-small-bold">Address:</p>
+                        <p className="text__title text-small-bold">Adres:</p>
                         <p className="text__content text-medium-normal">
-                            <a href="https://g.co/kgs/P3n3EtW">
+                            <a href="https://g.co/kgs/P3n3EtW" title="Zobacz treningi w Mapach Google">
                                 Myśliwska 255, Rzeszów, PL 35-242
                             </a>
                         </p>
@@ -32,7 +33,7 @@ export default function DialogOne() {
                         <a
                             className="text__content text-medium-normal"
                             href="tel:694906749"
-                            title="Zarezerwuj"
+                            title="Zadzwoń do nas: 694 906 749"
                         >
                             694 906 749
                         </a>
@@ -51,16 +52,17 @@ export default function DialogOne() {
                     <h2 className="heading-h3">Masaż</h2>
                     <Image
                         alt="Zdjecie masazu mezczyzny"
+                        title="Masaż relaksacyjny i leczniczy - Panda Studio"
                         className="showElement"
                         src="/img/panda_studio_massage_mini_268.jpg"
                         width={200}
                         height={200}
                     />
                     <div className="text">
-                        <p className="text__title text-small-bold">Address:</p>
+                        <p className="text__title text-small-bold">Adres:</p>
                         <p className="text__content text-medium-normal">
-                            <a href="https://g.co/kgs/P3n3EtW">
-                                Myśliwska 255, Rzeszów, PL 35-242
+                            <a href="https://g.co/kgs/MBEjdC3" title="Zobacz masaże w Mapach Google">
+                                Podkarpacka 12a, Rzeszów, PL 35-082
                             </a>
                         </p>
                     </div>
@@ -69,7 +71,7 @@ export default function DialogOne() {
                         <a
                             className="text__content text-medium-normal"
                             href="tel:694906749"
-                            title="Zarezerwuj"
+                            title="Zadzwoń do nas: 694 906 749"
                         >
                             694 906 749
                         </a>
@@ -77,7 +79,7 @@ export default function DialogOne() {
                     <a
                         className="btn-reservation text-medium-bold"
                         href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
-                        title="Zarezerwuj"
+                        title="Zarezerwuj wizytę na Booksy"
                     >
                         Zarezerwuj
                     </a>

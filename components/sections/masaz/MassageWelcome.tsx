@@ -10,6 +10,7 @@ export default function MassageWelcome() {
                         <Image
                             src="/img/massage/studio-interior.png"
                             alt="Gabinet masażu Panda Studio Rzeszów"
+                            title="Wnętrze gabinetu masażu Panda Studio przy ul. Podkarpackiej"
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 50vw"
@@ -33,6 +34,7 @@ export default function MassageWelcome() {
                         <Link
                             href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
                             target="_blank"
+                            title="Zarezerwuj wizytę w gabinecie masażu przez Booksy"
                             className="btn-primary inline-flex items-center gap-2"
                         >
                             Umów wizytę przez Booksy

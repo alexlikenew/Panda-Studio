@@ -42,6 +42,7 @@ export default function NutritionTipsSection() {
                                     <Image
                                         src={card.imageSrc}
                                         alt={card.imageAlt}
+                                        title={`Ilustracja porady: ${card.badge}`}
                                         fill
                                         className="nutrition-tips__image"
                                         sizes="(max-width: 768px) 100vw, 50vw"

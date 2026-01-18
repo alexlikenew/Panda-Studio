@@ -19,6 +19,7 @@ export default function PricingAction({ type, bookingUrl, className = "" }: Pric
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`pricing-btn ${className}`}
+                title="Zarezerwuj teraz"
             >
                 Zarezerwuj
             </Link>
@@ -29,6 +30,7 @@ export default function PricingAction({ type, bookingUrl, className = "" }: Pric
         <button
             onClick={openModal}
             className={`pricing-btn ${className}`}
+            aria-label="Otwórz formularz rezerwacji"
         >
             Zarezerwuj
         </button>

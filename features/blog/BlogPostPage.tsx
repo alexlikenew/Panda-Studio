@@ -59,7 +59,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
 
                 <div className="wrapper">
                     {/* Back Link */}
-                    <Link href="/blog" className="back-link">
+                    <Link href="/blog" className="back-link" title="Wróć do listy wszystkich artykułów">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M19 12H5" />
                             <path d="M12 19l-7-7 7-7" />
@@ -162,7 +162,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                                     {post.relatedServices.map((service, index) => (
                                         <div key={index} className="post-cta__item">
                                             <span className="post-cta__service text-medium-medium">{service.title}</span>
-                                            <a href={service.url} className="post-cta__button text-small-bold">
+                                            <a href={service.url} className="post-cta__button text-small-bold" title={`Zobacz szczegóły usługi: ${service.title}`}>
                                                 Zobacz
                                             </a>
                                         </div>

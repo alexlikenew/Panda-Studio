@@ -11,6 +11,7 @@ export default function Hero() {
         <Image
           src="/img/panda-masaz-ivan-mishchenko-glowna.webp"
           alt="Panda Studio - Trening, Masaż, Fizjoterapia"
+          title="Panda Studio - Profesjonalne studio treningu i masażu w Rzeszowie"
           fill
           priority
           // Opcja 1 (Najpewniejsza dla jakości): Wyłącza optymalizację Next.js.
@@ -46,7 +47,7 @@ export default function Hero() {
             </h2>
           </div>
 
-          <Link href="/kontakt" className="btn-primary text-small-bold">
+          <Link href="/kontakt" className="btn-primary text-small-bold" title="Skontaktuj się z nami i umów pierwszy trening">
             SPRÓBUJ TERAZ
           </Link>
 

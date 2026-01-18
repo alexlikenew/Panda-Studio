@@ -8,7 +8,7 @@ export default function MassageWelcome() {
                 <div className="massage-split">
                     <div className="massage-split__image">
                         <Image
-                            src="/img/massage/studio-interior.png"
+                            src="/img/massage/masaz-glowna-podkarpacka.jpg"
                             alt="Gabinet masażu Panda Studio Rzeszów"
                             title="Wnętrze gabinetu masażu Panda Studio przy ul. Podkarpackiej"
                             fill

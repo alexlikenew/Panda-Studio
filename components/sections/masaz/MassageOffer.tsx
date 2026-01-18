@@ -21,14 +21,14 @@ const MASSAGE_OFFERS = [
         id: 3,
         title: "Masaż Relaksacyjny",
         description: "Ukojenie dla układu nerwowego. Delikatne techniki redukujące stres, poprawiające jakość snu i głębokie samopoczucie psychosomatyczne.",
-        image: "/img/massage/offer-relax.png",
+        image: "/img/massage/masaz-relaksacyjny.jpg",
         bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
     },
     {
         id: 4,
         title: "Masaż Klasyczny",
         description: "Wszechstronna metoda poprawiająca krążenie i elastyczność mięśni. Fundament dbania o zdrowie fizyczne i utrzymania ciała w dobrej kondycji.",
-        image: "/img/massage/offer-classic.png",
+        image: "/img/massage/masaz-klasyczny.jpg",
         bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
     }
 ];

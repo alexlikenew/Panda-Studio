@@ -7,28 +7,28 @@ const classesData = [
         title: 'TRENING SIŁOWY',
         description: 'Zbuduj maksymalną siłę i wytrzymałość mięśniową dzięki pracy z wolnymi ciężarami.',
         imageSrc: '/img/classes/trening_silowy.jpg',
-        linkUrl: '/classes/heavy-weight',
+        linkUrl: '/trening',
     },
     {
         id: 2,
         title: 'INDOOR CYCLING',
         description: 'Intensywny trening cardio budujący żelazną kondycję w rytm energetycznej muzyki.',
         imageSrc: '/img/classes/indoor-cycling.webp',
-        linkUrl: '/classes/indoor-cycling',
+        linkUrl: '/trening',
     },
     {
         id: 3,
         title: 'SPALANIE & REDUKCJA',
         description: 'Dynamiczne zajęcia nastawione na szybką utratę tkanki tłuszczowej i poprawę metabolizmu.',
         imageSrc: '/img/classes/weight-loss.png',
-        linkUrl: '/classes/weight-loss',
+        linkUrl: '/trening',
     },
     {
         id: 4,
         title: 'MOBILNOŚĆ',
         description: 'Bezpieczny powrót do sprawności, poprawa zakresu ruchu i eliminacja bólu pod okiem fizjoterapeuty.',
         imageSrc: '/img/classes/body-building.png', // Tu warto docelowo dać zdjęcie kogoś rozciągającego się/na macie
-        linkUrl: '/classes/mobility',
+        linkUrl: '/trening',
     },
 ];
 export default function ClassesCategorySection() {

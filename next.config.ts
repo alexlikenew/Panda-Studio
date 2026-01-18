@@ -17,6 +17,24 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [];
   },
+  async headers() {
+    return [
+      {
+        // Apply strictly to page routes, excluding API and static assets
+        source: '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|gif|png|svg|ico)).*)',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/html; charset=utf-8',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

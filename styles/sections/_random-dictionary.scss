@@ -1,0 +1,101 @@
+// =========================================
+// RANDOM DICTIONARY ENTRIES SECTION
+// =========================================
+
+.random-dictionary {
+    padding: 80px 0;
+    width: 100%;
+    // Background can stay dark or match section, user said "Use the exact same background colors... as the main list" 
+    // but the main list doesn't have a background set on the list itself, it's on the section. 
+    // RandomDictionary previously had #0C0C0D. KnowledgeBase had no specific bg in styles, likely inherited or transparent.
+    // I will keep the dark background #0C0C0D as originally requested/user preference for this section, 
+    // OR matches "visually identical". KnowledgeBase is on a page, likely dark bg.
+    // I will keep #0C0C0D to ensure it stands out or fits the theme, but style the INNER items like KB.
+    background-color: #0C0C0D;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    &__header {
+        text-align: center;
+        margin-bottom: 60px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2 {
+            // Using global heading styles, but explicit color here
+            color: $green-color;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $white-color;
+            opacity: 0.8;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 40px;
+
+        @media (min-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (min-width: 900px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    &__link {
+        display: block;
+        color: $white-color;
+        text-decoration: none;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 8px;
+        // font-family: $font-primary; // Using global font if variable not available in this file scope without import, but usually is.
+        font-size: 14px;
+        line-height: 1.4;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // Previously text-align center, now flex align-items center (vertical), justify-content start (default)
+        // User asked: "Change from text-align: center to display: flex; align-items: center;"
+
+        &:hover,
+        &:focus {
+            color: $green-color;
+            border-color: rgba($green-color, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+    }
+
+    &__footer {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    &__view-all {
+        color: $white-color;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $green-color;
+            border-bottom-color: $green-color;
+            padding-bottom: 2px;
+        }
+    }
+}

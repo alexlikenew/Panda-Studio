@@ -6,7 +6,7 @@ export default function BooksyCTA() {
         <section className="booksy-cta">
             <div className="booksy-cta__bg">
                 <Image
-                    src="/img/booksy-cta-bg.png"
+                    src="/img/booksy-cta-bg.webp"
                     alt="Gym interior background"
                     fill
                     quality={90}

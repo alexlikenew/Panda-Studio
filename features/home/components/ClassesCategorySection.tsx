@@ -6,7 +6,7 @@ const classesData = [
         id: 1,
         title: 'TRENING SIŁOWY',
         description: 'Zbuduj maksymalną siłę i wytrzymałość mięśniową dzięki pracy z wolnymi ciężarami.',
-        imageSrc: '/img/classes/heavy-weight.png',
+        imageSrc: '/img/classes/trening_silowy.jpg',
         linkUrl: '/classes/heavy-weight',
     },
     {
@@ -25,10 +25,10 @@ const classesData = [
     },
     {
         id: 4,
-        title: 'MODELOWANIE',
-        description: 'Praca nad estetyką, proporcjami i definicją mięśni dla idealnej sylwetki.',
-        imageSrc: '/img/classes/body-building.png',
-        linkUrl: '/classes/body-building',
+        title: 'MOBILNOŚĆ',
+        description: 'Bezpieczny powrót do sprawności, poprawa zakresu ruchu i eliminacja bólu pod okiem fizjoterapeuty.',
+        imageSrc: '/img/classes/body-building.png', // Tu warto docelowo dać zdjęcie kogoś rozciągającego się/na macie
+        linkUrl: '/classes/mobility',
     },
 ];
 export default function ClassesCategorySection() {
@@ -54,7 +54,7 @@ export default function ClassesCategorySection() {
 
                                 <div className="classes-section__card-action">
                                     <span className="classes-section__link text-small-bold">
-                                        Learn More
+                                        Więcej
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"

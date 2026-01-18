@@ -154,7 +154,7 @@
         order: 1;
 
         @include breakpoint(desktop) {
-            height: 500px;
+            height: 450px;
             order: 2;
         }
     }

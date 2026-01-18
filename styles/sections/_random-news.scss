@@ -1,0 +1,37 @@
+// =========================================
+// RANDOM NEWS SECTION
+// Closely mirrors .latest-news from _home.scss
+// =========================================
+
+.random-news {
+    padding: 100px 0;
+    // Using main-color (black) as requested, similar to latest-news.
+    // If a distinction is needed, we could use lighten($main-color, 3%) or similar.
+    background-color: $main-color;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    &__header {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+
+        span {
+            color: $green-color;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint(desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

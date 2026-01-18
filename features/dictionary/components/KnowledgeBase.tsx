@@ -20,7 +20,7 @@ const KnowledgeBase = async () => {
                     </p>
                 </div>
 
-                <KnowledgeBaseList articles={articles} />
+                <KnowledgeBaseList articles={articles} initialVisibleCount={20} />
             </div>
         </section>
     );

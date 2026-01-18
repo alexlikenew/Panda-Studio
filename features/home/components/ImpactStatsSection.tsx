@@ -37,7 +37,7 @@ export default function ImpactStatsSection() {
                     {statsData.map((stat) => (
                         <li key={stat.id} className="impact-stats__item">
                             <div className="impact-stats__circle">
-                                <span className="impact-stats__value heading-h2">{stat.value}</span>
+                                <span className="impact-stats__value heading-h3">{stat.value}</span>
                             </div>
                             <div className="impact-stats__content">
                                 <span className="impact-stats__badge heading-tagline">{stat.title}</span>

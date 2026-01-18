@@ -50,3 +50,26 @@ export async function getEntry(slug: string): Promise<DictionaryEntry | null> {
   `;
   return client.fetch(query, { slug }, { next: { revalidate: 3600 } });
 }
+
+export async function getRandomDictionaryEntries(count: number = 20): Promise<DictionaryEntry[]> {
+  const query = `
+      *[_type == "knowledgeBase"] | order(publishedAt desc)[0...100] {
+        title,
+        slug
+      }
+    `;
+
+  const entries: DictionaryEntry[] = await client.fetch(query, {}, { next: { revalidate: 60 } });
+
+  if (!entries || entries.length === 0) {
+    return [];
+  }
+
+  // Shuffle
+  for (let i = entries.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [entries[i], entries[j]] = [entries[j], entries[i]];
+  }
+
+  return entries.slice(0, count);
+}

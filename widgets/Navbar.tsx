@@ -63,11 +63,6 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" title="Czytaj naszego bloga" className="text-small-semi-bold">
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <Link href="/trening" title="Oferta treningowa" className="text-small-semi-bold">
                   Trening
                 </Link>
@@ -75,6 +70,16 @@ export default function Navbar() {
               <li>
                 <Link href="/masaz" title="Oferta masażu" className="text-small-semi-bold">
                   Masaż
+                </Link>
+              </li>
+              <li>
+                <Link href="/baza-wiedzy" title="Baza wiedzy" className="text-small-semi-bold">
+                  Baza wiedzy
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" title="Czytaj naszego bloga" className="text-small-semi-bold">
+                  Blog
                 </Link>
               </li>
               <li>
@@ -116,11 +121,6 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" title="Czytaj naszego bloga">
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <Link href="/trening" title="Oferta treningowa">
                   Trening
                 </Link>
@@ -128,6 +128,16 @@ export default function Navbar() {
               <li>
                 <Link href="/masaz" title="Oferta masażu">
                   Masaż
+                </Link>
+              </li>
+              <li>
+                <Link href="/baza-wiedzy" title="Baza wiedzy">
+                  Baza wiedzy
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" title="Czytaj naszego bloga">
+                  Blog
                 </Link>
               </li>
               <li>

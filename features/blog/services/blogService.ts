@@ -77,3 +77,38 @@ export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
 
   return client.fetch(query, { limit }, { next: { revalidate } });
 }
+
+export async function getRandomBlogPosts(count: number = 3): Promise<Post[]> {
+  // Fetch more posts than needed to ensure randomness
+  const limit = 15;
+  const query = `*[_type == "blog"] | order(publishedAt desc)[0...$limit] {
+      _id,
+      title,
+      slug,
+      "mainImage": image.asset->{
+        _id,
+        url,
+        altText
+      },
+      excerpt,
+      "categories": categories[]->title,
+      "tags": tags,
+      "author": author->{name, image},
+      publishedAt,
+      body
+    }`;
+
+  const posts: Post[] = await client.fetch(query, { limit }, { next: { revalidate: 60 } }); // Lower revalidate for randomness
+
+  if (!posts || posts.length === 0) {
+    return [];
+  }
+
+  // Shuffle array using Fisher-Yates algorithm
+  for (let i = posts.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [posts[i], posts[j]] = [posts[j], posts[i]];
+  }
+
+  return posts.slice(0, count);
+}

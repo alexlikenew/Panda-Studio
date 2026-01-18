@@ -1,8 +1,6 @@
 'use client';
 
-import DictionaryList from "./components/DictionaryList";
-import DictionarySearch from "./components/DictionarySearch";
-import { useDictionarySearch } from "./hooks/useDictionarySearch";
+import KnowledgeBaseList from "./components/KnowledgeBaseList";
 import { DictionaryEntry } from "./types";
 
 interface DictionaryIndexPageProps {
@@ -10,8 +8,6 @@ interface DictionaryIndexPageProps {
 }
 
 export default function DictionaryIndexPage({ entries }: DictionaryIndexPageProps) {
-    const { searchQuery, setSearchQuery, filteredEntries } = useDictionarySearch(entries);
-
     return (
         <div className="dictionary-page">
             <div className="wrapper">
@@ -20,14 +16,9 @@ export default function DictionaryIndexPage({ entries }: DictionaryIndexPageProp
                     <p className="dictionary-header__subtitle text-medium-normal">
                         Poznaj terminologię treningową i dietetyczną.
                     </p>
-
-                    <DictionarySearch
-                        value={searchQuery}
-                        onChange={setSearchQuery}
-                    />
                 </header>
 
-                <DictionaryList entries={filteredEntries} />
+                <KnowledgeBaseList articles={entries} initialVisibleCount={100} />
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ import NutritionTipsSection from "@/features/home/components/NutritionTipsSectio
 import ImpactStatsSection from "@/features/home/components/ImpactStatsSection";
 import ReviewsSection from "@/features/home/components/ReviewsSection";
 import ServicesAccordionSection from "@/features/home/components/ServicesAccordionSection";
-import KnowledgeBase from "@/features/home/components/KnowledgeBase";
+import KnowledgeBase from "@/features/dictionary/components/KnowledgeBase";
 
 export default function Home() {
   return (

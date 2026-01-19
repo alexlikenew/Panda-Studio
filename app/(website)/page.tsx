@@ -4,14 +4,14 @@ import TransformLife from "@/components/sections/TransformLife";
 import Services from "@/components/sections/Services";
 import Testimonials from "@/components/sections/Testimonials";
 import LatestNews from "@/features/blog/components/LatestNews";
-import Locations from "@/features/home/components/Locations";
-import CommunityReels from "@/features/home/components/CommunityReels";
-import BooksyCTA from "@/features/home/components/BooksyCTA";
-import ClassesCategorySection from "@/features/home/components/ClassesCategorySection";
-import NutritionTipsSection from "@/features/home/components/NutritionTipsSection";
-import ImpactStatsSection from "@/features/home/components/ImpactStatsSection";
-import ReviewsSection from "@/features/home/components/ReviewsSection";
-import ServicesAccordionSection from "@/features/home/components/ServicesAccordionSection";
+import Locations from "@/components/sections/home/Locations";
+import CommunityReels from "@/components/sections/home/CommunityReels";
+import BooksyCTA from "@/components/sections/home/BooksyCTA";
+import ClassesCategorySection from "@/components/sections/home/ClassesCategorySection";
+import NutritionTipsSection from "@/components/sections/home/NutritionTipsSection";
+import ImpactStatsSection from "@/components/sections/home/ImpactStatsSection";
+import ReviewsSection from "@/components/sections/home/ReviewsSection";
+import ServicesAccordionSection from "@/components/sections/home/ServicesAccordionSection";
 import KnowledgeBase from "@/features/dictionary/components/KnowledgeBase";
 
 export default function Home() {

@@ -1,7 +1,9 @@
 "use server";
 
 import { contactSchema, ContactFormState } from "../schema/contactSchema";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendContactEmail(
     prevState: ContactFormState,
@@ -28,54 +30,35 @@ export async function sendContactEmail(
     const { name, email, phone, subject, message } = validatedFields.data;
 
     try {
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST,
-            port: parseInt(process.env.SMTP_PORT || "465"),
-            secure: true, // true for 465, false for other ports
-            auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASS,
-            },
-        });
-
-        await transporter.verify();
-
-        await transporter.sendMail({
-            from: `"${name}" <${process.env.SMTP_USER}>`, // Sender address (must match auth user usually)
-            to: process.env.SMTP_TO, // Receiver address
-            replyTo: email, // Customer email for reply
-            subject: `Nowa wiadomość ze strony: ${subject}`,
-            text: `
-        Imię: ${name}
-        Email: ${email}
-        Telefon: ${phone}
-        
-        Wiadomość:
-        ${message}
-      `,
+        const { data, error } = await resend.emails.send({
+            from: "Panda Studio <formularz@pandastudioteam.com>",
+            to: [process.env.CONTACT_EMAIL_TO as string],
+            replyTo: email,
+            subject: `Nowa wiadomość: ${subject}`,
             html: `
-        <h3>Nowa wiadomość z formularza kontaktowego</h3>
-        <p><strong>Imię:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Telefon:</strong> ${phone}</p>
-        <br/>
-        <p><strong>Temat:</strong> ${subject}</p>
-        <p><strong>Wiadomość:</strong></p>
-        <p>${message.replace(/\n/g, "<br/>")}</p>
-      `,
+                <h3>Nowa wiadomość z formularza kontaktowego</h3>
+                <p><strong>Imię:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Telefon:</strong> ${phone}</p>
+                <br/>
+                <p><strong>Temat:</strong> ${subject}</p>
+                <p><strong>Wiadomość:</strong></p>
+                <p>${message.replace(/\n/g, "<br/>")}</p>
+            `,
         });
+
+        if (error) {
+            console.error("Resend error:", error);
+            return { success: false, message: "Błąd wysyłki e-maila." };
+        }
 
         return {
             success: true,
-            message: "Wiadomość została wysłana pomyślnie! Skontaktujemy się z Tobą wkrótce.",
+            message: "Wiadomość została wysłana pomyślnie!",
             errors: {},
         };
     } catch (error) {
-        console.error("Email sending error:", error);
-        return {
-            success: false,
-            message: "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później.",
-            errors: {},
-        };
+        console.error("Server Action Error:", error);
+        return { success: false, message: "Wystąpił błąd serwera." };
     }
 }

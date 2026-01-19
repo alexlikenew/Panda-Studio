@@ -3,7 +3,7 @@ import { getPosts } from '@/features/blog/services/blogService';
 import { getEntries } from '@/features/dictionary/services/dictionaryService';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://pandastudio.rzeszow.pl';
+    const baseUrl = 'https://pandastudioteam.com';
 
     // Static routes
     const staticRoutes = [

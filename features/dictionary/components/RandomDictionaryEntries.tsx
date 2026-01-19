@@ -12,8 +12,24 @@ export default async function RandomDictionaryEntries({ count = 20 }: RandomDict
         return null;
     }
 
+    // Generate JSON-LD for SEO
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": entries.map((entry, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "url": `https://pandastudioteam.com/baza-wiedzy/${entry.slug.current}`,
+            "name": entry.title
+        }))
+    };
+
     return (
         <section className="random-dictionary">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="wrapper">
                 <h2 className="random-dictionary__header heading-h4">
                     WARTO WIEDZIEĆ

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import TrainingHero from "@/components/sections/trening/TrainingHero";
 import TrainingOffer from "@/components/sections/trening/TrainingOffer";
-import ServicesAccordionSection from "@/features/home/components/ServicesAccordionSection";
-import NutritionTipsSection from "@/features/home/components/NutritionTipsSection";
-import ClassesCategorySection from "@/features/home/components/ClassesCategorySection";
+import ServicesAccordionSection from "@/components/sections/home/ServicesAccordionSection";
+import NutritionTipsSection from "@/components/sections/home/NutritionTipsSection";
+import ClassesCategorySection from "@/components/sections/home/ClassesCategorySection";
 import RandomNews from "@/features/blog/components/RandomNews";
 import RandomDictionaryEntries from "@/features/dictionary/components/RandomDictionaryEntries";
 import FaqSection from "@/components/FaqSection";

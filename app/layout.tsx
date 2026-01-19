@@ -25,24 +25,43 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://pandastudio.rzeszow.pl"),
+    metadataBase: new URL("https://pandastudioteam.com"),
     title: {
-        default: "FIT Panda Studio Treningu & Masażu Rzeszów",
-        template: "%s | FIT Panda Studio",
+        default: "Panda Studio Rzeszów – Trening Personalny i Masaż",
+        template: "%s | Panda Studio Rzeszów",
     },
     description:
-        "Panda Studio Team – profesjonalne studio treningowe w Rzeszowie. Treningi personalne, grupowe i funkcjonalne. Zadbaj o formę z doświadczonym trenerem! Rehabilitacja ruchowa i masaż.",
+        "Profesjonalny trening personalny, fizjoterapia i masaż w Rzeszowie. Zadbaj o zdrowie i sylwetkę pod okiem ekspertów w kameralnej atmosferze. Umów wizytę!",
     keywords: [
-        "studio treningowe Rzeszów",
-        "trener personalny",
-        "siłownia Rzeszów",
-        "Panda Studio Team",
-        "odchudzanie Rzeszów",
-        "rehabilitacja ruchowa Rzeszów",
+        "trening",
         "masaż",
         "fitness",
+        "siłownia",
+        "odchudzanie",
+        "fizjoterapia",
+        "Panda Studio Team",
+        "Panda Studio Rzeszów",
+        "studio treningowe Rzeszów",
+        "siłownia Rzeszów",
+        "trener personalny Rzeszów",
+        "masaż Rzeszów",
+        "fizjoterapeuta Rzeszów",
+        "rehabilitacja ruchowa Rzeszów",
+        "trener personalny",
         "trening funkcjonalny",
+        "trening medyczny",
+        "trening w parze",
+        "masaż leczniczy",
+        "masaż sportowy",
+        "masaż tkanek głębokich",
+        "masaż relaksacyjny",
         "zdrowy kręgosłup",
+        "ból pleców",
+        "korekcja wad postawy",
+        "rwa kulszowa",
+        "przygotowanie motoryczne",
+        "powrót do formy",
+        "kameralna siłownia"
     ],
     authors: [{ name: "Panda Studio Team" }],
     creator: "Panda Studio Team",
@@ -50,7 +69,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "pl_PL",
-        url: "https://panda-studio-puce.vercel.app/",
+        url: "https://pandastudioteam.com",
         siteName: "FIT Panda Studio",
         title: "FIT Panda Studio Treningu & Masażu Rzeszów",
         description:
@@ -97,10 +116,10 @@ export default function RootLayout({
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://fitpandastudio.pl/#organization",
+                "@id": "https://pandastudioteam.com/#organization",
                 "name": "Panda Studio",
-                "url": "https://fitpandastudio.pl",
-                "logo": "https://fitpandastudio.pl/img/logo.png",
+                "url": "https://pandastudioteam.com",
+                "logo": "https://pandastudioteam.com/img/logo.png",
                 "email": "kontakt@fitpandastudio.pl",
                 "telephone": "+48694906749",
                 "sameAs": [
@@ -110,10 +129,10 @@ export default function RootLayout({
             },
             {
                 "@type": "SportsActivityLocation",
-                "@id": "https://fitpandastudio.pl/#gym",
-                "parentOrganization": { "@id": "https://fitpandastudio.pl/#organization" },
+                "@id": "https://pandastudioteam.com/#gym",
+                "parentOrganization": { "@id": "https://pandastudioteam.com/#organization" },
                 "name": "Panda Studio - Trening Personalny",
-                "image": "https://fitpandastudio.pl/img/hero-training.jpg",
+                "image": "https://pandastudioteam.com/img/hero-training.jpg",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "ul. Myśliwska 255",
@@ -139,10 +158,10 @@ export default function RootLayout({
             },
             {
                 "@type": "HealthAndBeautyBusiness",
-                "@id": "https://fitpandastudio.pl/#massage",
-                "parentOrganization": { "@id": "https://fitpandastudio.pl/#organization" },
+                "@id": "https://pandastudioteam.com/#massage",
+                "parentOrganization": { "@id": "https://pandastudioteam.com/#organization" },
                 "name": "Panda Studio - Masaż i Fizjoterapia",
-                "image": "https://fitpandastudio.pl/img/masaz-welcome.jpg",
+                "image": "https://pandastudioteam.com/img/masaz-welcome.jpg",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "ul. Podkarpacka 12a",

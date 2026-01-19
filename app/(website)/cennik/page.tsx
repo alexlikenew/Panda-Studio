@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PricingHero from "@/components/sections/cennik/PricingHero";
-import PricingTables from "@/features/home/components/PricingTables";
+import PricingTables from "@/components/sections/home/PricingTables";
 import RandomNews from "@/features/blog/components/RandomNews";
 import RandomDictionaryEntries from "@/features/dictionary/components/RandomDictionaryEntries";
 import FaqSection from "@/components/FaqSection";

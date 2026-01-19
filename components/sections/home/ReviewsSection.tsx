@@ -34,6 +34,30 @@ const reviewsData = [
     { id: 31, author: "Irena Dubyk", role: "Lokalny przewodnik", date: "4 lata temu", text: "Rewelacja! Odprężyłam się całkowicie. Oczywiście polecam każdemu:)" }
 ];
 
+const parseRelativeDate = (dateStr: string): string => {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth();
+
+    if (dateStr.includes("miesiąc")) {
+        const months = parseInt(dateStr.match(/\d+/)?.[0] || "0", 10);
+        now.setMonth(currentMonth - months);
+    } else if (dateStr.includes("rok") || dateStr.includes("lata")) {
+        if (dateStr === "rok temu") {
+            now.setFullYear(currentYear - 1);
+        } else {
+            const years = parseInt(dateStr.match(/\d+/)?.[0] || "0", 10);
+            now.setFullYear(currentYear - years);
+        }
+    } else {
+        // Fallback for unknown formats to a recent date to avoid validation errors
+        // or leave as is if specific logic isn't needed
+        return now.toISOString().split("T")[0];
+    }
+
+    return now.toISOString().split("T")[0];
+};
+
 export default function ReviewsSection() {
     // Generate 5 stars
     const renderStars = () => (
@@ -55,8 +79,40 @@ export default function ReviewsSection() {
         </div>
     );
 
+    // SEO: Generate LocalBusiness Schema with Reviews
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://pandastudioteam.com/#organization", // Reuse main ID if possible
+        "name": "Panda Studio Rzeszów",
+        "review": reviewsData.map((review) => ({
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": review.author
+            },
+            "datePublished": parseRelativeDate(review.date),
+            "reviewBody": review.text,
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            }
+        })),
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": reviewsData.length.toString(),
+            "bestRating": "5"
+        }
+    };
+
     return (
         <section className="reviews-section">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="reviews-section__wrapper">
                 <header className="reviews-section__header">
                     <h2 className="heading-h2">Opinie Klientów</h2>

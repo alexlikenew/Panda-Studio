@@ -1,0 +1,313 @@
+[
+    {
+        "_type": "seoSection",
+        "title": "Home Page SEO",
+        "slug": {
+            "_type": "slug",
+            "current": "home-page-seo"
+        },
+        "heading": "Panda Studio Rzeszów – Twoje kameralne centrum treningu i regeneracji",
+        "content": [
+            {
+                "_type": "block",
+                "style": "h3",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Dlaczego nie jesteśmy typową siłownią?"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "W Rzeszowie znajdziesz wiele dużych klubów fitness, ale "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "strong"
+                        ],
+                        "text": "Panda Studio Team"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " to coś więcej niż tylko sprzęt i ciężary. Jesteśmy "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "strong"
+                        ],
+                        "text": "kameralnym studiem treningowym"
+                    },
+                    {
+                        "_type": "span",
+                        "text": ", w którym nie jesteś anonimowym klientem. Stawiamy na relację, indywidualne podejście i atmosferę, w której każdy – niezależnie od poziomu zaawansowania – czuje się bezpiecznie. Nasza filozofia opiera się na holistycznym podejściu do zdrowia: od "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_trening"
+                        ],
+                        "text": "profesjonalnego treningu personalnego"
+                    },
+                    {
+                        "_type": "span",
+                        "text": ", przez edukację, aż po skuteczną regenerację."
+                    }
+                ],
+                "markDefs": [
+                    {
+                        "_key": "link_trening",
+                        "_type": "link",
+                        "href": "/trening"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "h3",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Trening Personalny i Funkcjonalny – Rzeszów, ul. Myśliwska 255"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "W naszej lokalizacji treningowej przy ulicy Myśliwskiej skupiamy się na tym, co najważniejsze – Twoim zdrowiu i sprawności. Nasi doświadczeni "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "strong"
+                        ],
+                        "text": "trenerzy personalni"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " specjalizują się nie tylko w kształtowaniu sylwetki i odchudzaniu, ale przede wszystkim w "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "strong"
+                        ],
+                        "text": "treningu medycznym"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " i funkcjonalnym. Pomagamy osobom z bólami kręgosłupa, siedzącym trybem życia oraz tym, którzy wracają do formy po kontuzjach."
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Nie wiesz, od czego zacząć? Sprawdź nasz "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_cennik"
+                        ],
+                        "text": "cennik treningów"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " i umów się na konsultację. W Panda Studio stawiamy na technikę i bezpieczeństwo, ucząc Cię świadomego ruchu, który wykorzystasz w życiu codziennym."
+                    }
+                ],
+                "markDefs": [
+                    {
+                        "_key": "link_cennik",
+                        "_type": "link",
+                        "href": "/cennik"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "h3",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Masaż i Fizjoterapia – Rzeszów, ul. Podkarpacka 12a"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Trening to tylko połowa sukcesu. Równie ważna jest regeneracja. W naszym oddzielnym gabinecie przy ulicy Podkarpackiej oferujemy profesjonalne usługi fizjoterapeutyczne. Jeśli szukasz ulgi w bólu, polecamy "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "strong"
+                        ],
+                        "text": "masaż leczniczy"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " lub terapię manualną. Dla osób aktywnych przygotowaliśmy "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_masaz"
+                        ],
+                        "text": "masaż sportowy"
+                    },
+                    {
+                        "_type": "span",
+                        "text": ", który przyspiesza regenerację mięśni. A jeśli po prostu potrzebujesz chwili wytchnienia od codziennego stresu, nasz masaż relaksacyjny będzie idealnym wyborem."
+                    }
+                ],
+                "markDefs": [
+                    {
+                        "_key": "link_masaz",
+                        "_type": "link",
+                        "href": "/masaz"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Rezerwacja wizyty jest prosta i szybka. Możesz to zrobić online przez nasz profil na Booksy: "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_booksy"
+                        ],
+                        "text": "Zarezerwuj masaż w Panda Studio"
+                    },
+                    {
+                        "_type": "span",
+                        "text": "."
+                    }
+                ],
+                "markDefs": [
+                    {
+                        "_key": "link_booksy",
+                        "_type": "link",
+                        "href": "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "h3",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Edukacja i Społeczność – Dołącz do nas!"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Wierzymy, że świadomy klient osiąga lepsze efekty. Dlatego regularnie publikujemy artykuły na naszym "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_blog"
+                        ],
+                        "text": "blogu"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " oraz rozwijamy "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_baza"
+                        ],
+                        "text": "Bazę Wiedzy"
+                    },
+                    {
+                        "_type": "span",
+                        "text": ", gdzie tłumaczymy skomplikowane zagadnienia treningowe w prosty sposób."
+                    }
+                ],
+                "markDefs": [
+                    {
+                        "_key": "link_blog",
+                        "_type": "link",
+                        "href": "/blog"
+                    },
+                    {
+                        "_key": "link_baza",
+                        "_type": "link",
+                        "href": "/baza-wiedzy"
+                    }
+                ]
+            },
+            {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                    {
+                        "_type": "span",
+                        "text": "Panda Studio to także ludzie. Zobacz, jak trenujemy, śmiejemy się i wspieramy na co dzień. Obserwuj nas na Instagramie: "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "link_insta"
+                        ],
+                        "text": "@ivo_life_"
+                    },
+                    {
+                        "_type": "span",
+                        "text": " i stań się częścią naszej pozytywnej społeczności. Niezależnie od tego, czy Twoim celem jest "
+                    },
+                    {
+                        "_type": "span",
+                        "marks": [
+                            "strong"
+                        ],
+                        "text": "zdrowy kręgosłup"
+                    },
+                    {
+                        "_type": "span",
+                        "text": ", zrzucenie kilku kilogramów czy po prostu lepsze samopoczucie – jesteśmy tu dla Ciebie."
+                    }
+                ],
+                "markDefs": [
+                    {
+                        "_key": "link_insta",
+                        "_type": "link",
+                        "href": "https://www.instagram.com/ivo_life_/"
+                    }
+                ]
+            }
+        ]
+    }
+]

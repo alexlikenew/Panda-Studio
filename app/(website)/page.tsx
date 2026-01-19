@@ -13,26 +13,27 @@ import ImpactStatsSection from "@/components/sections/home/ImpactStatsSection";
 import ReviewsSection from "@/components/sections/home/ReviewsSection";
 import ServicesAccordionSection from "@/components/sections/home/ServicesAccordionSection";
 import KnowledgeBase from "@/features/dictionary/components/KnowledgeBase";
+import { getSeoSection } from "@/features/seo-content/services/seoService";
+import SeoContentBlock from "@/features/seo-content/components/SeoContentBlock";
 
-export default function Home() {
+export default async function Home() {
+  const seoData = await getSeoSection("home-page-seo");
+
   return (
     <main>
       <Hero />
       <TransformLife />
       <ServicesAccordionSection />
-      {/* <Services /> */}
       <ClassesCategorySection />
       <CommunityReels />
-      {/* <NutritionTipsSection /> */}
       <ImpactStatsSection />
       <BooksyCTA />
       <ReviewsSection />
-
       <LatestNews />
       <Locations />
-      {/* <Testimonials /> */}
-      {/* <DialogOne /> */}
       <KnowledgeBase />
-    </main>
+      <SeoContentBlock data={seoData} />
+      {/* <DialogOne /> */}
+    </main >
   );
 }

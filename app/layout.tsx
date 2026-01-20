@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Inter, Poppins } from "next/font/google"; // Added fonts
 import "@/styles/main.scss";
 import Navbar from "@/widgets/Navbar"; // Added Navbar
-import Footer from "@/widgets/Footer"; // Added Footer
+import Footer from "@/components/layout/Footer"; // Updated Footer
 import ClientProviders from "@/providers/ClientProviders"; // Added Providers
 
 const inter = Inter({

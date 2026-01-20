@@ -112,3 +112,14 @@ export async function getRandomBlogPosts(count: number = 3): Promise<Post[]> {
 
   return posts.slice(0, count);
 }
+
+export async function getLatestFooterPosts(): Promise<Post[]> {
+  const query = `*[_type == "blogPost" && defined(slug.current)] | order(publishedAt desc)[0..2] {
+    _id,
+    title,
+    "slug": slug.current,
+    publishedAt
+  }`;
+
+  return client.fetch(query, {}, { next: { revalidate } });
+}

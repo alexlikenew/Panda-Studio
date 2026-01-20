@@ -716,171 +716,9 @@ dialog .closeDialog {
 }
 
 
-// FOOTER
-.footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-	.wrapper {
-		padding: 30px 16px;
-	}
 
-	&__hr-line--top,
-	&__hr-line--bottom {
-		width: 100%;
-		height: 1px;
-		background: #45474f;
-	}
 
-	&__hr-line--top {
-		margin-bottom: 20px;
-	}
-
-	&__hr-line--bottom {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	&__social {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		row-gap: 1.5rem;
-
-		&__text {
-			p {
-				color: $green-color;
-				padding: 10px 0;
-				text-transform: uppercase;
-				// Font styles removed, use .text-small-bold
-			}
-
-			h2 {
-				// Font styles removed, use .heading-h4
-				line-height: 36px;
-			}
-		}
-
-		&__images {
-			width: 100%;
-
-			ul {
-				display: flex;
-				list-style: none;
-				gap: 36px;
-
-				li {
-					a {
-						width: clamp(40px, 3.33vw, 120px);
-						height: clamp(40px, 3.33vw, 120px);
-						border: 2px solid #d7fb00;
-						border-radius: 50%;
-						background: transparent;
-						transition: all 0.3s ease-in-out;
-						display: grid;
-						align-items: center;
-						justify-content: center;
-
-						svg {
-							width: clamp(18px, 1.667vw, 64px);
-							height: clamp(18px, 1.667vw, 64px);
-						}
-
-						&:hover {
-							background-color: $green-color;
-							color: $main-color;
-							box-shadow: 0 0 15px $green-color;
-
-							svg path {
-								fill: $main-color;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	&__info {
-		&__left {
-			padding: 16px 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
-			gap: 1.5rem;
-
-			p {
-				// Font styles removed, use .text-medium-normal
-				color: rgb(146, 148, 159);
-			}
-		}
-
-		&__right {
-			display: flex;
-			flex-direction: column;
-
-			ul {
-				display: flex;
-				flex-direction: column;
-				gap: 1.5rem;
-				list-style: none;
-
-				li {
-					display: flex;
-					flex-direction: row;
-
-					.icon-box {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						margin-right: 10px;
-
-						img {
-							width: clamp(24px, 2.083vw, 64px);
-							height: clamp(24px, 2.083vw, 64px);
-						}
-					}
-
-					.text {
-						display: flex;
-						flex-direction: column;
-						gap: 0.5rem;
-
-						&__title {
-							// Font styles removed, use .text-medium-normal
-						}
-
-						&__content {
-							color: $light-gray;
-
-							&:hover a {
-								color: $green-color;
-							}
-
-							a {
-								color: $light-gray;
-
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	&__rights {
-		margin-top: 1.5rem;
-		text-align: center;
-
-		a {
-			font-weight: 500;
-			color: $green-color;
-		}
-	}
-}
 
 //MEDIA QUERIES 578px - 768px
 @media (min-width: 576px) {
@@ -935,14 +773,7 @@ dialog .closeDialog {
 		}
 	}
 
-	.footer__social {
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
 
-	.footer__social__images {
-		width: auto;
-	}
 }
 
 //MEDIA QUERIES 768px - 992px
@@ -1206,3 +1037,5 @@ dialog .closeDialog {
 }
 
 @import 'features/seo-content';
+@import 'pages/privacy-policy';
+@import 'layout/footer';

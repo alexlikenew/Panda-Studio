@@ -1,0 +1,337 @@
+.footer {
+    background-color: $main-color;
+    padding: 60px 0 20px;
+    border-top: 1px solid rgba($light-gray, 0.1);
+    position: relative; // For scroll button positioning
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        columns: 1;
+        gap: 40px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+            gap: 60px;
+        }
+    }
+
+    // Column Styles
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__title {
+            color: $white-color;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: $lightest-gray;
+            line-height: 1.6;
+        }
+    }
+
+    // Logo & Brand
+    &__brand {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                height: 40px;
+                width: auto;
+            }
+        }
+
+        &__social {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border: 1px solid rgba($green-color, 0.5);
+                border-radius: 50%;
+                transition: all 0.3s ease;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+
+                    path {
+                        fill: $green-color;
+                        transition: fill 0.3s ease;
+                    }
+                }
+
+                &:hover {
+                    background-color: $green-color;
+                    border-color: $green-color;
+                    box-shadow: 0 0 15px rgba($green-color, 0.4);
+
+                    svg path {
+                        fill: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    // Navigation Links
+    &__nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li {
+                a {
+                    color: $lightest-gray;
+                    transition: color 0.3s ease;
+                    line-height: 1.4;
+
+                    &:hover {
+                        color: $green-color;
+                        padding-left: 5px;
+                    }
+                }
+
+                .footer__nav__cookie-btn {
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    color: $lightest-gray;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    text-decoration-color: rgba($lightest-gray, 0.3);
+                    font-family: inherit;
+                    text-align: left;
+                    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+                    line-height: 1.4;
+
+                    &:hover {
+                        color: $green-color;
+                        text-decoration-color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+
+    // Blog Posts
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            a {
+                color: $white-color;
+                transition: color 0.3s ease;
+                line-height: 1.4;
+
+                &:hover {
+                    color: $green-color;
+                }
+            }
+
+            span {
+                color: rgba($lightest-gray, 0.6);
+            }
+        }
+    }
+
+    // Contact Info
+    &__contact {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+
+            img {
+                width: 20px;
+                height: auto;
+                opacity: 0.8;
+                margin-top: 4px; // Align icon with text
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                strong {
+                    color: $white-color;
+                }
+
+                a,
+                span {
+                    color: $lightest-gray;
+                    line-height: 1.4;
+                }
+
+                a:hover {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+
+    // Bottom Bar
+    &__bottom {
+        border-top: 1px solid rgba($light-gray, 0.1);
+        margin-top: 60px;
+        padding-top: 20px;
+        text-align: center;
+        position: relative; // For scroll button
+
+        p {
+            color: rgba($lightest-gray, 0.5);
+
+            a {
+                color: $green-color;
+                font-weight: 500;
+            }
+        }
+    }
+
+    // Scroll To Top Button
+    &__scroll-top {
+        position: absolute;
+        right: 0;
+        top: 20px; // Align with top of bottom section
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba($white-color, 0.1);
+        border: 1px solid rgba($white-color, 0.1);
+        color: $green-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 0;
+
+        @media (max-width: 768px) {
+            position: relative;
+            margin: 20px auto 0;
+            right: auto;
+            top: auto;
+        }
+
+        &:hover {
+            background-color: $green-color;
+            border-color: $green-color;
+            color: $main-color;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba($green-color, 0.3);
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+// Newsletter Form Styles
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__title {
+        color: $green-color;
+    }
+
+    &__desc {
+        color: $lightest-gray;
+        margin-bottom: 10px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba($light-gray, 0.2);
+        border-radius: 4px;
+        padding: 10px 12px;
+        color: $white-color;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: $green-color;
+        }
+
+        &--error {
+            border-color: #ff4d4d;
+        }
+    }
+
+    &__button {
+        background-color: $green-color;
+        color: $main-color;
+        border: none;
+        border-radius: 4px;
+        padding: 0 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        white-space: nowrap;
+
+        &:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba($green-color, 0.3);
+        }
+
+        &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+    }
+
+    &__message {
+        margin-top: 5px;
+
+        &--error {
+            color: #ff4d4d;
+        }
+
+        &--success {
+            color: $green-color;
+        }
+    }
+}

@@ -56,10 +56,6 @@ export default async function Footer() {
                         <li><Link className="text-small-normal" href="/cennik">Cennik</Link></li>
                         <li><Link className="text-small-normal" href="/blog">Blog</Link></li>
                         <li><Link className="text-small-normal" href="/polityka-prywatnosci">Polityka Prywatności</Link></li>
-                        <li><Link className="text-small-normal" href="/regulamin">Regulamin</Link></li>
-                        <li>
-                            <CookieSettingsButton />
-                        </li>
                     </ul>
                 </div>
 

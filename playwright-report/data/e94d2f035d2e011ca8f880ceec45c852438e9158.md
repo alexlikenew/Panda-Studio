@@ -1,0 +1,944 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Logo niedźwiedzia Logo FIT" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Logo niedźwiedzia" [ref=e6]
+        - img "Logo FIT" [ref=e7]
+      - button "Otwórz menu nawigacji" [ref=e8] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - img "Panda Studio - Trening, Masaż, Fizjoterapia" [ref=e14]
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "TRENING" [level=1] [ref=e18]
+          - heading "MASAŻ" [level=1] [ref=e19]
+          - heading "FIZJOTERAPIA" [level=1] [ref=e20]
+        - heading "TWOJA DROGA DO LEPSZEJ SIŁY" [level=2] [ref=e22]
+        - link "SPRÓBUJ TERAZ" [ref=e23] [cursor=pointer]:
+          - /url: /kontakt
+        - paragraph [ref=e25]: Profesjonalne studio treningu personalnego i fizjoterapii w sercu miasta. Pierwszy trening za darmo.
+    - generic [ref=e28]:
+      - link "Trening Personalny w Panda Studio Rehabilitacja & Transformacja Trening ul. Myśliwska 255 Umów Się" [ref=e29] [cursor=pointer]:
+        - /url: /contact
+        - img "Trening Personalny w Panda Studio" [ref=e30]
+        - generic [ref=e32]:
+          - generic [ref=e33]: Rehabilitacja & Transformacja
+          - heading "Trening" [level=2] [ref=e34]
+          - generic [ref=e35]: ul. Myśliwska 255
+          - generic [ref=e36]: Umów Się
+      - link "Masaż i Regeneracja w Panda Studio Relaks & Regeneracja Masaż Podkarpacka 12a Rezerwuj" [ref=e37] [cursor=pointer]:
+        - /url: https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow
+        - img "Masaż i Regeneracja w Panda Studio" [ref=e38]
+        - generic [ref=e40]:
+          - generic [ref=e41]: Relaks & Regeneracja
+          - heading "Masaż" [level=2] [ref=e42]
+          - generic [ref=e43]: Podkarpacka 12a
+          - generic [ref=e44]: Rezerwuj
+    - generic [ref=e46]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: NASZA OFERTA
+        - heading "NIE TYLKO TRENING. KOMPLEKSOWE PODEJŚCIE." [level=2] [ref=e50]:
+          - text: NIE TYLKO TRENING.
+          - text: KOMPLEKSOWE PODEJŚCIE.
+        - generic [ref=e51]:
+          - link "SPRAWDŹ OFERTĘ" [ref=e52] [cursor=pointer]:
+            - /url: /cennik
+          - link "ZOBACZ WIDEO ▶" [ref=e53] [cursor=pointer]:
+            - /url: /#community-reels
+            - text: ZOBACZ WIDEO
+            - generic [ref=e54]: ▶
+      - generic [ref=e55]:
+        - generic [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]:
+            - heading "POPRAWA SYLWETKI" [level=3] [ref=e59]
+            - paragraph [ref=e61]: Ten program to kompleksowe podejście do budowy wymarzonej sylwetki. Skupia się na spalaniu tkanki tłuszczowej, modelowaniu mięśni oraz poprawie ogólnej sprawności.
+          - generic [ref=e63]: "01"
+        - generic [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]:
+            - heading "TRENING FUNKCJONALNY" [level=3] [ref=e67]
+            - generic:
+              - paragraph: Ten program pomoże Ci wzmocnić całe ciało, poprawić stabilność, mobilność i koordynację. Trening funkcjonalny opiera się na naturalnych ruchach.
+          - generic [ref=e69]: "02"
+        - generic [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]:
+            - heading "TRENING W PARACH" [level=3] [ref=e73]
+            - generic:
+              - paragraph: Trening w parach to świetny sposób na wspólną motywację i zabawę podczas ćwiczeń! Ćwiczenia angażują całe ciało, wykorzystując współpracę.
+          - generic [ref=e75]: "03"
+        - generic [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]:
+            - heading "TRENING PO KONTUZJACH" [level=3] [ref=e79]
+            - generic:
+              - paragraph: Program stworzony z myślą o bezpiecznym powrocie do pełnej sprawności. Skupia się na wzmacnianiu osłabionych obszarów i poprawie mobilności.
+          - generic [ref=e81]: "04"
+        - generic [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]:
+            - heading "MASAŻ" [level=3] [ref=e85]
+            - generic:
+              - paragraph: Naszym celem jest pomaganie klientom w osiąganiu stanu głębokiego relaksu, ulgi od bólu oraz poprawy ogólnego samopoczucia.
+          - generic [ref=e87]: "05"
+    - generic [ref=e90]:
+      - 'link "TRENING SIŁOWY Zbuduj maksymalną siłę i wytrzymałość mięśniową dzięki pracy z wolnymi ciężarami. Więcej Zajęcia grupowe: TRENING SIŁOWY" [ref=e91] [cursor=pointer]':
+        - /url: /trening
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - heading "TRENING SIŁOWY" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Zbuduj maksymalną siłę i wytrzymałość mięśniową dzięki pracy z wolnymi ciężarami.
+          - generic [ref=e97]:
+            - text: Więcej
+            - img [ref=e98]
+        - generic:
+          - 'img "Zajęcia grupowe: TRENING SIŁOWY"'
+      - 'link "INDOOR CYCLING Intensywny trening cardio budujący żelazną kondycję w rytm energetycznej muzyki. Więcej Zajęcia grupowe: INDOOR CYCLING" [ref=e100] [cursor=pointer]':
+        - /url: /trening
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - heading "INDOOR CYCLING" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Intensywny trening cardio budujący żelazną kondycję w rytm energetycznej muzyki.
+          - generic [ref=e106]:
+            - text: Więcej
+            - img [ref=e107]
+        - generic:
+          - 'img "Zajęcia grupowe: INDOOR CYCLING"'
+      - 'link "SPALANIE & REDUKCJA Dynamiczne zajęcia nastawione na szybką utratę tkanki tłuszczowej i poprawę metabolizmu. Więcej Zajęcia grupowe: SPALANIE & REDUKCJA" [ref=e109] [cursor=pointer]':
+        - /url: /trening
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - heading "SPALANIE & REDUKCJA" [level=3] [ref=e112]
+            - paragraph [ref=e113]: Dynamiczne zajęcia nastawione na szybką utratę tkanki tłuszczowej i poprawę metabolizmu.
+          - generic [ref=e115]:
+            - text: Więcej
+            - img [ref=e116]
+        - generic:
+          - 'img "Zajęcia grupowe: SPALANIE & REDUKCJA"'
+      - 'link "MOBILNOŚĆ Bezpieczny powrót do sprawności, poprawa zakresu ruchu i eliminacja bólu pod okiem fizjoterapeuty. Więcej Zajęcia grupowe: MOBILNOŚĆ" [ref=e118] [cursor=pointer]':
+        - /url: /trening
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - heading "MOBILNOŚĆ" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Bezpieczny powrót do sprawności, poprawa zakresu ruchu i eliminacja bólu pod okiem fizjoterapeuty.
+          - generic [ref=e124]:
+            - text: Więcej
+            - img [ref=e125]
+        - generic:
+          - 'img "Zajęcia grupowe: MOBILNOŚĆ"'
+    - generic [ref=e127]:
+      - generic [ref=e129]:
+        - heading "PANDA COMMUNITY" [level=2] [ref=e130]
+        - paragraph [ref=e131]: Dołącz do nas online. Zobacz, jak trenujemy, regenerujemy i budujemy formę każdego dnia
+      - generic [ref=e133]:
+        - generic [ref=e134] [cursor=pointer]: <
+        - generic [ref=e136]:
+          - generic [ref=e140] [cursor=pointer]:
+            - button [ref=e142]:
+              - img
+            - generic [ref=e143]:
+              - link [ref=e144]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e145]: Jak umówić się na masaż?
+          - generic [ref=e149] [cursor=pointer]:
+            - button [ref=e151]:
+              - img
+            - generic [ref=e152]:
+              - link [ref=e153]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e154]: Voucher
+          - generic [ref=e158] [cursor=pointer]:
+            - button [ref=e160]:
+              - img
+            - generic [ref=e161]:
+              - link [ref=e162]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e163]: Nowe terminy na masaz
+          - generic [ref=e167] [cursor=pointer]:
+            - button [ref=e169]:
+              - img
+            - generic [ref=e170]:
+              - link [ref=e171]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e172]: Jak umówić się na masaż?
+          - generic [ref=e176] [cursor=pointer]:
+            - button [ref=e178]:
+              - img
+            - generic [ref=e179]:
+              - link [ref=e180]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e181]: Rodzaje masaży
+          - generic [ref=e185] [cursor=pointer]:
+            - button [ref=e187]:
+              - img
+            - generic [ref=e188]:
+              - link [ref=e189]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e190]: Chiropraktyka a Studio
+          - generic [ref=e194] [cursor=pointer]:
+            - button [ref=e196]:
+              - img
+            - generic [ref=e197]:
+              - link [ref=e198]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e199]: Jak umówić się na masaż?
+          - generic [ref=e203] [cursor=pointer]:
+            - button [ref=e205]:
+              - img
+            - generic [ref=e206]:
+              - link [ref=e207]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e208]: Voucher
+          - generic [ref=e212] [cursor=pointer]:
+            - button "Włącz dźwięk" [ref=e214]:
+              - img
+            - generic [ref=e215]:
+              - link "@panda_masaz" [ref=e216]:
+                - /url: https://www.instagram.com/ivo_life_/
+              - paragraph [ref=e217]: Nowe terminy na masaz
+          - generic [ref=e221] [cursor=pointer]:
+            - button "Włącz dźwięk" [ref=e223]:
+              - img
+            - generic [ref=e224]:
+              - link "@panda_masaz" [ref=e225]:
+                - /url: https://www.instagram.com/ivo_life_/
+              - paragraph [ref=e226]: Jak umówić się na masaż?
+          - generic [ref=e230] [cursor=pointer]:
+            - button "Włącz dźwięk" [ref=e232]:
+              - img
+            - generic [ref=e233]:
+              - link "@panda_masaz" [ref=e234]:
+                - /url: https://www.instagram.com/ivo_life_/
+              - paragraph [ref=e235]: Rodzaje masaży
+          - generic [ref=e239] [cursor=pointer]:
+            - button "Włącz dźwięk" [ref=e241]:
+              - img
+            - generic [ref=e242]:
+              - link "@panda_masaz" [ref=e243]:
+                - /url: https://www.instagram.com/ivo_life_/
+              - paragraph [ref=e244]: Chiropraktyka a Studio
+          - generic [ref=e248] [cursor=pointer]:
+            - button "Włącz dźwięk" [ref=e250]:
+              - img
+            - generic [ref=e251]:
+              - link "@panda_masaz" [ref=e252]:
+                - /url: https://www.instagram.com/ivo_life_/
+              - paragraph [ref=e253]: Jak umówić się na masaż?
+          - generic [ref=e257] [cursor=pointer]:
+            - button [ref=e259]:
+              - img
+            - generic [ref=e260]:
+              - link [ref=e261]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e262]: Voucher
+          - generic [ref=e266] [cursor=pointer]:
+            - button [ref=e268]:
+              - img
+            - generic [ref=e269]:
+              - link [ref=e270]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e271]: Nowe terminy na masaz
+          - generic [ref=e275] [cursor=pointer]:
+            - button [ref=e277]:
+              - img
+            - generic [ref=e278]:
+              - link [ref=e279]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e280]: Jak umówić się na masaż?
+          - generic [ref=e284] [cursor=pointer]:
+            - button [ref=e286]:
+              - img
+            - generic [ref=e287]:
+              - link [ref=e288]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e289]: Rodzaje masaży
+          - generic [ref=e293] [cursor=pointer]:
+            - button [ref=e295]:
+              - img
+            - generic [ref=e296]:
+              - link [ref=e297]:
+                - /url: https://www.instagram.com/ivo_life_/
+                - text: "@panda_masaz"
+              - paragraph [ref=e298]: Chiropraktyka a Studio
+        - generic [ref=e299] [cursor=pointer]: ">"
+    - generic [ref=e301]:
+      - heading "Wpływ treningu na jakość życia" [level=2] [ref=e302]
+      - list [ref=e303]:
+        - listitem [ref=e304]:
+          - generic [ref=e306]: 26%
+          - generic [ref=e307]:
+            - generic [ref=e308]: Mniejsze ryzyko depresji
+            - paragraph [ref=e309]: Regularna aktywność fizyczna zmniejsza ryzyko wystąpienia objawów depresji o 26%.
+        - listitem [ref=e310]:
+          - generic [ref=e312]: 30%
+          - generic [ref=e313]:
+            - generic [ref=e314]: Lepszy sen
+            - paragraph [ref=e315]: Systematyczny ruch poprawia jakość snu i regenerację organizmu nawet o 30%.
+        - listitem [ref=e316]:
+          - generic [ref=e318]: 40%
+          - generic [ref=e319]:
+            - generic [ref=e320]: Większa produktywność
+            - paragraph [ref=e321]: Osoby aktywne fizycznie odnotowują wzrost swojej efektywności w ciągu dnia o 40%.
+        - listitem [ref=e322]:
+          - generic [ref=e324]: 70%
+          - generic [ref=e325]:
+            - generic [ref=e326]: Pewność siebie
+            - paragraph [ref=e327]: Aż 70% osób trenujących potwierdza, że regularne ćwiczenia budują ich pewność siebie.
+    - generic [ref=e328]:
+      - img "Tło z wnętrzem siłowni Panda Studio" [ref=e330]
+      - generic [ref=e332]:
+        - heading "Gotowy na zmianę?" [level=2] [ref=e333]
+        - paragraph [ref=e334]: Umów wizytę szybko i wygodnie przez Booksy.
+        - link "UMÓW WIZYTĘ" [ref=e335] [cursor=pointer]:
+          - /url: https://booksy.com
+    - generic [ref=e337]:
+      - generic [ref=e338]:
+        - heading "Opinie Klientów" [level=2] [ref=e339]
+        - paragraph [ref=e340]: Realne historie. Prawdziwe efekty.
+      - generic [ref=e343]:
+        - article [ref=e344]:
+          - generic [ref=e345]:
+            - generic [ref=e346]:
+              - heading "Artur Kuzniar" [level=3] [ref=e347]
+              - generic [ref=e348]: Lokalny przewodnik
+            - generic [ref=e349]:
+              - img [ref=e350]
+              - img [ref=e352]
+              - img [ref=e354]
+              - img [ref=e356]
+              - img [ref=e358]
+          - paragraph [ref=e361]: Zdecydowanie polecam. Masaż wykonywany profesjonalnie. Po jednej wizycie czuć że mięśnie zostały 'ruszone', a po kilku wizytach są oczekiwane efekty. Można porozmawiać, poprosić o porady lub pomilczeć w spokoju. Miejsce i atmosfera relaksująca. Plus za parking.
+          - time [ref=e363]: 4 miesiące temu
+        - article [ref=e364]:
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - heading "Piotr W" [level=3] [ref=e367]
+              - generic [ref=e368]: Lokalny przewodnik
+            - generic [ref=e369]:
+              - img [ref=e370]
+              - img [ref=e372]
+              - img [ref=e374]
+              - img [ref=e376]
+              - img [ref=e378]
+          - paragraph [ref=e381]: Moje odczucia po zabiegach masażu w Panda Masaż są bardzo pozytywne. Profesjonalizm i autentyczne zaangażowanie w wykonywaną pracę. Doceniam, że poza samym zabiegiem otrzymałem instrukcje wykonywania ćwiczeń, które pomogły mi z moimi dolegliwościami. Szczerze polecam.
+          - time [ref=e383]: 4 miesiące temu
+        - article [ref=e384]:
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - heading "darek lesko" [level=3] [ref=e387]
+              - generic [ref=e388]: Lokalny przewodnik
+            - generic [ref=e389]:
+              - img [ref=e390]
+              - img [ref=e392]
+              - img [ref=e394]
+              - img [ref=e396]
+              - img [ref=e398]
+          - paragraph [ref=e401]: Mega serdecznie polecam naprawdę 🫡
+          - time [ref=e403]: 5 miesięcy temu
+        - article [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]:
+              - heading "Mariusz" [level=3] [ref=e407]
+              - generic [ref=e408]: 1 opinia
+            - generic [ref=e409]:
+              - img [ref=e410]
+              - img [ref=e412]
+              - img [ref=e414]
+              - img [ref=e416]
+              - img [ref=e418]
+          - paragraph [ref=e421]: Przyszedłem w połowie kwietnia na masaż z objawami rwy kulszowej. Po pierwszym masażu ataki rwy przeszły a już od następnego dnia mogłem spokojnie przespać całą noc. Oprócz masażu dostałem zestaw bardzo pomocnych ćwiczeń. Serdecznie polecam.
+          - time [ref=e423]: 2 lata temu
+        - article [ref=e424]:
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - heading "Paulina Dusiłło" [level=3] [ref=e427]
+              - generic [ref=e428]: 6 opinii
+            - generic [ref=e429]:
+              - img [ref=e430]
+              - img [ref=e432]
+              - img [ref=e434]
+              - img [ref=e436]
+              - img [ref=e438]
+          - paragraph [ref=e441]: Świetnie przeprowadzone badanie fizjoterapeutyczne, jasno określone cele i założenia wizyty. Po wizycie omówiono zdiagnozowane dolegliwości oraz zaproponowano rozwiązanie. 100% pojawię się ponownie.
+          - time [ref=e443]: 4 lata temu
+        - article [ref=e444]:
+          - generic [ref=e445]:
+            - generic [ref=e446]:
+              - heading "Marti Ta" [level=3] [ref=e447]
+              - generic [ref=e448]: 7 opinii
+            - generic [ref=e449]:
+              - img [ref=e450]
+              - img [ref=e452]
+              - img [ref=e454]
+              - img [ref=e456]
+              - img [ref=e458]
+          - paragraph [ref=e461]: Polecam!!! Świetny specjalista, super podejście, rewalacyjne masaże. Plus ogromna wiedza.
+          - time [ref=e463]: rok temu
+        - article [ref=e464]:
+          - generic [ref=e465]:
+            - generic [ref=e466]:
+              - heading "Ki Lee" [level=3] [ref=e467]
+              - generic [ref=e468]: Lokalny przewodnik
+            - generic [ref=e469]:
+              - img [ref=e470]
+              - img [ref=e472]
+              - img [ref=e474]
+              - img [ref=e476]
+              - img [ref=e478]
+          - paragraph [ref=e481]: Świetne podejście do klienta, oraz profesjonalny masaż. Serdecznie polecam !
+          - time [ref=e483]: rok temu
+        - article [ref=e484]:
+          - generic [ref=e485]:
+            - generic [ref=e486]:
+              - heading "magdab111 boron" [level=3] [ref=e487]
+              - generic [ref=e488]: 3 opinie
+            - generic [ref=e489]:
+              - img [ref=e490]
+              - img [ref=e492]
+              - img [ref=e494]
+              - img [ref=e496]
+              - img [ref=e498]
+          - paragraph [ref=e501]: Świetne miejsce, fachowa i profesjonalna obsługa. Wyczucie!! to charakteryzuje dobrego masażystę, Ivan robi to z pasją wiedzą i zaangażowaniem, potrafi również zadbać o właściwą atmosferę.
+          - time [ref=e503]: 3 lata temu
+        - article [ref=e504]:
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - heading "Marcelina Wójcik" [level=3] [ref=e507]
+              - generic [ref=e508]: 2 opinie
+            - generic [ref=e509]:
+              - img [ref=e510]
+              - img [ref=e512]
+              - img [ref=e514]
+              - img [ref=e516]
+              - img [ref=e518]
+          - paragraph [ref=e521]: Moja pierwsza wizyta i na pewno nie ostatnia:) Pełen profesjonalizm, świetny gabinet, obowiązkowy punkt do odwiedzenia na mapie Rzeszowa! Polecam masaż relaksacyjny, wychodzisz jak nowo narodzona.
+          - time [ref=e523]: 3 lata temu
+        - article [ref=e524]:
+          - generic [ref=e525]:
+            - generic [ref=e526]:
+              - heading "Анастасія Степанчук" [level=3] [ref=e527]
+              - generic [ref=e528]: Lokalny przewodnik
+            - generic [ref=e529]:
+              - img [ref=e530]
+              - img [ref=e532]
+              - img [ref=e534]
+              - img [ref=e536]
+              - img [ref=e538]
+          - paragraph [ref=e541]: Najlepszy fizjoterapeuta w Rzeszowie! Korzystamy z usług Ivo już ponad 2 lata cała rodzina. Gorąco polecam!!!
+          - time [ref=e543]: 3 lata temu
+        - article [ref=e544]:
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - heading "Hannah 22" [level=3] [ref=e547]
+              - generic [ref=e548]: 1 opinia
+            - generic [ref=e549]:
+              - img [ref=e550]
+              - img [ref=e552]
+              - img [ref=e554]
+              - img [ref=e556]
+              - img [ref=e558]
+          - paragraph [ref=e561]: "'Slow' masaż to coś, czego mi było trzeba! Profesjonalna obsługa zapewniły przebieg wizyty w miłej i komfortowej atmosferze. Na pewno wrócę! Polecam serdecznie ;)"
+          - time [ref=e563]: 4 lata temu
+        - article [ref=e564]:
+          - generic [ref=e565]:
+            - generic [ref=e566]:
+              - heading "Liza Petryshyn" [level=3] [ref=e567]
+              - generic [ref=e568]: Lokalny przewodnik
+            - generic [ref=e569]:
+              - img [ref=e570]
+              - img [ref=e572]
+              - img [ref=e574]
+              - img [ref=e576]
+              - img [ref=e578]
+          - paragraph [ref=e581]: Profesjonalne podejście do klienta, miła atmosfera i bardzo dobry masaż. Polecam!
+          - time [ref=e583]: 2 lata temu
+        - article [ref=e584]:
+          - generic [ref=e585]:
+            - generic [ref=e586]:
+              - heading "Patryk" [level=3] [ref=e587]
+              - generic [ref=e588]: 5 opinii
+            - generic [ref=e589]:
+              - img [ref=e590]
+              - img [ref=e592]
+              - img [ref=e594]
+              - img [ref=e596]
+              - img [ref=e598]
+          - paragraph [ref=e601]: Pełny profesjonalizm, bardzo dobre podejście do pacjenta. Masaż na prawdę bardzo dobry szczerze polecam ja na pewno tam wrócę.
+          - time [ref=e603]: 3 lata temu
+        - article [ref=e604]:
+          - generic [ref=e605]:
+            - generic [ref=e606]:
+              - heading "Magdalena Swizdor" [level=3] [ref=e607]
+              - generic [ref=e608]: 9 opinii
+            - generic [ref=e609]:
+              - img [ref=e610]
+              - img [ref=e612]
+              - img [ref=e614]
+              - img [ref=e616]
+              - img [ref=e618]
+          - paragraph [ref=e621]: Great place to relax, get treatment, feel amazing !!! Instant relief. Nice, professional service! Highly recommended 👌
+          - time [ref=e623]: rok temu
+        - article [ref=e624]:
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - heading "Katarzyna Boryło" [level=3] [ref=e627]
+              - generic [ref=e628]: 2 opinie
+            - generic [ref=e629]:
+              - img [ref=e630]
+              - img [ref=e632]
+              - img [ref=e634]
+              - img [ref=e636]
+              - img [ref=e638]
+          - paragraph [ref=e641]: Pełen profesjonalizm, bardzo dobry masaż godny polecenia!
+          - time [ref=e643]: rok temu
+        - article [ref=e644]:
+          - generic [ref=e645]:
+            - generic [ref=e646]:
+              - heading "Monika Usarz" [level=3] [ref=e647]
+              - generic [ref=e648]: Lokalny przewodnik
+            - generic [ref=e649]:
+              - img [ref=e650]
+              - img [ref=e652]
+              - img [ref=e654]
+              - img [ref=e656]
+              - img [ref=e658]
+          - paragraph [ref=e661]: Jestem bardzo zadowolona z wizyty 😊 świetny klimat, muzyka, zapachy no i przede wszystkim umiejętności polecam całym sercem, będę wracać ❤
+          - time [ref=e663]: 4 lata temu
+        - article [ref=e664]:
+          - generic [ref=e665]:
+            - generic [ref=e666]:
+              - heading "Julia Zubarska" [level=3] [ref=e667]
+              - generic [ref=e668]: Lokalny przewodnik
+            - generic [ref=e669]:
+              - img [ref=e670]
+              - img [ref=e672]
+              - img [ref=e674]
+              - img [ref=e676]
+              - img [ref=e678]
+          - paragraph [ref=e681]: Polecam każdemu, usługa bardzo profesjonalna. Super atmosfera i podejście do klienta 🙂
+          - time [ref=e683]: 2 lata temu
+        - article [ref=e684]:
+          - generic [ref=e685]:
+            - generic [ref=e686]:
+              - heading "Wiktoria M" [level=3] [ref=e687]
+              - generic [ref=e688]: Lokalny przewodnik
+            - generic [ref=e689]:
+              - img [ref=e690]
+              - img [ref=e692]
+              - img [ref=e694]
+              - img [ref=e696]
+              - img [ref=e698]
+          - paragraph [ref=e701]: Masaż idealnie dopasowany do moich potrzeb, bardzo profesjonalne podejście. Z pewnością wrócę!
+          - time [ref=e703]: rok temu
+        - article [ref=e704]:
+          - generic [ref=e705]:
+            - generic [ref=e706]:
+              - heading "Monika" [level=3] [ref=e707]
+              - generic [ref=e708]: Lokalny przewodnik
+            - generic [ref=e709]:
+              - img [ref=e710]
+              - img [ref=e712]
+              - img [ref=e714]
+              - img [ref=e716]
+              - img [ref=e718]
+          - paragraph [ref=e721]: Świetny masaż i profesjonalne podejście. Polecam :)
+          - time [ref=e723]: rok temu
+        - article [ref=e724]:
+          - generic [ref=e725]:
+            - generic [ref=e726]:
+              - heading "Maciej Brach" [level=3] [ref=e727]
+              - generic [ref=e728]: Lokalny przewodnik
+            - generic [ref=e729]:
+              - img [ref=e730]
+              - img [ref=e732]
+              - img [ref=e734]
+              - img [ref=e736]
+              - img [ref=e738]
+          - paragraph [ref=e741]: Rewelacyjne miejsce, pełen profesjonalizm!!! Na pewno wrócę i szczerze polecam!!!!
+          - time [ref=e743]: rok temu
+        - article [ref=e744]:
+          - generic [ref=e745]:
+            - generic [ref=e746]:
+              - heading "Anita Palecka" [level=3] [ref=e747]
+              - generic [ref=e748]: 1 opinia
+            - generic [ref=e749]:
+              - img [ref=e750]
+              - img [ref=e752]
+              - img [ref=e754]
+              - img [ref=e756]
+              - img [ref=e758]
+          - paragraph [ref=e761]: Profesjonalna obsługa, miła atmosfera, indywidualne podejście do klienta. Polecam :)
+          - time [ref=e763]: 2 lata temu
+        - article [ref=e764]:
+          - generic [ref=e765]:
+            - generic [ref=e766]:
+              - heading "Patrycja Mach" [level=3] [ref=e767]
+              - generic [ref=e768]: 3 opinie
+            - generic [ref=e769]:
+              - img [ref=e770]
+              - img [ref=e772]
+              - img [ref=e774]
+              - img [ref=e776]
+              - img [ref=e778]
+          - paragraph [ref=e781]: Świetny masaż, polecam! Na pewno wrócę.
+          - time [ref=e783]: rok temu
+        - article [ref=e784]:
+          - generic [ref=e785]:
+            - generic [ref=e786]:
+              - heading "Olha Zaborska" [level=3] [ref=e787]
+              - generic [ref=e788]: 5 opinii
+            - generic [ref=e789]:
+              - img [ref=e790]
+              - img [ref=e792]
+              - img [ref=e794]
+              - img [ref=e796]
+              - img [ref=e798]
+          - paragraph [ref=e801]: Dziękuje za kameralną atmosferę i profesjonalne podejście! Jestem szczęśliwa! Polecam!
+          - time [ref=e803]: 2 lata temu
+        - article [ref=e804]:
+          - generic [ref=e805]:
+            - generic [ref=e806]:
+              - heading "Ewelina Oleszycka" [level=3] [ref=e807]
+              - generic [ref=e808]: 3 opinie
+            - generic [ref=e809]:
+              - img [ref=e810]
+              - img [ref=e812]
+              - img [ref=e814]
+              - img [ref=e816]
+              - img [ref=e818]
+          - paragraph [ref=e821]: Chwila relaksu dla siebie ;) Zdecydowanie polecam. Pełen profesjonalizm. Na pewno jeszcze tu wrócę ;)
+          - time [ref=e823]: 3 lata temu
+        - article [ref=e824]:
+          - generic [ref=e825]:
+            - generic [ref=e826]:
+              - heading "Nastia Khropata" [level=3] [ref=e827]
+              - generic [ref=e828]: 3 opinie
+            - generic [ref=e829]:
+              - img [ref=e830]
+              - img [ref=e832]
+              - img [ref=e834]
+              - img [ref=e836]
+              - img [ref=e838]
+          - paragraph [ref=e841]: Najlepsza decyzja której w ogóle można podjąć, świetny klimat, profesjonalne podejście, zdecydowanie polecam😍
+          - time [ref=e843]: 3 lata temu
+        - article [ref=e844]:
+          - generic [ref=e845]:
+            - generic [ref=e846]:
+              - heading "Роксоляна Басараб" [level=3] [ref=e847]
+              - generic [ref=e848]: Lokalny przewodnik
+            - generic [ref=e849]:
+              - img [ref=e850]
+              - img [ref=e852]
+              - img [ref=e854]
+              - img [ref=e856]
+              - img [ref=e858]
+          - paragraph [ref=e861]: Profesjonalnie, bardzo polecam! 😊
+          - time [ref=e863]: rok temu
+        - article [ref=e864]:
+          - generic [ref=e865]:
+            - generic [ref=e866]:
+              - heading "Tonny brov" [level=3] [ref=e867]
+              - generic [ref=e868]: 5 opinii
+            - generic [ref=e869]:
+              - img [ref=e870]
+              - img [ref=e872]
+              - img [ref=e874]
+              - img [ref=e876]
+              - img [ref=e878]
+          - paragraph [ref=e881]: Dziękuję Ivan. Jestem doskonale zrelaksowany po masażu. Bardzo profesjonalne wykonanie.
+          - time [ref=e883]: 4 lata temu
+        - article [ref=e884]:
+          - generic [ref=e885]:
+            - generic [ref=e886]:
+              - heading "regina bober" [level=3] [ref=e887]
+              - generic [ref=e888]: 5 opinii
+            - generic [ref=e889]:
+              - img [ref=e890]
+              - img [ref=e892]
+              - img [ref=e894]
+              - img [ref=e896]
+              - img [ref=e898]
+          - paragraph [ref=e901]: Bardzo dobry masaż, polecam serdecznie! :)
+          - time [ref=e903]: 3 lata temu
+        - article [ref=e904]:
+          - generic [ref=e905]:
+            - generic [ref=e906]:
+              - heading "Mariola Palecka" [level=3] [ref=e907]
+              - generic [ref=e908]: 1 opinia
+            - generic [ref=e909]:
+              - img [ref=e910]
+              - img [ref=e912]
+              - img [ref=e914]
+              - img [ref=e916]
+              - img [ref=e918]
+          - paragraph [ref=e921]: Super miejsce, miła atmosfera. Polecam :)
+          - time [ref=e923]: 2 lata temu
+        - article [ref=e924]:
+          - generic [ref=e925]:
+            - generic [ref=e926]:
+              - heading "Mateusz Dudek" [level=3] [ref=e927]
+              - generic [ref=e928]: Lokalny przewodnik
+            - generic [ref=e929]:
+              - img [ref=e930]
+              - img [ref=e932]
+              - img [ref=e934]
+              - img [ref=e936]
+              - img [ref=e938]
+          - paragraph [ref=e941]: Bardzo polecam! Skorzystam nie raz!☺️
+          - time [ref=e943]: 3 lata temu
+        - article [ref=e944]:
+          - generic [ref=e945]:
+            - generic [ref=e946]:
+              - heading "Irena Dubyk" [level=3] [ref=e947]
+              - generic [ref=e948]: Lokalny przewodnik
+            - generic [ref=e949]:
+              - img [ref=e950]
+              - img [ref=e952]
+              - img [ref=e954]
+              - img [ref=e956]
+              - img [ref=e958]
+          - paragraph [ref=e961]: Rewelacja! Odprężyłam się całkowicie. Oczywiście polecam każdemu:)
+          - time [ref=e963]: 4 lata temu
+    - generic [ref=e965]:
+      - heading "Ostatnie Aktualności" [level=2] [ref=e966]
+      - generic [ref=e967]:
+        - article [ref=e968]:
+          - 'link "Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu? #stres #kortyzol #zdrowie psychiczne #regeneracja Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu? 10 kwi 2024 | 1 min" [ref=e969] [cursor=pointer]':
+            - /url: /blog/stres-kortyzol-wplyw-na-trening-masaz
+            - img "Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu?" [ref=e971]
+            - generic [ref=e972]:
+              - generic [ref=e973]:
+                - generic [ref=e974]: "#stres"
+                - generic [ref=e975]: "#kortyzol"
+                - generic [ref=e976]: "#zdrowie psychiczne"
+                - generic [ref=e977]: "#regeneracja"
+              - heading "Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu?" [level=2] [ref=e978]
+              - generic [ref=e980]:
+                - time [ref=e981]: 10 kwi 2024
+                - generic [ref=e982]: "|"
+                - generic [ref=e983]:
+                  - img [ref=e984]
+                  - text: 1 min
+        - article [ref=e986]:
+          - 'link "Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup? #technika ćwiczeń #przysiady #zdrowe kolana #trening nóg Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup? 6 kwi 2024 | 1 min" [ref=e987] [cursor=pointer]':
+            - /url: /blog/przysiad-technika-kolana-kregoslup
+            - img "Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup?" [ref=e989]
+            - generic [ref=e990]:
+              - generic [ref=e991]:
+                - generic [ref=e992]: "#technika ćwiczeń"
+                - generic [ref=e993]: "#przysiady"
+                - generic [ref=e994]: "#zdrowe kolana"
+                - generic [ref=e995]: "#trening nóg"
+              - heading "Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup?" [level=2] [ref=e996]
+              - generic [ref=e998]:
+                - time [ref=e999]: 6 kwi 2024
+                - generic [ref=e1000]: "|"
+                - generic [ref=e1001]:
+                  - img [ref=e1002]
+                  - text: 1 min
+        - article [ref=e1004]:
+          - 'link "Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu? #masaż sportowy #regeneracja #fizjoterapia #wyniki sportowe Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu? 2 kwi 2024 | 1 min" [ref=e1005] [cursor=pointer]':
+            - /url: /blog/jak-czesto-masaz-sportowy-regeneracja
+            - img "Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu?" [ref=e1007]
+            - generic [ref=e1008]:
+              - generic [ref=e1009]:
+                - generic [ref=e1010]: "#masaż sportowy"
+                - generic [ref=e1011]: "#regeneracja"
+                - generic [ref=e1012]: "#fizjoterapia"
+                - generic [ref=e1013]: "#wyniki sportowe"
+              - heading "Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu?" [level=2] [ref=e1014]
+              - generic [ref=e1016]:
+                - time [ref=e1017]: 2 kwi 2024
+                - generic [ref=e1018]: "|"
+                - generic [ref=e1019]:
+                  - img [ref=e1020]
+                  - text: 1 min
+    - generic [ref=e1023]:
+      - heading "Znajdź nas na mapie" [level=2] [ref=e1024]
+      - generic [ref=e1025]:
+        - generic [ref=e1026]:
+          - generic [ref=e1027]:
+            - heading "STUDIO TRENINGOWE" [level=3] [ref=e1028]
+            - paragraph [ref=e1029]: Myśliwska 255, Rzeszów
+          - iframe [ref=e1031]
+        - generic [ref=e1032]:
+          - generic [ref=e1033]:
+            - heading "MASAŻ" [level=3] [ref=e1034]
+            - paragraph [ref=e1035]: Podkarpacka 12a, Rzeszów
+          - iframe [ref=e1037]
+    - generic [ref=e1039]:
+      - generic [ref=e1040]:
+        - heading "CENTRUM WIEDZY PANDA" [level=2] [ref=e1041]
+        - paragraph [ref=e1042]: Eksperckie artykuły, porady żywieniowe i techniki treningowe, które pomogą Ci zrozumieć Twoje ciało.
+      - generic [ref=e1043]:
+        - generic [ref=e1044]:
+          - generic:
+            - img
+          - textbox "Wyszukaj pojęcie..." [ref=e1045]
+        - generic [ref=e1046]:
+          - link "Rozgrzewka Dynamiczna" [ref=e1047] [cursor=pointer]:
+            - /url: /baza-wiedzy/rozgrzewka-dynamiczna
+          - link "Trening Oporowy" [ref=e1048] [cursor=pointer]:
+            - /url: /baza-wiedzy/trening-oporowy-silowy
+          - link "Kalistenika" [ref=e1049] [cursor=pointer]:
+            - /url: /baza-wiedzy/kalistenika-trening-wlasna-masa
+          - link "Tabata" [ref=e1050] [cursor=pointer]:
+            - /url: /baza-wiedzy/tabata-protokol
+          - link "Trening Interwałowy (HIIT)" [ref=e1051] [cursor=pointer]:
+            - /url: /baza-wiedzy/trening-interwalowy-hiit
+          - link "Pułap Tlenowy (VO2 Max)" [ref=e1052] [cursor=pointer]:
+            - /url: /baza-wiedzy/pulap-tlenowy-vo2-max
+          - link "Próg Mleczanowy" [ref=e1053] [cursor=pointer]:
+            - /url: /baza-wiedzy/prog-mleczanowy
+          - link "ATP (Adenozynotrifosforan)" [ref=e1054] [cursor=pointer]:
+            - /url: /baza-wiedzy/atp-energia
+          - link "Superkompensacja" [ref=e1055] [cursor=pointer]:
+            - /url: /baza-wiedzy/superkompensacja
+          - link "Włókna Mięśniowe Wolnokurczliwe (Typ I)" [ref=e1056] [cursor=pointer]:
+            - /url: /baza-wiedzy/wlokna-wolnokurczliwe-typ-1
+          - link "Włókna Mięśniowe Szybkokurczliwe" [ref=e1057] [cursor=pointer]:
+            - /url: /baza-wiedzy/wlokna-szybkokurczliwe-typ-2
+          - link "Pamięć Mięśniowa" [ref=e1058] [cursor=pointer]:
+            - /url: /baza-wiedzy/pamiec-miesniowa
+          - link "Zakres Ruchu (ROM)" [ref=e1059] [cursor=pointer]:
+            - /url: /baza-wiedzy/zakres-ruchu-rom
+          - link "Stabilność (Stability)" [ref=e1060] [cursor=pointer]:
+            - /url: /baza-wiedzy/stabilnosc-stawow
+          - link "Mobilność (Mobility)" [ref=e1061] [cursor=pointer]:
+            - /url: /baza-wiedzy/mobilnosc-mobility
+          - link "Stabilizacja Centralna (Core)" [ref=e1062] [cursor=pointer]:
+            - /url: /baza-wiedzy/stabilizacja-centralna-core
+          - link "Ekscentryczna Faza Ruchu" [ref=e1063] [cursor=pointer]:
+            - /url: /baza-wiedzy/faza-ekscentryczna
+          - link "Koncentryczna Faza Ruchu" [ref=e1064] [cursor=pointer]:
+            - /url: /baza-wiedzy/faza-koncentryczna
+          - link "Trening Plyometryczny" [ref=e1065] [cursor=pointer]:
+            - /url: /baza-wiedzy/trening-plyometryczny
+          - link "Trening Izometryczny" [ref=e1066] [cursor=pointer]:
+            - /url: /baza-wiedzy/trening-izometryczny
+        - button "POKAŻ WIĘCEJ" [ref=e1068] [cursor=pointer]
+    - generic [ref=e1070]:
+      - heading "Panda Studio Rzeszów – Twoje kameralne centrum treningu i regeneracji" [level=2] [ref=e1071]
+      - generic [ref=e1073]:
+        - heading "Dlaczego nie jesteśmy typową siłownią?" [level=3] [ref=e1074]
+        - paragraph [ref=e1075]:
+          - text: W Rzeszowie znajdziesz wiele dużych klubów fitness, ale
+          - strong [ref=e1076]: Panda Studio Team
+          - text: to coś więcej niż tylko sprzęt i ciężary. Jesteśmy
+          - strong [ref=e1077]: kameralnym studiem treningowym
+          - text: ", w którym nie jesteś anonimowym klientem. Stawiamy na relację, indywidualne podejście i atmosferę, w której każdy – niezależnie od poziomu zaawansowania – czuje się bezpiecznie. Nasza filozofia opiera się na holistycznym podejściu do zdrowia: od"
+          - link "profesjonalnego treningu personalnego" [ref=e1078] [cursor=pointer]:
+            - /url: /trening
+          - text: ", przez edukację, aż po skuteczną regenerację."
+        - heading "Trening Personalny i Funkcjonalny – Rzeszów, ul. Myśliwska 255" [level=3] [ref=e1079]
+        - paragraph [ref=e1080]:
+          - text: W naszej lokalizacji treningowej przy ulicy Myśliwskiej skupiamy się na tym, co najważniejsze – Twoim zdrowiu i sprawności. Nasi doświadczeni
+          - strong [ref=e1081]: trenerzy personalni
+          - text: specjalizują się nie tylko w kształtowaniu sylwetki i odchudzaniu, ale przede wszystkim w
+          - strong [ref=e1082]: treningu medycznym
+          - text: i funkcjonalnym. Pomagamy osobom z bólami kręgosłupa, siedzącym trybem życia oraz tym, którzy wracają do formy po kontuzjach.
+        - paragraph [ref=e1083]:
+          - text: Nie wiesz, od czego zacząć? Sprawdź nasz
+          - link "cennik treningów" [ref=e1084] [cursor=pointer]:
+            - /url: /cennik
+          - text: i umów się na konsultację. W Panda Studio stawiamy na technikę i bezpieczeństwo, ucząc Cię świadomego ruchu, który wykorzystasz w życiu codziennym.
+        - heading "Masaż i Fizjoterapia – Rzeszów, ul. Podkarpacka 12a" [level=3] [ref=e1085]
+        - paragraph [ref=e1086]:
+          - text: Trening to tylko połowa sukcesu. Równie ważna jest regeneracja. W naszym oddzielnym gabinecie przy ulicy Podkarpackiej oferujemy profesjonalne usługi fizjoterapeutyczne. Jeśli szukasz ulgi w bólu, polecamy
+          - strong [ref=e1087]: masaż leczniczy
+          - text: lub terapię manualną. Dla osób aktywnych przygotowaliśmy
+          - link "masaż sportowy" [ref=e1088] [cursor=pointer]:
+            - /url: /masaz
+          - text: ", który przyspiesza regenerację mięśni. A jeśli po prostu potrzebujesz chwili wytchnienia od codziennego stresu, nasz masaż relaksacyjny będzie idealnym wyborem."
+        - paragraph [ref=e1089]:
+          - text: "Rezerwacja wizyty jest prosta i szybka. Możesz to zrobić online przez nasz profil na Booksy:"
+          - link "Zarezerwuj masaż w Panda Studio" [ref=e1090] [cursor=pointer]:
+            - /url: https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow
+          - text: .
+        - heading "Edukacja i Społeczność – Dołącz do nas!" [level=3] [ref=e1091]
+        - paragraph [ref=e1092]:
+          - text: Wierzymy, że świadomy klient osiąga lepsze efekty. Dlatego regularnie publikujemy artykuły na naszym
+          - link "blogu" [ref=e1093] [cursor=pointer]:
+            - /url: /blog
+          - text: oraz rozwijamy
+          - link "Bazę Wiedzy" [ref=e1094] [cursor=pointer]:
+            - /url: /baza-wiedzy
+          - text: ", gdzie tłumaczymy skomplikowane zagadnienia treningowe w prosty sposób."
+        - paragraph [ref=e1095]:
+          - text: "Panda Studio to także ludzie. Zobacz, jak trenujemy, śmiejemy się i wspieramy na co dzień. Obserwuj nas na Instagramie:"
+          - link "@ivo_life_" [ref=e1096] [cursor=pointer]:
+            - /url: https://www.instagram.com/ivo_life_/
+          - text: i stań się częścią naszej pozytywnej społeczności. Niezależnie od tego, czy Twoim celem jest
+          - strong [ref=e1097]: zdrowy kręgosłup
+          - text: ", zrzucenie kilku kilogramów czy po prostu lepsze samopoczucie – jesteśmy tu dla Ciebie."
+      - button "Rozwiń" [ref=e1099] [cursor=pointer]
+  - contentinfo [ref=e1100]:
+    - generic [ref=e1101]:
+      - generic [ref=e1103]:
+        - generic [ref=e1104]:
+          - paragraph [ref=e1105]: S u b s k r y b u j n a s z e m e d i a
+          - heading "Stay in touch" [level=2] [ref=e1106]
+        - list [ref=e1108]:
+          - listitem [ref=e1109]:
+            - link "Facebook Panda Masaż" [ref=e1110] [cursor=pointer]:
+              - /url: https://www.facebook.com/Pandamasaz/
+              - img [ref=e1111]
+          - listitem [ref=e1113]:
+            - link "Instagram Panda Masaż" [ref=e1114] [cursor=pointer]:
+              - /url: https://www.instagram.com/panda_masaz/
+              - img [ref=e1115]
+      - generic [ref=e1118]:
+        - generic [ref=e1119]:
+          - link "Logo niedźwiedzia Logo FIT" [ref=e1120] [cursor=pointer]:
+            - /url: /
+            - img "Logo niedźwiedzia" [ref=e1121]
+            - img "Logo FIT" [ref=e1122]
+          - paragraph [ref=e1123]: Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.
+        - list [ref=e1125]:
+          - listitem [ref=e1126]:
+            - img "Ikonka lokalizacji" [ref=e1128]
+            - generic [ref=e1129]:
+              - paragraph [ref=e1130]: "Adres:"
+              - paragraph [ref=e1131]:
+                - link "Treningi:Myśliwska 255, Rzeszów, PL 35-242" [ref=e1132] [cursor=pointer]:
+                  - /url: https://g.co/kgs/P3n3EtW
+                  - strong [ref=e1133]: "Treningi:"
+                  - text: Myśliwska 255, Rzeszów, PL 35-242
+              - paragraph [ref=e1134]:
+                - link "Masaże:Podkarpacka 12a, Rzeszów, PL 35-082" [ref=e1135] [cursor=pointer]:
+                  - /url: https://g.co/kgs/MBEjdC3
+                  - strong [ref=e1136]: "Masaże:"
+                  - text: Podkarpacka 12a, Rzeszów, PL 35-082
+          - listitem [ref=e1137]:
+            - img "Ikonka telefonu" [ref=e1139]
+            - generic [ref=e1140]:
+              - paragraph [ref=e1141]: "Telefon:"
+              - paragraph [ref=e1142]:
+                - link "694 906 749" [ref=e1143] [cursor=pointer]:
+                  - /url: tel:694 906 749
+          - listitem [ref=e1144]:
+            - img "Ikonka zegarka" [ref=e1146]
+            - generic [ref=e1147]:
+              - paragraph [ref=e1148]: "Godziny pracy:"
+              - paragraph [ref=e1149]: "Pon-Sob: 08:00 - 16:00"
+      - paragraph [ref=e1150]:
+        - text: ©2026Wszystkie prawa
+        - link "PandaStudioTeam." [ref=e1151] [cursor=pointer]:
+          - /url: /
+        - text: Design & Developed By alexlikenew
+  - button "Open Next.js Dev Tools" [ref=e1157] [cursor=pointer]:
+    - img [ref=e1158]
+  - alert [ref=e1161]
+```

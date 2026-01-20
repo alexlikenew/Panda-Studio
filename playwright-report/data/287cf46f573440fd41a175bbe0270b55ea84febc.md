@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Logo niedźwiedzia Logo FIT" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Logo niedźwiedzia" [ref=e6]
+        - img "Logo FIT" [ref=e7]
+      - button "Otwórz menu nawigacji" [ref=e8] [cursor=pointer]
+  - generic [ref=e12]:
+    - heading "404" [level=1] [ref=e13]
+    - heading "This page could not be found." [level=2] [ref=e15]
+  - contentinfo [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: S u b s k r y b u j n a s z e m e d i a
+          - heading "Stay in touch" [level=2] [ref=e22]
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "Facebook Panda Masaż" [ref=e26] [cursor=pointer]:
+              - /url: https://www.facebook.com/Pandamasaz/
+              - img [ref=e27]
+          - listitem [ref=e29]:
+            - link "Instagram Panda Masaż" [ref=e30] [cursor=pointer]:
+              - /url: https://www.instagram.com/panda_masaz/
+              - img [ref=e31]
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - link "Logo niedźwiedzia Logo FIT" [ref=e36] [cursor=pointer]:
+            - /url: /
+            - img "Logo niedźwiedzia" [ref=e37]
+            - img "Logo FIT" [ref=e38]
+          - paragraph [ref=e39]: Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - img "Ikonka lokalizacji" [ref=e44]
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: "Adres:"
+              - paragraph [ref=e47]:
+                - link "Treningi:Myśliwska 255, Rzeszów, PL 35-242" [ref=e48] [cursor=pointer]:
+                  - /url: https://g.co/kgs/P3n3EtW
+                  - strong [ref=e49]: "Treningi:"
+                  - text: Myśliwska 255, Rzeszów, PL 35-242
+              - paragraph [ref=e50]:
+                - link "Masaże:Podkarpacka 12a, Rzeszów, PL 35-082" [ref=e51] [cursor=pointer]:
+                  - /url: https://g.co/kgs/MBEjdC3
+                  - strong [ref=e52]: "Masaże:"
+                  - text: Podkarpacka 12a, Rzeszów, PL 35-082
+          - listitem [ref=e53]:
+            - img "Ikonka telefonu" [ref=e55]
+            - generic [ref=e56]:
+              - paragraph [ref=e57]: "Telefon:"
+              - paragraph [ref=e58]:
+                - link "694 906 749" [ref=e59] [cursor=pointer]:
+                  - /url: tel:694 906 749
+          - listitem [ref=e60]:
+            - img "Ikonka zegarka" [ref=e62]
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: "Godziny pracy:"
+              - paragraph [ref=e65]: "Pon-Sob: 08:00 - 16:00"
+      - paragraph [ref=e66]:
+        - text: ©2026Wszystkie prawa
+        - link "PandaStudioTeam." [ref=e67] [cursor=pointer]:
+          - /url: /
+        - text: Design & Developed By alexlikenew
+  - button "Open Next.js Dev Tools" [ref=e73] [cursor=pointer]:
+    - generic [ref=e76]:
+      - text: Compiling
+      - generic [ref=e77]:
+        - generic [ref=e78]: .
+        - generic [ref=e79]: .
+        - generic [ref=e80]: .
+  - alert [ref=e81]
+```

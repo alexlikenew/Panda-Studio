@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter, Poppins } from "next/font/google"; // Added fonts
 import "@/styles/main.scss";
 import Navbar from "@/widgets/Navbar"; // Added Navbar
@@ -191,6 +192,19 @@ export default function RootLayout({
     return (
         <html lang="pl">
             <body className={`${inter.variable} ${poppins.variable} antialiased`}>
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-99JXQ7S6FC"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-99JXQ7S6FC');
+                    `}
+                </Script>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

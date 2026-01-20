@@ -1,0 +1,263 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Logo niedźwiedzia Logo FIT" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Logo niedźwiedzia" [ref=e6]
+        - img "Logo FIT" [ref=e7]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Cennik" [ref=e11] [cursor=pointer]:
+            - /url: /cennik
+        - listitem [ref=e12]:
+          - link "Trening" [ref=e13] [cursor=pointer]:
+            - /url: /trening
+        - listitem [ref=e14]:
+          - link "Masaż" [ref=e15] [cursor=pointer]:
+            - /url: /masaz
+        - listitem [ref=e16]:
+          - link "Baza wiedzy" [ref=e17] [cursor=pointer]:
+            - /url: /baza-wiedzy
+        - listitem [ref=e18]:
+          - link "Blog" [ref=e19] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e20]:
+          - link "Kontakt" [ref=e21] [cursor=pointer]:
+            - /url: /contact
+        - listitem [ref=e22]: "|"
+        - listitem [ref=e23]:
+          - button "Spróbuj teraz - otwórz formularz" [ref=e24] [cursor=pointer]: SPRÓBUJ!
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Nasze Artykuły" [level=1] [ref=e28]
+        - paragraph [ref=e29]: Wiedza, porady i inspiracje ze świata treningu, masażu i zdrowego stylu życia.
+      - generic [ref=e30]:
+        - article [ref=e31]:
+          - 'link "Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu? #stres #kortyzol #zdrowie psychiczne #regeneracja Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu? 10 kwi 2024 | 1 min" [ref=e32] [cursor=pointer]':
+            - /url: /blog/stres-kortyzol-wplyw-na-trening-masaz
+            - img "Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu?" [ref=e34]
+            - generic [ref=e35]:
+              - generic [ref=e36]:
+                - generic [ref=e37]: "#stres"
+                - generic [ref=e38]: "#kortyzol"
+                - generic [ref=e39]: "#zdrowie psychiczne"
+                - generic [ref=e40]: "#regeneracja"
+              - heading "Stres niszczy Twoje efekty treningowe. Jak masaż i trening obniżają poziom kortyzolu?" [level=2] [ref=e41]
+              - generic [ref=e43]:
+                - time [ref=e44]: 10 kwi 2024
+                - generic [ref=e45]: "|"
+                - generic [ref=e46]:
+                  - img [ref=e47]
+                  - text: 1 min
+        - article [ref=e49]:
+          - 'link "Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup? #technika ćwiczeń #przysiady #zdrowe kolana #trening nóg Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup? 6 kwi 2024 | 1 min" [ref=e50] [cursor=pointer]':
+            - /url: /blog/przysiad-technika-kolana-kregoslup
+            - img "Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup?" [ref=e52]
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: "#technika ćwiczeń"
+                - generic [ref=e56]: "#przysiady"
+                - generic [ref=e57]: "#zdrowe kolana"
+                - generic [ref=e58]: "#trening nóg"
+              - heading "Przysiad – król ćwiczeń. Jak poprawić technikę, by chronić kolana i kręgosłup?" [level=2] [ref=e59]
+              - generic [ref=e61]:
+                - time [ref=e62]: 6 kwi 2024
+                - generic [ref=e63]: "|"
+                - generic [ref=e64]:
+                  - img [ref=e65]
+                  - text: 1 min
+        - article [ref=e67]:
+          - 'link "Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu? #masaż sportowy #regeneracja #fizjoterapia #wyniki sportowe Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu? 2 kwi 2024 | 1 min" [ref=e68] [cursor=pointer]':
+            - /url: /blog/jak-czesto-masaz-sportowy-regeneracja
+            - img "Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu?" [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - generic [ref=e73]: "#masaż sportowy"
+                - generic [ref=e74]: "#regeneracja"
+                - generic [ref=e75]: "#fizjoterapia"
+                - generic [ref=e76]: "#wyniki sportowe"
+              - heading "Jak często chodzić na masaż sportowy, żeby widzieć realne efekty w treningu?" [level=2] [ref=e77]
+              - generic [ref=e79]:
+                - time [ref=e80]: 2 kwi 2024
+                - generic [ref=e81]: "|"
+                - generic [ref=e82]:
+                  - img [ref=e83]
+                  - text: 1 min
+        - article [ref=e85]:
+          - 'link "Co jeść przed i po treningu, żeby mieć energię i szybciej się regenerować? #dieta sportowa #odżywianie #suplementacja #energia Co jeść przed i po treningu, żeby mieć energię i szybciej się regenerować? 29 mar 2024 | 1 min" [ref=e86] [cursor=pointer]':
+            - /url: /blog/co-jesc-przed-i-po-treningu-dieta
+            - img "Co jeść przed i po treningu, żeby mieć energię i szybciej się regenerować?" [ref=e88]
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]: "#dieta sportowa"
+                - generic [ref=e92]: "#odżywianie"
+                - generic [ref=e93]: "#suplementacja"
+                - generic [ref=e94]: "#energia"
+              - heading "Co jeść przed i po treningu, żeby mieć energię i szybciej się regenerować?" [level=2] [ref=e95]
+              - generic [ref=e97]:
+                - time [ref=e98]: 29 mar 2024
+                - generic [ref=e99]: "|"
+                - generic [ref=e100]:
+                  - img [ref=e101]
+                  - text: 1 min
+        - article [ref=e103]:
+          - 'link "Kobiety i ciężary: Czy od dźwigania stanę się ''zbyt umięśniona''? Obalamy mity #trening kobiet #mity treningowe #sylwetka #siłownia Kobiety i ciężary: Czy od dźwigania stanę się ''zbyt umięśniona''? Obalamy mity 25 mar 2024 | 1 min" [ref=e104] [cursor=pointer]':
+            - /url: /blog/kobiety-ciezary-mity-zbyt-umiesniona
+            - 'img "Kobiety i ciężary: Czy od dźwigania stanę się ''zbyt umięśniona''? Obalamy mity" [ref=e106]'
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - generic [ref=e109]: "#trening kobiet"
+                - generic [ref=e110]: "#mity treningowe"
+                - generic [ref=e111]: "#sylwetka"
+                - generic [ref=e112]: "#siłownia"
+              - 'heading "Kobiety i ciężary: Czy od dźwigania stanę się ''zbyt umięśniona''? Obalamy mity" [level=2] [ref=e113]'
+              - generic [ref=e115]:
+                - time [ref=e116]: 25 mar 2024
+                - generic [ref=e117]: "|"
+                - generic [ref=e118]:
+                  - img [ref=e119]
+                  - text: 1 min
+        - article [ref=e121]:
+          - 'link "Dlaczego nie chudniesz mimo treningów? Rola NEAT i regeneracji w redukcji #odchudzanie #redukcja #NEAT #metabolizm Dlaczego nie chudniesz mimo treningów? Rola NEAT i regeneracji w redukcji 20 mar 2024 | 1 min" [ref=e122] [cursor=pointer]':
+            - /url: /blog/brak-efektow-odchudzanie-neat-regeneracja
+            - img "Dlaczego nie chudniesz mimo treningów? Rola NEAT i regeneracji w redukcji" [ref=e124]
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]: "#odchudzanie"
+                - generic [ref=e128]: "#redukcja"
+                - generic [ref=e129]: "#NEAT"
+                - generic [ref=e130]: "#metabolizm"
+              - heading "Dlaczego nie chudniesz mimo treningów? Rola NEAT i regeneracji w redukcji" [level=2] [ref=e131]
+              - generic [ref=e133]:
+                - time [ref=e134]: 20 mar 2024
+                - generic [ref=e135]: "|"
+                - generic [ref=e136]:
+                  - img [ref=e137]
+                  - text: 1 min
+        - article [ref=e139]:
+          - 'link "Punkty spustowe (Trigger Points) – dlaczego bolą i jak się ich pozbyć? #fizjoterapia #punkty spustowe #ból mięśni #masaż Punkty spustowe (Trigger Points) – dlaczego bolą i jak się ich pozbyć? 15 mar 2024 | 1 min" [ref=e140] [cursor=pointer]':
+            - /url: /blog/punkty-spustowe-trigger-points-bol
+            - img "Punkty spustowe (Trigger Points) – dlaczego bolą i jak się ich pozbyć?" [ref=e142]
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - generic [ref=e145]: "#fizjoterapia"
+                - generic [ref=e146]: "#punkty spustowe"
+                - generic [ref=e147]: "#ból mięśni"
+                - generic [ref=e148]: "#masaż"
+              - heading "Punkty spustowe (Trigger Points) – dlaczego bolą i jak się ich pozbyć?" [level=2] [ref=e149]
+              - generic [ref=e151]:
+                - time [ref=e152]: 15 mar 2024
+                - generic [ref=e153]: "|"
+                - generic [ref=e154]:
+                  - img [ref=e155]
+                  - text: 1 min
+        - article [ref=e157]:
+          - 'link "Trening na masę vs. na siłę – czym się różnią i co wybrać na początek? #trening siłowy #hipertrofia #siła #plany treningowe Trening na masę vs. na siłę – czym się różnią i co wybrać na początek? 12 mar 2024 | 1 min" [ref=e158] [cursor=pointer]':
+            - /url: /blog/trening-masa-vs-sila-roznice
+            - img "Trening na masę vs. na siłę – czym się różnią i co wybrać na początek?" [ref=e160]
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - generic [ref=e163]: "#trening siłowy"
+                - generic [ref=e164]: "#hipertrofia"
+                - generic [ref=e165]: "#siła"
+                - generic [ref=e166]: "#plany treningowe"
+              - heading "Trening na masę vs. na siłę – czym się różnią i co wybrać na początek?" [level=2] [ref=e167]
+              - generic [ref=e169]:
+                - time [ref=e170]: 12 mar 2024
+                - generic [ref=e171]: "|"
+                - generic [ref=e172]:
+                  - img [ref=e173]
+                  - text: 1 min
+        - article [ref=e175]:
+          - 'link "Sztywny kark i ból głowy od komputera? Jak masaż tkanek głębokich ratuje biurowców #ból karku #praca siedząca #masaż tkanek głębokich #zdrowie w biurze Sztywny kark i ból głowy od komputera? Jak masaż tkanek głębokich ratuje biurowców 8 mar 2024 | 1 min" [ref=e176] [cursor=pointer]':
+            - /url: /blog/sztywny-kark-bol-glowy-biuro-masaz
+            - img "Sztywny kark i ból głowy od komputera? Jak masaż tkanek głębokich ratuje biurowców" [ref=e178]
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - generic [ref=e181]: "#ból karku"
+                - generic [ref=e182]: "#praca siedząca"
+                - generic [ref=e183]: "#masaż tkanek głębokich"
+                - generic [ref=e184]: "#zdrowie w biurze"
+              - heading "Sztywny kark i ból głowy od komputera? Jak masaż tkanek głębokich ratuje biurowców" [level=2] [ref=e185]
+              - generic [ref=e187]:
+                - time [ref=e188]: 8 mar 2024
+                - generic [ref=e189]: "|"
+                - generic [ref=e190]:
+                  - img [ref=e191]
+                  - text: 1 min
+        - article [ref=e193]:
+          - 'link "5 błędów na siłowni, przez które nie budujesz mięśni (i jak je naprawić) #trening siłowy #budowa mięśni #błędy treningowe #hipertrofia 5 błędów na siłowni, przez które nie budujesz mięśni (i jak je naprawić) 5 mar 2024 | 1 min" [ref=e194] [cursor=pointer]':
+            - /url: /blog/5-bledow-na-silowni-budowanie-miesni
+            - img "5 błędów na siłowni, przez które nie budujesz mięśni (i jak je naprawić)" [ref=e196]
+            - generic [ref=e197]:
+              - generic [ref=e198]:
+                - generic [ref=e199]: "#trening siłowy"
+                - generic [ref=e200]: "#budowa mięśni"
+                - generic [ref=e201]: "#błędy treningowe"
+                - generic [ref=e202]: "#hipertrofia"
+              - heading "5 błędów na siłowni, przez które nie budujesz mięśni (i jak je naprawić)" [level=2] [ref=e203]
+              - generic [ref=e205]:
+                - time [ref=e206]: 5 mar 2024
+                - generic [ref=e207]: "|"
+                - generic [ref=e208]:
+                  - img [ref=e209]
+                  - text: 1 min
+  - contentinfo [ref=e211]:
+    - generic [ref=e212]:
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - paragraph [ref=e216]: S u b s k r y b u j n a s z e m e d i a
+          - heading "Stay in touch" [level=2] [ref=e217]
+        - list [ref=e219]:
+          - listitem [ref=e220]:
+            - link "Facebook Panda Masaż" [ref=e221] [cursor=pointer]:
+              - /url: https://www.facebook.com/Pandamasaz/
+              - img [ref=e222]
+          - listitem [ref=e224]:
+            - link "Instagram Panda Masaż" [ref=e225] [cursor=pointer]:
+              - /url: https://www.instagram.com/panda_masaz/
+              - img [ref=e226]
+      - generic [ref=e229]:
+        - generic [ref=e230]:
+          - link "Logo niedźwiedzia Logo FIT" [ref=e231] [cursor=pointer]:
+            - /url: /
+            - img "Logo niedźwiedzia" [ref=e232]
+            - img "Logo FIT" [ref=e233]
+          - paragraph [ref=e234]: Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.
+        - list [ref=e236]:
+          - listitem [ref=e237]:
+            - img "Ikonka lokalizacji" [ref=e239]
+            - generic [ref=e240]:
+              - paragraph [ref=e241]: "Adres:"
+              - paragraph [ref=e242]:
+                - link "Treningi:Myśliwska 255, Rzeszów, PL 35-242" [ref=e243] [cursor=pointer]:
+                  - /url: https://g.co/kgs/P3n3EtW
+                  - strong [ref=e244]: "Treningi:"
+                  - text: Myśliwska 255, Rzeszów, PL 35-242
+              - paragraph [ref=e245]:
+                - link "Masaże:Podkarpacka 12a, Rzeszów, PL 35-082" [ref=e246] [cursor=pointer]:
+                  - /url: https://g.co/kgs/MBEjdC3
+                  - strong [ref=e247]: "Masaże:"
+                  - text: Podkarpacka 12a, Rzeszów, PL 35-082
+          - listitem [ref=e248]:
+            - img "Ikonka telefonu" [ref=e250]
+            - generic [ref=e251]:
+              - paragraph [ref=e252]: "Telefon:"
+              - paragraph [ref=e253]:
+                - link "694 906 749" [ref=e254] [cursor=pointer]:
+                  - /url: tel:694 906 749
+          - listitem [ref=e255]:
+            - img "Ikonka zegarka" [ref=e257]
+            - generic [ref=e258]:
+              - paragraph [ref=e259]: "Godziny pracy:"
+              - paragraph [ref=e260]: "Pon-Sob: 08:00 - 16:00"
+      - paragraph [ref=e261]:
+        - text: ©2026Wszystkie prawa
+        - link "PandaStudioTeam." [ref=e262] [cursor=pointer]:
+          - /url: /
+        - text: Design & Developed By alexlikenew
+```

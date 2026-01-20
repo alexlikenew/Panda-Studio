@@ -1,0 +1,93 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Logo niedźwiedzia Logo FIT" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Logo niedźwiedzia" [ref=e6]
+        - img "Logo FIT" [ref=e7]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Cennik" [ref=e11] [cursor=pointer]:
+            - /url: /cennik
+        - listitem [ref=e12]:
+          - link "Trening" [ref=e13] [cursor=pointer]:
+            - /url: /trening
+        - listitem [ref=e14]:
+          - link "Masaż" [ref=e15] [cursor=pointer]:
+            - /url: /masaz
+        - listitem [ref=e16]:
+          - link "Baza wiedzy" [ref=e17] [cursor=pointer]:
+            - /url: /baza-wiedzy
+        - listitem [ref=e18]:
+          - link "Blog" [ref=e19] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e20]:
+          - link "Kontakt" [ref=e21] [cursor=pointer]:
+            - /url: /contact
+        - listitem [ref=e22]: "|"
+        - listitem [ref=e23]:
+          - button "Spróbuj teraz - otwórz formularz" [ref=e24] [cursor=pointer]: SPRÓBUJ!
+  - generic [ref=e26]:
+    - heading "404" [level=1] [ref=e27]
+    - heading "This page could not be found." [level=2] [ref=e29]
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - paragraph [ref=e35]: S u b s k r y b u j n a s z e m e d i a
+          - heading "Stay in touch" [level=2] [ref=e36]
+        - list [ref=e38]:
+          - listitem [ref=e39]:
+            - link "Facebook Panda Masaż" [ref=e40] [cursor=pointer]:
+              - /url: https://www.facebook.com/Pandamasaz/
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link "Instagram Panda Masaż" [ref=e44] [cursor=pointer]:
+              - /url: https://www.instagram.com/panda_masaz/
+              - img [ref=e45]
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - link "Logo niedźwiedzia Logo FIT" [ref=e50] [cursor=pointer]:
+            - /url: /
+            - img "Logo niedźwiedzia" [ref=e51]
+            - img "Logo FIT" [ref=e52]
+          - paragraph [ref=e53]: Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - img "Ikonka lokalizacji" [ref=e58]
+            - generic [ref=e59]:
+              - paragraph [ref=e60]: "Adres:"
+              - paragraph [ref=e61]:
+                - link "Treningi:Myśliwska 255, Rzeszów, PL 35-242" [ref=e62] [cursor=pointer]:
+                  - /url: https://g.co/kgs/P3n3EtW
+                  - strong [ref=e63]: "Treningi:"
+                  - text: Myśliwska 255, Rzeszów, PL 35-242
+              - paragraph [ref=e64]:
+                - link "Masaże:Podkarpacka 12a, Rzeszów, PL 35-082" [ref=e65] [cursor=pointer]:
+                  - /url: https://g.co/kgs/MBEjdC3
+                  - strong [ref=e66]: "Masaże:"
+                  - text: Podkarpacka 12a, Rzeszów, PL 35-082
+          - listitem [ref=e67]:
+            - img "Ikonka telefonu" [ref=e69]
+            - generic [ref=e70]:
+              - paragraph [ref=e71]: "Telefon:"
+              - paragraph [ref=e72]:
+                - link "694 906 749" [ref=e73] [cursor=pointer]:
+                  - /url: tel:694 906 749
+          - listitem [ref=e74]:
+            - img "Ikonka zegarka" [ref=e76]
+            - generic [ref=e77]:
+              - paragraph [ref=e78]: "Godziny pracy:"
+              - paragraph [ref=e79]: "Pon-Sob: 08:00 - 16:00"
+      - paragraph [ref=e80]:
+        - text: ©2026Wszystkie prawa
+        - link "PandaStudioTeam." [ref=e81] [cursor=pointer]:
+          - /url: /
+        - text: Design & Developed By alexlikenew
+  - button "Open Next.js Dev Tools" [ref=e87] [cursor=pointer]:
+    - img [ref=e88]
+  - alert [ref=e91]
+```

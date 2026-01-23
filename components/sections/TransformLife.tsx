@@ -28,7 +28,7 @@ export default function TransformLife() {
 
                     {/* Card 2: Massage (External Link) */}
                     <a
-                        href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+                        href="http://pandamasaz.booksy.com/a/"
                         className="services-split__card"
                         target="_blank"
                         rel="noopener noreferrer"

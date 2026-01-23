@@ -99,7 +99,7 @@ export default function PricingTables() {
                             <div className="pricing-box__title heading-h4">Data i czas</div>
                             <div className="pricing-box__button ">
                                 <a
-                                    href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+                                    href="http://pandamasaz.booksy.com/a/"
                                     title="Zarezerwuj"
                                     target="_blank"
                                     rel="noopener noreferrer"

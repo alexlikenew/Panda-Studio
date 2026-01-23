@@ -32,35 +32,60 @@ export const metadata: Metadata = {
     description:
         "Profesjonalny trening personalny, fizjoterapia i masaż w Rzeszowie. Zadbaj o zdrowie i sylwetkę pod okiem ekspertów w kameralnej atmosferze. Umów wizytę!",
     keywords: [
-        "trening",
-        "masaż",
-        "fitness",
-        "siłownia",
-        "odchudzanie",
-        "fizjoterapia",
-        "Panda Studio Team",
+        // 1. MARKA & LOKALIZACJA (Brand)
         "Panda Studio Rzeszów",
+        "Panda Studio Team",
         "studio treningowe Rzeszów",
         "siłownia Rzeszów",
-        "trener personalny Rzeszów",
+        "kameralna siłownia Rzeszów",
+
+        // 2. MASAŻ - NAJPOPULARNIEJSZE (High Volume)
         "masaż Rzeszów",
-        "fizjoterapeuta Rzeszów",
-        "rehabilitacja ruchowa Rzeszów",
-        "trener personalny",
+        "masażysta Rzeszów",
+        "dobry masażysta Rzeszów",
+        "salon masażu Rzeszów",
+        "gabinet masażu Rzeszów",
+        "kręgarz Rzeszów",
+        "nastawianie kręgosłupa",
+
+        // 3. RODZAJE MASAŻU (Specific Types)
+        "masaż relaksacyjny",
+        "masaż sportowy",
+        "masaż leczniczy",
+        "masaż klasyczny",
+        "masaż tkanek głębokich",
+        "masaż powięziowy",
+        "masaż antycellulitowy",
+        "masaż bańką chińską",
+        "drenaż limfatyczny",
+        "masaż limfatyczny",
+        "masaż dla par Rzeszów",
+
+        // 4. TRENING & SYLWETKA (Fitness)
+        "trener personalny Rzeszów",
+        "trening personalny",
         "trening funkcjonalny",
         "trening medyczny",
         "trening w parze",
-        "masaż leczniczy",
-        "masaż sportowy",
-        "masaż tkanek głębokich",
-        "masaż relaksacyjny",
-        "zdrowy kręgosłup",
-        "ból pleców",
-        "korekcja wad postawy",
-        "rwa kulszowa",
         "przygotowanie motoryczne",
         "powrót do formy",
-        "kameralna siłownia"
+        "odchudzanie Rzeszów",
+        "modelowanie sylwetki",
+
+        // 5. ZDROWIE & FIZJOTERAPIA (Health)
+        "fizjoterapia Rzeszów",
+        "fizjoterapeuta Rzeszów",
+        "rehabilitacja ruchowa",
+        "rehabilitacja powypadkowa",
+        "zdrowy kręgosłup",
+        "ból pleców",
+        "rwa kulszowa",
+        "korekcja wad postawy",
+        "terapia manualna",
+
+        // 6. PREZENTY (Commercial Intent)
+        "voucher na masaż Rzeszów",
+        "bon podarunkowy na masaż"
     ],
     authors: [{ name: "Panda Studio Team" }],
     creator: "Panda Studio Team",
@@ -75,7 +100,7 @@ export const metadata: Metadata = {
             "Panda Studio Team – profesjonalne studio treningowe w Rzeszowie. Treningi personalne, grupowe i funkcjonalne.",
         images: [
             {
-                url: "/img/og-image.jpg",
+                url: "/img/panda_studio_og_image_rzeszow.png",
                 width: 1200,
                 height: 630,
                 alt: "Panda Studio Team Rzeszów",
@@ -87,17 +112,18 @@ export const metadata: Metadata = {
         apple: "/favicon/apple-touch-icon.png",
     },
     other: {
+        "og:logo": "/img/pandastuio_logo_png.png",
         "geo.region": "PL-PK",
         "geo.placename": "Rzeszów",
         "geo.position": "50.0413;21.9990",
         ICBM: "50.0413, 21.9990",
     },
     robots: {
-        index: false,
-        follow: false,
+        index: true,
+        follow: true,
         googleBot: {
-            index: false,
-            follow: false,
+            index: true,
+            follow: true,
             'max-video-preview': -1,
             'max-image-preview': 'large',
             'max-snippet': -1,

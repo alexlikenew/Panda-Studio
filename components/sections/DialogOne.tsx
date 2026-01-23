@@ -78,7 +78,7 @@ export default function DialogOne() {
                     </div>
                     <a
                         className="btn-reservation text-medium-bold"
-                        href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+                        href="http://pandamasaz.booksy.com/a/"
                         title="Zarezerwuj wizytę na Booksy"
                     >
                         Zarezerwuj

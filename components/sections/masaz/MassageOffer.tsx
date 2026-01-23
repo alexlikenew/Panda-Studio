@@ -8,28 +8,28 @@ const MASSAGE_OFFERS = [
         title: "Masaż Leczniczy",
         description: "Celowana terapia manualna niwelująca ból kręgosłupa i napięcia mięśniowe. Idealny przy pracy siedzącej oraz przewlekłych dolegliwościach.",
         image: "/img/massage/offer-therapeutic.png",
-        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+        bookingUrl: "http://pandamasaz.booksy.com/a/"
     },
     {
         id: 2,
         title: "Masaż Sportowy",
         description: "Głęboka praca na tkankach przyspieszająca regenerację powysiłkową. Zwiększa mobilność, poprawia ukrwienie i zapobiega kontuzjom.",
         image: "/img/massage/offer-sports.png",
-        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+        bookingUrl: "http://pandamasaz.booksy.com/a/"
     },
     {
         id: 3,
         title: "Masaż Relaksacyjny",
         description: "Ukojenie dla układu nerwowego. Delikatne techniki redukujące stres, poprawiające jakość snu i głębokie samopoczucie psychosomatyczne.",
         image: "/img/massage/masaz-relaksacyjny.jpg",
-        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+        bookingUrl: "http://pandamasaz.booksy.com/a/"
     },
     {
         id: 4,
         title: "Masaż Klasyczny",
         description: "Wszechstronna metoda poprawiająca krążenie i elastyczność mięśni. Fundament dbania o zdrowie fizyczne i utrzymania ciała w dobrej kondycji.",
         image: "/img/massage/masaz-klasyczny.jpg",
-        bookingUrl: "https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+        bookingUrl: "http://pandamasaz.booksy.com/a/"
     }
 ];
 

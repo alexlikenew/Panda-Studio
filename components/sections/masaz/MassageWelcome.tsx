@@ -32,7 +32,7 @@ export default function MassageWelcome() {
                         </p>
 
                         <Link
-                            href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow"
+                            href="http://pandamasaz.booksy.com/a/"
                             target="_blank"
                             title="Zarezerwuj wizytę w gabinecie masażu przez Booksy"
                             className="btn-primary inline-flex items-center gap-2"

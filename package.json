@@ -20,6 +20,7 @@
     "dotenv": "^17.2.3",
     "next": "16.0.10",
     "next-sanity": "^11.6.10",
+    "posthog-js": "^1.335.0",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "react-hook-form": "^7.71.1",

@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Inter, Poppins } from "next/font/google"; // Added fonts
 
 import ClientProviders from "@/providers/ClientProviders"; // Added Providers
+import { CSPostHogProvider } from "@/app/providers/PostHogProvider";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -233,11 +234,13 @@ export default function RootLayout({
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
-                <ClientProviders>
+                <CSPostHogProvider>
+                    <ClientProviders>
 
-                    {children}
+                        {children}
 
-                </ClientProviders>
+                    </ClientProviders>
+                </CSPostHogProvider>
             </body>
         </html>
     );

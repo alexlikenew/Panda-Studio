@@ -38,7 +38,7 @@ export default async function PricingTables() {
                             <div className="pricing-category-card__footer">
                                 <PricingAction
                                     type={category.type}
-                                    bookingUrl={category.bookingUrl}
+                                    bookingUrl={'/kontakt'}
                                     className="w-full"
                                 />
                             </div>

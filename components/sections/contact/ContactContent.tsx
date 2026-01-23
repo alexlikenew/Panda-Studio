@@ -61,7 +61,7 @@ export default function ContactContent() {
                                     <a href="tel:694906749">694 906 749</a>
                                 </p>
                                 <p className="text-large-normal text-gray">
-                                    <a href="mailto:kontakt@pandastudio.pl">kontakt@fitpandastudio.pl</a>
+                                    <a href="mailto:pandamasaz.team@gmail.com">pandamasaz.team@gmail.com </a>
                                 </p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ export default function ContactContent() {
                             <div className="info-tile__content">
                                 <h3 className="heading-h5 text-green uppercase">Godziny otwarcia</h3>
                                 <p className="text-large-normal text-gray">
-                                    Poniedziałek - Sobota: <span className="text-white">08:00 - 16:00</span>
+                                    Poniedziałek - Sobota: <span className="text-white">08:00 - 20:00</span>
                                 </p>
                                 <p className="text-large-normal text-gray">
                                     Niedziela: Zamknięte

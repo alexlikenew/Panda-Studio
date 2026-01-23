@@ -27,12 +27,14 @@ export default function PricingAction({ type, bookingUrl, className = "" }: Pric
     }
 
     return (
-        <button
-            onClick={openModal}
+        <Link
+            href={bookingUrl || '/kontakt'}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`pricing-btn ${className}`}
-            aria-label="Otwórz formularz rezerwacji"
+            title="Zarezerwuj teraz"
         >
             Zarezerwuj
-        </button>
+        </Link>
     );
 }

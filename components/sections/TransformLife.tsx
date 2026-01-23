@@ -7,7 +7,7 @@ export default function TransformLife() {
             <div className="wrapper">
                 <div className="services-split__grid">
                     {/* Card 1: Training (Internal Link) */}
-                    <Link href="/contact" className="services-split__card" title="Umów się na trening personalny przy ul. Myśliwskiej">
+                    <Link href="/kontakt" className="services-split__card" title="Umów się na trening personalny przy ul. Myśliwskiej">
                         <Image
                             src="/img/panda_studio_trening.webp"
                             alt="Trening Personalny w Panda Studio"

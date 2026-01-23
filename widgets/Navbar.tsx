@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { useUIContext } from "@/providers/UIContext";
+
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { openModal } = useUIContext();
+
 
   const toggleMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -83,20 +83,19 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" title="Skontaktuj się z nami" className="text-small-semi-bold">
+                <Link href="/kontakt" title="Skontaktuj się z nami" className="text-small-semi-bold">
                   Kontakt
                 </Link>
               </li>
               <li className="navigation__separator">|</li>
               <li>
-                <button
-                  aria-label="Spróbuj teraz - otwórz formularz"
+                <Link
+                  href="/cennik"
                   className="navigation__cta-btn text-small-bold"
-                  data-dialog="dialogOne"
-                  onClick={openModal}
+                  title="Sprawdź cennik"
                 >
                   SPRÓBUJ!
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -141,22 +140,19 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" title="Skontaktuj się z nami">
+                <Link href="/kontakt" title="Skontaktuj się z nami">
                   Kontakt
                 </Link>
               </li>
               <li>
-                <button
-                  aria-label="Spróbuj teraz - otwórz formularz"
+                <Link
+                  href="/cennik"
                   className="text"
-                  data-dialog="dialogOne"
-                  onClick={() => {
-                    openModal();
-                    setIsMobileMenuOpen(false);
-                  }}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  title="Sprawdź cennik"
                 >
                   SPRÓBUJ!
-                </button>
+                </Link>
               </li>
               <li>
                 <p className="text__content">

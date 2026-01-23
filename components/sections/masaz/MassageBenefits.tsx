@@ -1,6 +1,17 @@
-import Image from "next/image";
+'use client';
+
+import { useState, useRef } from 'react';
 
 export default function MassageBenefits() {
+    const [isMuted, setIsMuted] = useState(true);
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    const toggleSound = () => {
+        if (videoRef.current) {
+            videoRef.current.muted = !isMuted;
+            setIsMuted(!isMuted);
+        }
+    };
     return (
         <section className="massage-section massage-benefits">
             <div className="wrapper">
@@ -83,16 +94,35 @@ export default function MassageBenefits() {
                         </ul>
                     </div>
 
-                    {/* Image Right */}
-                    <div className="massage-split__image order-1 md:order-2">
-                        <Image
-                            src="/img/massage/benefits-detail.png"
-                            alt="Korzyści z masażu w Panda Studio"
-                            title="Szczegółowy opis korzyści płynących z masażu"
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 50vw"
-                        />
+                    {/* Image Right -> Changed to Video */}
+                    <div className="massage-split__video-wrapper">
+                        <div className="massage-split__video">
+                            <video
+                                ref={videoRef}
+                                src="/videos/Strona-Masazu-Studio-Panda-Rzeszow.mp4"
+                                autoPlay
+                                loop
+                                muted={isMuted}
+                                playsInline
+                            />
+                            {/* Optional overlay */}
+                            <div className="overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.1)', pointerEvents: 'none' }} />
+
+                            {/* Sound Toggle Button */}
+                            <button className="massage-split__sound-toggle" onClick={toggleSound} aria-label={isMuted ? "Włącz dźwięk" : "Wycisz"}>
+                                {isMuted ? (
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM18.53 19.53a.75.75 0 0 0 1.06-1.06l-6-6a.75.75 0 0 0-1.06 1.06l6 6Zm-1.06-7.06a.75.75 0 0 0 1.06-1.06l-6-6a.75.75 0 0 0-1.06 1.06l6 6Z" fillRule="evenodd" clipRule="evenodd" />
+                                    </svg>
+                                ) : (
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM17.78 9.22a.75.75 0 1 0-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 1 0 1.06-1.06L20.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-1.72 1.72-1.72-1.72Z" />
+                                    </svg>
+                                )}
+                            </button>
+
+
+                        </div>
                     </div>
                 </div>
             </div>

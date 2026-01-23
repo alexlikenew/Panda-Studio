@@ -1,9 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Inter, Poppins } from "next/font/google"; // Added fonts
-import "@/styles/main.scss";
-import Navbar from "@/widgets/Navbar"; // Added Navbar
-import Footer from "@/components/layout/Footer"; // Updated Footer
+
 import ClientProviders from "@/providers/ClientProviders"; // Added Providers
 
 const inter = Inter({
@@ -210,9 +208,9 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
                 <ClientProviders>
-                    <Navbar />
+
                     {children}
-                    <Footer />
+
                 </ClientProviders>
             </body>
         </html>

@@ -33,8 +33,11 @@ function ReelItem({ reel, isActive, isMuted, toggleMute }: ReelItemProps) {
         const video = videoRef.current;
         if (!video || !reel.videoUrl) return;
 
-        if (isActive) {
-            // Attempt to play
+        // Check for slick-cloned parent to prevent double playback (echo)
+        const isCloned = video.closest('.slick-cloned');
+
+        if (isActive && !isCloned) {
+            // Attempt to play only if active AND NOT a clone
             const playPromise = video.play();
             if (playPromise !== undefined) {
                 playPromise.catch((error) => {

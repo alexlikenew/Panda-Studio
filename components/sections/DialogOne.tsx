@@ -40,7 +40,7 @@ export default function DialogOne() {
                     </div>
                     <Link
                         className="btn-reservation text-medium-bold"
-                        href="/contact"
+                        href="/kontakt"
                         title="Zarezerwuj"
                         onClick={closeModal}
                     >

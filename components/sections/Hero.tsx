@@ -43,7 +43,7 @@ export default function Hero() {
 
           <div className="hero-slogan">
             <h2 className="heading-h3 text-white">
-              TWOJA DROGA DO <span className="text-green">LEPSZEJ SIŁY</span>
+              TWOJA DROGA DO <span className="text-green">SPRAWNOŚCI</span>
             </h2>
           </div>
 
@@ -51,12 +51,12 @@ export default function Hero() {
             SPRÓBUJ TERAZ
           </Link>
 
-          <div className="hero__info-box">
+          {/* <div className="hero__info-box">
             <p className="text-light-normal">
               Profesjonalne studio treningu personalnego i fizjoterapii w sercu miasta.
               <span className="text-green font-bold"> Pierwszy trening za darmo.</span>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -18,14 +18,12 @@ export default function BooksyCTA() {
                 <div className="booksy-cta__content">
                     <h2 className="heading-h2">Gotowy na zmianę?</h2>
                     <p className="text-large-light">
-                        Umów wizytę szybko i wygodnie przez Booksy.
+                        Umów wizytę szybko i wygodnie.
                     </p>
                     <Link
-                        href="https://booksy.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/cennik"
                         className="booksy-cta__button text-medium-bold"
-                        title="Przejdź do Booksy i umów wizytę"
+                        title="Umów wizytę"
                     >
                         UMÓW WIZYTĘ
                     </Link>

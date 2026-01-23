@@ -19,7 +19,7 @@
 @import './sections/random-news';
 @import './sections/random-dictionary';
 @import './sections/pricing-tables';
-@import 'pages/contact';
+@import 'pages/kontakt';
 @import 'sections/classes-category';
 @import 'sections/nutrition-tips';
 @import 'sections/impact-stats';
@@ -41,13 +41,13 @@
 }
 
 // TITLE BANER
-.title-baner-massage {
-	background: url('/img/title-baner-massage.jpg') no-repeat;
-}
+// .title-baner-massage {
+// 	background: url('/img/title-baner-massage.jpg') no-repeat;
+// }
 
-.title-baner-training {
-	background: url('/img/title-banner.png') no-repeat;
-}
+// .title-baner-training {
+// 	background: url('/img/title-banner.png') no-repeat;
+// }
 
 .title-baner-training,
 .title-baner-massage {

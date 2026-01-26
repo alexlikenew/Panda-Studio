@@ -88,7 +88,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                                 {post.author && (
                                     <div className="post-hero__meta-item">
                                         {post.author.image && (
-                                            <div className="post-hero__author-image">
+                                            <Link href={`/autor/${post.author.slug}`} className="post-hero__author-image" title={`Zobacz profil: ${post.author.name}`}>
                                                 <Image
                                                     src={urlFor(post.author.image).width(64).height(64).url()}
                                                     alt={post.author.name}
@@ -96,11 +96,13 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                                                     fill
                                                     className="post-hero__author-img"
                                                 />
-                                            </div>
+                                            </Link>
                                         )}
                                         <div className="post-hero__author-col">
                                             <span className="post-hero__label text-tiny-normal">Autor</span>
-                                            <span className="post-hero__name text-regular-bold">{post.author.name}</span>
+                                            <Link href={`/autor/${post.author.slug}`} className="post-hero__name text-regular-bold" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+                                                {post.author.name}
+                                            </Link>
                                         </div>
                                     </div>
                                 )}

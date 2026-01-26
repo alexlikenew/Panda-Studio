@@ -46,6 +46,12 @@ export const knowledgeBaseType = defineType({
             ],
         }),
         defineField({
+            name: 'author',
+            title: 'Autor',
+            type: 'reference',
+            to: [{ type: 'author' }],
+        }),
+        defineField({
             name: 'excerpt',
             title: 'Krótki opis (SEO / Meta Description)',
             description: 'Streszczenie wyświetlane w Google i na liście wpisów. Max 160 znaków zalecane.',

@@ -10,6 +10,7 @@ export async function getEntries(): Promise<DictionaryEntry[]> {
       slug,
       publishedAt,
       excerpt,
+      "author": author->{name, image, "slug": slug.current},
       tags
     }
   `;
@@ -25,6 +26,7 @@ export async function getEntry(slug: string): Promise<DictionaryEntry | null> {
       slug,
       publishedAt,
       excerpt,
+      "author": author->{name, image, "slug": slug.current},
       content,
       tags,
       mainImage {

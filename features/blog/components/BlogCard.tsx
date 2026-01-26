@@ -57,7 +57,7 @@ export default function BlogCard({ post }: BlogCardProps) {
                         {post.author && (
                             <div className="blog-card__author">
                                 {post.author.image && (
-                                    <div className="blog-card__author-image">
+                                    <Link href={`/autor/${post.author.slug}`} className="blog-card__author-image">
                                         <Image
                                             src={urlFor(post.author.image).width(48).height(48).url()}
                                             alt={post.author.name}
@@ -65,9 +65,11 @@ export default function BlogCard({ post }: BlogCardProps) {
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
+                                    </Link>
                                 )}
-                                <span className="blog-card__author-name text-small-medium">{post.author.name}</span>
+                                <Link href={`/autor/${post.author.slug}`} className="blog-card__author-name text-small-medium hover:underline">
+                                    {post.author.name}
+                                </Link>
                             </div>
                         )}
 

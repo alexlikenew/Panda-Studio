@@ -9,6 +9,11 @@ export interface DictionaryEntry {
     content: PortableTextBlock[];
     publishedAt: string;
     tags?: string[];
+    author?: {
+        name: string;
+        image?: any;
+        slug: string;
+    };
     excerpt?: string;
     faq?: {
         question: string;

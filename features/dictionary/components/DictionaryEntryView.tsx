@@ -43,6 +43,16 @@ export default function DictionaryEntryView({ entry }: Props) {
                 <span className="dictionary-article__label text-small-bold">POJĘCIE / BAZA WIEDZY</span>
                 <h1 className="dictionary-article__title">{entry.title}</h1>
                 <div className="dictionary-article__meta text-small-normal">
+                    {/* Author Link */}
+                    {entry.author && (
+                        <div className="dictionary-article__author">
+                            <span className="text-gray-400">Autor: </span>
+                            <a href={`/autor/${entry.author.slug}`} className="hover:text-green-500 font-medium transition-colors">
+                                {entry.author.name}
+                            </a>
+                            <span className="mx-2 text-gray-600">|</span>
+                        </div>
+                    )}
                     <time dateTime={entry.publishedAt}>
                         {new Date(entry.publishedAt).toLocaleDateString("pl-PL", {
                             day: "numeric",

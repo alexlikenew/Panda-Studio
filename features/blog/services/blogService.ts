@@ -27,7 +27,7 @@ export async function getPosts(): Promise<Post[]> {
     publishedAt,
     "categories": categories[]->title,
     "tags": tags,
-    "author": author->{name, image},
+    "author": author->{name, image, "slug": slug.current},
     body
   }`;
 
@@ -49,7 +49,7 @@ export async function getPost(slug: string): Promise<Post | null> {
     relatedServices[] { title, url },
     publishedAt,
     body,
-    "author": author->{name, image},
+    "author": author->{name, image, "slug": slug.current},
     "categories": categories[]->title,
     "tags": tags
   }`;
@@ -70,7 +70,7 @@ export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
     excerpt,
     "categories": categories[]->title,
     "tags": tags,
-    "author": author->{name, image},
+    "author": author->{name, image, "slug": slug.current},
     publishedAt,
     body
   }`;
@@ -93,7 +93,7 @@ export async function getRandomBlogPosts(count: number = 3): Promise<Post[]> {
       excerpt,
       "categories": categories[]->title,
       "tags": tags,
-      "author": author->{name, image},
+      "author": author->{name, image, "slug": slug.current},
       publishedAt,
       body
     }`;

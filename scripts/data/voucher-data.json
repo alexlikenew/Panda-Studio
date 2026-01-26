@@ -1,0 +1,62 @@
+[
+    {
+        "_type": "voucher",
+        "title": "Voucher: Masaż Relaksacyjny (60 min)",
+        "slug": {
+            "_type": "slug",
+            "current": "voucher-masaz-relaksacyjny"
+        },
+        "description": "Szukasz idealnego prezentu w Rzeszowie? Podaruj bliskiej osobie głębokie odprężenie w Panda Studio. Masaż relaksacyjny to delikatna terapia manualna z użyciem aromaterapii.",
+        "price": "150 PLN",
+        "buyLink": "https://booksy.com/pl-pl/twoj-link-do-relaksacyjnego",
+        "localImagePath": "public/img/vouchers/relaksacyjny.png"
+    },
+    {
+        "_type": "voucher",
+        "title": "Voucher: Masaż Klasyczny (60 min)",
+        "slug": {
+            "_type": "slug",
+            "current": "voucher-masaz-klasyczny"
+        },
+        "description": "Uniwersalny bon podarunkowy na zdrowie. Masaż klasyczny to najpopularniejszy zabieg w naszym gabinecie w Rzeszowie. Skutecznie rozluźnia napięte mięśnie.",
+        "price": "170 PLN",
+        "buyLink": "https://booksy.com/pl-pl/twoj-link-do-klasycznego",
+        "localImagePath": "public/img/vouchers/klasyczny.png"
+    },
+    {
+        "_type": "voucher",
+        "title": "Voucher: Masaż Sportowy (60 min)",
+        "slug": {
+            "_type": "slug",
+            "current": "voucher-masaz-sportowy"
+        },
+        "description": "Profesjonalne wsparcie dla aktywnych. Masaż sportowy pomaga usunąć kwas mlekowy, zapobiega kontuzjom i przygotowuje do wysiłku.",
+        "price": "190 PLN",
+        "buyLink": "https://booksy.com/pl-pl/twoj-link-do-sportowego",
+        "localImagePath": "public/img/vouchers/sportowy.png"
+    },
+    {
+        "_type": "voucher",
+        "title": "Voucher: Masaż Tkanek Głębokich (60 min)",
+        "slug": {
+            "_type": "slug",
+            "current": "voucher-masaz-tkanek-glebokich"
+        },
+        "description": "Terapia dla wymagających. Deep Tissue to specjalistyczna praca na powięziach, dedykowana osobom z przewlekłym bólem.",
+        "price": "200 PLN",
+        "buyLink": "https://booksy.com/pl-pl/twoj-link-do-glebokiego",
+        "localImagePath": "public/img/vouchers/tkanek-glebokich.png"
+    },
+    {
+        "_type": "voucher",
+        "title": "Voucher: Masaż Kobido - Lifting Twarzy",
+        "slug": {
+            "_type": "slug",
+            "current": "voucher-masaz-kobido"
+        },
+        "description": "Ekskluzywny prezent beauty. Japoński masaż twarzy Kobido to niechirurgiczny lifting, który ujędrnia skórę i relaksuje.",
+        "price": "220 PLN",
+        "buyLink": "https://booksy.com/pl-pl/twoj-link-do-kobido",
+        "localImagePath": "public/img/vouchers/kobido.png"
+    }
+]

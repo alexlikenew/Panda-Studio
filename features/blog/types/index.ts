@@ -9,6 +9,7 @@ export interface Post {
     author?: {
         name: string;
         image?: any;
+        slug: string;
     };
     excerpt?: string;
     faq?: {

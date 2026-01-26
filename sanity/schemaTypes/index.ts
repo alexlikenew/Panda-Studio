@@ -7,6 +7,8 @@ import { socialReel } from "@/sanity/schemaTypes/socialReel";
 import pricing from "@/sanity/schemaTypes/pricing";
 import { seoSection } from "@/sanity/schemaTypes/seoSection";
 
+import voucher from "@/sanity/schemaTypes/voucher";
+
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [postType, author, category, knowledgeBaseType, socialReel, pricing, seoSection],
+  types: [postType, author, category, knowledgeBaseType, socialReel, pricing, seoSection, voucher],
 }

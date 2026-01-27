@@ -1,150 +1,249 @@
+@use "sass:color";
+
+$primary-color: #d1fd0a;
+$text-main: #f5f5f5;
+$text-muted: #cccccc;
+$card-bg: rgba(10, 10, 10, 0.8);
+
 .author-profile {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  padding: 4rem 0;
-
-  @media (min-width: 768px) {
-    padding: 6rem 0;
-    gap: 6rem;
-  }
-
-  &__header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    gap: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
 
-    @media (min-width: 768px) {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 4rem;
-    }
-  }
-
-  &__image-wrapper {
-    flex-shrink: 0;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid $green-color;
-
-    @media (min-width: 768px) {
-      width: 300px;
-      height: 300px;
-    }
-  }
-
-  &__image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      align-items: flex-start;
-      text-align: left;
-    }
-  }
-
-  &__name {
-    color: $lightest-gray;
-  }
-
-  &__bio {
-    color: $light-gray;
-    max-width: 600px;
-    
-    // Portable Text styles override if needed, but mostly relying on global defaults
-    p {
-      margin-bottom: 1em;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__posts {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  &__posts-title {
-    color: $green-color;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba($green-color, 0.3);
-  }
-
-  &__posts-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    
     @media (min-width: 1024px) {
-      grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 80px;
+        align-items: start;
+        padding-top: 10rem;
     }
-  }
 
-  &__post-card {
+    // --- Sidebar ---
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center on mobile
+        text-align: center;
+        gap: 1.5rem;
+
+        @media (min-width: 1024px) {
+            position: sticky;
+            top: 140px;
+            align-items: flex-start; // Left align on desktop
+            text-align: left;
+        }
+    }
+
+    &__image-container {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 50%; // Keep circle on mobile
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+        @media (min-width: 1024px) {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            max-width: 100%;
+            border-radius: 24px; // Rounded square on desktop
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__identity {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__name {
+        margin: 0;
+        color: $text-main;
+        margin-top: 1rem;
+
+        @media (min-width: 1024px) {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__job {
+        color: $primary-color;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
+
+    &__actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1024px) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__cta {
+        margin-top: 1rem;
+        padding: 0.8rem 2rem;
+    }
+
+
+    // --- Content Area ---
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem; // Generous whitespace
+    }
+
+    &__bio {
+
+        // Typography handled by _typography.scss / utility classes
+        // Just handling colors and margins here
+        p {
+            color: $text-muted;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: $primary-color;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: $text-main;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: $text-main;
+            margin-top: 1.5rem;
+        }
+
+        strong {
+            color: $text-main;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: $text-muted;
+
+            li {
+                margin-bottom: 0.5rem;
+
+                &::marker {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        a {
+            color: $primary-color;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: opacity 0.2s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__section-title {
+        margin-bottom: 2rem;
+        color: $text-main;
+        border-left: 3px solid $primary-color;
+        padding-left: 1rem;
+    }
+
+    &__posts-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1400px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+// --- Article Card (Minimalist) ---
+.author-article-card {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    background-color: rgba(#ffffff, 0.03);
-    border-radius: 12px;
+    // Dark background for contrast against page
+    background: $card-bg;
+    border-radius: 16px; // Soft corners
     overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    border: 1px solid transparent;
+    transition: transform 0.3s ease, background 0.3s;
+    text-decoration: none;
+    border: none; // Explicitly remove borders
 
     &:hover {
-      transform: translateY(-5px);
-      background-color: rgba(#ffffff, 0.06);
-      border-color: rgba($green-color, 0.3);
+        transform: translateY(-5px);
+        background: color.scale($card-bg, $lightness: 5%);
 
-      .author-profile__post-title {
-        color: $green-color;
-      }
+        .author-article-card__image {
+            transform: scale(1.05);
+        }
+
+        .author-article-card__title {
+            color: $primary-color;
+        }
     }
-  }
 
-  &__post-image {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: #000;
     }
-  }
 
-  &__post-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+    &__image {
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
 
-  &__post-title {
-    color: $lightest-gray;
-    transition: color 0.3s ease;
-  }
+    &__content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 
-  &__post-date {
-    color: rgba($light-gray, 0.6);
-  }
+    &__title {
+        color: $text-main;
+        transition: color 0.3s;
+        margin-bottom: 0.5rem;
+
+        /* Clamp 2 lines */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__date {
+        color: color.scale($text-muted, $lightness: -10%);
+    }
 }

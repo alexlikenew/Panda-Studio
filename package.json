@@ -18,6 +18,7 @@
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.21.1",
     "dotenv": "^17.2.3",
+    "lucide-react": "^0.563.0",
     "next": "16.0.10",
     "next-sanity": "^11.6.10",
     "posthog-js": "^1.335.0",

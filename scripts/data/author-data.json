@@ -1,0 +1,213 @@
+{
+    "name": "Ivan",
+    "bio": [
+        {
+            "_type": "block",
+            "style": "h2",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "O mnie"
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Jestem magistrem fizjoterapii oraz praktykiem, który od lat łączy wiedzę medyczną z realną pracą z ciałem. Ukończyłem specjalistyczne kursy z zakresu PNF, terapii manualnej odcinka szyjnego, treningu personalnego oraz programowania treningu, co pozwala mi patrzeć na pacjenta całościowo — nie tylko przez pryzmat bólu, ale również funkcji, ruchu i codziennego życia."
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "h3",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Doświadczenie zawodowe"
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Od 5 lat prowadzę własny gabinet masażu, a łącznie z ciałem pracuję już ponad 8 lat. Doświadczenie zdobywałem w gabinetach rehabilitacyjnych w Rzeszowie, podczas wyjazdów na zgrupowania z Reprezentacją Polski w rugby na wózkach, a także pracując z dziećmi ze spektrum autyzmu. Każde z tych miejsc nauczyło mnie czegoś innego — cierpliwości, uważności i indywidualnego podejścia."
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "h3",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Moja osobista historia"
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Moja droga zawodowa jest również bardzo osobista. Urodziłem się ze stopą końsko-szpotawą, co od najmłodszych lat nauczyło mnie, że ciało potrafi stawiać wyzwania, ale równie dobrze potrafi się adaptować. Wiąże się to z zanikiem mięśni tylnej powierzchni goleni oraz zniekształceniami w obrębie stawu skokowego, jednak dzięki świadomej pracy z ruchem, odpowiednio dobranemu treningowi i regeneracji funkcjonuję dziś w pełni aktywnie — zarówno zawodowo, jak i sportowo."
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "To doświadczenie sprawia, że doskonale rozumiem osoby zmagające się z bólem, ograniczeniami ruchu czy powrotem do sprawności. W pracy z pacjentem nie opieram się wyłącznie na wiedzy z podręczników, ale również na własnym doświadczeniu — wiem, że dobrze zaplanowany ruch i terapia potrafią realnie zmienić jakość życia."
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "h3",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Filozofia pracy"
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Nie wyobrażam sobie życia bez ruchu, aktywności i świadomej pracy z ciałem. W gabinecie stawiam na indywidualne podejście, zrozumienie przyczyny problemu i realne efekty — nie tylko krótkotrwałą ulgę, ale długofalową poprawę jakości życia."
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "h3",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Zostańmy w kontakcie"
+                }
+            ]
+        },
+        {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+                {
+                    "_type": "span",
+                    "text": "Zapraszam do śledzenia moich działań w mediach społecznościowych: "
+                },
+                {
+                    "_type": "span",
+                    "marks": [
+                        "link_fb"
+                    ],
+                    "text": "Facebook"
+                },
+                {
+                    "_type": "span",
+                    "text": " oraz "
+                },
+                {
+                    "_type": "span",
+                    "marks": [
+                        "link_ig"
+                    ],
+                    "text": "Instagram"
+                },
+                {
+                    "_type": "span",
+                    "text": ". Zachęcam Cię również do sprawdzenia mojej pełnej oferty. Zajrzyj do "
+                },
+                {
+                    "_type": "span",
+                    "marks": [
+                        "link_cennik"
+                    ],
+                    "text": "Cennika"
+                },
+                {
+                    "_type": "span",
+                    "text": ", wybierz "
+                },
+                {
+                    "_type": "span",
+                    "marks": [
+                        "link_trening"
+                    ],
+                    "text": "Trening"
+                },
+                {
+                    "_type": "span",
+                    "text": " dopasowany do Twoich potrzeb lub umów się na profesjonalny "
+                },
+                {
+                    "_type": "span",
+                    "marks": [
+                        "link_masaz"
+                    ],
+                    "text": "Masaż"
+                },
+                {
+                    "_type": "span",
+                    "text": ". Jeśli szukasz rzetelnych informacji o zdrowiu i ciele, polecam moją "
+                },
+                {
+                    "_type": "span",
+                    "marks": [
+                        "link_baza"
+                    ],
+                    "text": "Bazę Wiedzy"
+                },
+                {
+                    "_type": "span",
+                    "text": "."
+                }
+            ],
+            "markDefs": [
+                {
+                    "_key": "link_fb",
+                    "_type": "link",
+                    "href": "https://www.facebook.com/Pandamasaz/"
+                },
+                {
+                    "_key": "link_ig",
+                    "_type": "link",
+                    "href": "https://www.instagram.com/panda_masaz/"
+                },
+                {
+                    "_key": "link_cennik",
+                    "_type": "link",
+                    "href": "/cennik"
+                },
+                {
+                    "_key": "link_trening",
+                    "_type": "link",
+                    "href": "/trening"
+                },
+                {
+                    "_key": "link_masaz",
+                    "_type": "link",
+                    "href": "/masaz"
+                },
+                {
+                    "_key": "link_baza",
+                    "_type": "link",
+                    "href": "/baza-wiedzy"
+                }
+            ]
+        }
+    ]
+}

@@ -8,7 +8,8 @@ import pricing from "@/sanity/schemaTypes/pricing";
 import { seoSection } from "@/sanity/schemaTypes/seoSection";
 
 import voucher from "@/sanity/schemaTypes/voucher";
+import voucherPage from "@/sanity/schemaTypes/voucherPage";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [postType, author, category, knowledgeBaseType, socialReel, pricing, seoSection, voucher],
+  types: [postType, author, category, knowledgeBaseType, socialReel, pricing, seoSection, voucher, voucherPage],
 }

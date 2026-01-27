@@ -1,24 +1,26 @@
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 
-export const revalidate = 3600; // 1 hour
+export const revalidate = 3600;
 
-export interface Voucher {
-    title: string;
-    image: any;
-    description: string;
-    price: string;
-    buyLink: string;
+export interface VoucherPageData {
+  title: string;
+  description: string;
+  imageFront: any;
+  imageBack: any;
+  infoParams: string[];
+  phoneNumber: string;
 }
 
-export async function getVouchers(): Promise<Voucher[]> {
-    const query = groq`*[_type == "voucher"] {
-    title,
-    image,
-    description,
-    price,
-    buyLink
-  }`;
+export async function getVoucherPageData(): Promise<VoucherPageData> {
+  const query = groq`*[_type == "voucherPage"][0] {
+        title,
+        description,
+        imageFront,
+        imageBack,
+        infoParams,
+        phoneNumber
+    }`;
 
-    return client.fetch(query, {}, { next: { revalidate } });
+  return client.fetch(query, {}, { next: { revalidate } });
 }
